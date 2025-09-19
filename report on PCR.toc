@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Core Concepts and Questions (Q0--Q13)}{2}{section.2}%
+\contentsline {section}{\numberline {3}Experiments on MNIST (Q14)}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Dataset and Setup}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Method}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Results: 2D Visualization}{3}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Analysis}{3}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Discussion and Conclusion}{3}{section.4}%
+\contentsline {section}{\numberline {A}Notation (Alphabetical Summary)}{3}{appendix.A}%
+\contentsline {section}{\numberline {B}Derivations (Optional)}{3}{appendix.B}%
+\contentsline {section}{\numberline {C}Reproducibility (Optional)}{3}{appendix.C}%

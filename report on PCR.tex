@@ -1,0 +1,165 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs,multirow}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+\usepackage{listings}
+\usepackage{titling}
+\usepackage[T1]{fontenc}
+
+% ---------- Safe helpers (no external-file errors) ----------
+\makeatletter
+\newcommand{\maybeincludegraphics}[2][]{%
+  \IfFileExists{#2}{\includegraphics[#1]{#2}}{%
+    \fbox{\parbox[c][4cm][c]{0.9\linewidth}{\centering
+      Placeholder: \texttt{#2} not found}}}}
+\newcommand{\maybelstinput}[2][]{%
+  \IfFileExists{#2}{\lstinputlisting[#1]{#2}}{%
+    \noindent\emph{(File \texttt{#2} not found; listing omitted.)}}}
+\makeatother
+
+% ---------- Math macros ----------
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\trace}{\operatorname{tr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\diag}{\operatorname{diag}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+% ---------- Lists ----------
+\setlist[itemize]{noitemsep,topsep=3pt}
+\setlist[enumerate]{noitemsep,topsep=3pt}
+
+% ---------- Title ----------
+\pretitle{\vspace*{-2em}\begin{center}\LARGE\bfseries}
+\posttitle{\par\end{center}\vspace{0.5em}}
+\preauthor{\begin{center}\large}
+\postauthor{\par\end{center}\vspace{0.5em}}
+\predate{\begin{center}\small}
+\postdate{\par\end{center}}
+
+\title{Reading Report:\\ \emph{A Tutorial on Principal Component Analysis}}
+\author{Boyuan Du (2024151470021)\\
+School of Software,\textbf{ Sichuan University}\\
+{Email:2024151470021@stu.scu.edu.cn}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Course / Assignment:} Reading report on PCA .\\
+\textbf{Primary Source:} J.~Shlens, ``A Tutorial on Principal Component Analysis,'' 2014.
+
+\begin{abstract}
+One paragraph (150--200 words): 
+objective of PCA, main insights from the tutorial, and your MNIST takeaway. Mention the ED/SVD equivalence briefly.
+PCA is a powerful and fundamental technique for extracting useful information from complex(high-dimensional) data by lowering dimension onto basic features of the data. The essence of PCA lies in its ability to identify the directions of maximum variance in the data, which are represented by the principal components. By projecting the data onto these components, PCA effectively reduces redundancy and highlights the most informative aspects of the dataset. The tutorial emphasizes two main approaches to PCA: eigen-decomposition (ED) of the covariance matrix and singular value decomposition (SVD) of the data matrix. Both methods yield equivalent results with the help of eigenvector. However they has a common weakness that they rely on the assumption that principal components are orthogonal which limits the two techniques to extract non-vertical principal component, but Independent Component Analysis can handle this problem efficiently. "about the experiment of MNIST..."
+\textbf{Keywords:} PCA, covariance, eigen-decomposition, SVD, variance.
+
+\end{abstract}
+
+\tableofcontents
+\vspace{0.5em}
+
+
+% =========================
+\section{Introduction}\label{sec:intro}
+Briefly introduce PCA as a linear, non-parametric technique for variance-maximizing, decorrelating representation; follow the change-of-basis view in Shlens (2014).
+
+% =========================
+\section{Core Concepts and Questions (Q0--Q13)}
+\subsection*{Q0. Essence of a Matrix} Linear map / basis-change views; minimal example.
+\subsection*{Q1. What Problems Does PCA Address?} Redundancy, meaningful axes of variation.
+\subsection*{Q2. Assumptions and Limits} Linearity; variance$\to$structure; orthogonality; failure cases.
+\subsection*{Q3. Basis in Linear Algebra} Basis, orthonormality, projection.
+\subsection*{Q4. Covariance and Redundancy} $\Cov$, off-diagonal dependence, diagonal dominance.
+\subsection*{Q5. SNR, Variance, Redundancy} $\Var$, SNR; why diagonalize $C_X$.
+\subsection*{Q6. Principal Component Meaning} Variance-maximizing directions under orthogonality.
+\subsection*{Q7. PCA as Basis Transformation} $Y=PX$; geometric interpretation.
+\subsection*{Q8. Re-expressing Inputs} Centering; dimensionality reduction by top-$k$ rows of $P$.
+\subsection*{Q9. PCA and Covariance} $C_Y=PC_XP^\top$; diagonalization.
+\subsection*{Q10. PCA, ED, SVD} ED of $C_X$ vs SVD route; equivalence and numerics.
+\subsection*{Q11. Intuition: ED and SVD} Rotations + stretch interpretations.
+\subsection*{Q12. Objective Function}
+\begin{align}
+\max_{\|w\|=1}~ w^\top C_X w \quad\Longleftrightarrow\quad
+\min_{\rank(\tilde X)\le k}\|X-\tilde X\|_F^2~(\text{Eckart--Young})
+\end{align}
+\subsection*{Q13. Why Dimension Reduction Works} Order by eigenvalues; preserve most variance.
+
+% =========================
+\section{Experiments on MNIST (Q14)}\label{sec:experiments}
+\subsection{Dataset and Setup}
+Use 2{,}000 train + 2{,}000 test images. Preprocess: flatten, center, optionally scale.
+
+\subsection{Method}
+PCA via ED or SVD. Report explained variance ratio for top-2/top-50 as sanity check.
+
+\subsection{Results: 2D Visualization}
+\begin{figure}[h]
+\centering
+
+\caption{PCA to 2D on MNIST. Distinct colors/markers per digit class.}
+\end{figure}
+
+\subsection{Analysis}
+Comment on class overlap; limits of linear PCA; when kernel PCA/ICA might help.
+
+% =========================
+\section{Discussion and Conclusion}
+Summarize SNR/covariance $\to$ diagonalization $\to$ ED/SVD routes; practical gains and limits.
+
+% =========================
+\section*{Compliance Checklist}
+\begin{itemize}
+\item Self-contained definitions (matrix, basis, projection, variance, covariance, SNR, redundancy, PC).
+\item High logic, concise writing.
+\item Q0--Q13 covered; Q14 plots and analysis present.
+\item Notation table completed in \cref{sec:notation}.
+\end{itemize}
+
+\clearpage
+% =========================
+
+\appendix
+\section{Mathmatical Notations)}\label{sec:mathmatical notations}
+\begin{table}[htbp]
+  \centering
+  \caption{Mathmatical Notations}\label{tab:basic-3col}
+  \begin{tabular}{@{}lll@{}} 
+    \toprule
+    Notation & Definition B & Correspoding to  \\
+    \midrule
+    apple    & red      & round \\
+    banana   & yellow   & long  \\
+    cherry   & red      & small \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\end{Mathmatical Notations}
+
+% =========================
+
+\section{Derivations (Optional)}
+Sketch why eigenvectors of $C_X$ diagonalize $C_Y$; Eckart--Young link.
+
+\section{Reproducibility (Optional)}
+OS, Python/Matlab version, libs, seed, commands to regenerate figures.
+
+\begin{thebibliography}{9}
+\bibitem{Shlens2014}
+J.~Shlens, \emph{A Tutorial on Principal Component Analysis}, 2014.
+\end{thebibliography}
+
+
+\end{document}
