@@ -14,6 +14,9 @@
 \usepackage{listings}
 \usepackage{titling}
 \usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\usepackage{array} % for \newcolumntype
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X} % 左对齐可换行列
 
 % ---------- Safe helpers (no external-file errors) ----------
 \makeatletter
@@ -134,19 +137,46 @@ Summarize SNR/covariance $\to$ diagonalization $\to$ ED/SVD routes; practical ga
 \appendix
 \section{Mathmatical Notations)}\label{sec:mathmatical notations}
 \begin{table}[htbp]
-  \centering
-  \caption{Mathmatical Notations}\label{tab:basic-3col}
-  \begin{tabular}{@{}lll@{}} 
-    \toprule
-    Notation & Definition B & Correspoding to  \\
-    \midrule
-    apple    & red      & round \\
-    banana   & yellow   & long  \\
-    cherry   & red      & small \\
-    \bottomrule
-  \end{tabular}
+\centering
+\caption{Alphabetical summary of mathematical notations used in the PCA tutorial}
+\begin{tabular}{@{}l p{0.42\textwidth} p{0.36\textwidth}@{}}
+\toprule
+\textbf{Notation} & \textbf{Definition} & \textbf{Corresponds to} \\
+\midrule
+$A,\,B$ & Two general matrix used to define or explain other definitions below & tool matrix \\
+$a_i,\,b_i$ & $i$-th samples of $A$ and $B$ & scalar observations in demonstrating example \\
+$C_X=\tfrac{1}{n}XX^{\top}$ & Covariance matrix of $X$  & reveals the redundancy of dataset X  \\
+$C_Y=\tfrac{1}{n}YY^{\top}$ & Covariance of $Y=PX$ under a new basis & covariance matrix after change of basis\\
+$D$ & Diagonal matrix of eigenvalues in eigendecomposition & variances along principal components \\
+$E$ & Matrix whose columns are eigenvectors of $C_X$ & principal directions \\
+$I$ & Identity matrix & orthonormal basis in $\mathbb{R}^m$ \\
+$k$ & Target dimension for reduction($Xa=kb$in the explaination of SVD) &  \\
+$m$ & Number of features (measurement types) & dimensions of dataset \\
+$n$ & Number of samples (trials) & scale of training set \\
+$P=[p_1^{\top}\!\cdots p_m^{\top}]$ & rotation and stretch to transforms$X$into$Y$ & projection matrix\\
+$p_i$ & $i$-th principal component (row of $P$) & principal axis \\
+$r$ & Rank of $X$ (or $X^{\top}X$) & intrinsic dimensionality \\
+$\mathrm{SNR}=\sigma^2_{\text{signal}}/\sigma^2_{\text{noise}}$ & Signal-to-noise ratio & measurement quality \\
+$\Sigma=\diag(\sigma_1,\ldots,\sigma_r)$ & Diagonal matrix of singular values & covarience in new basis \\
+$\sigma_i$ & $i$-th singular value of $X$; $\lambda_i=\sigma_i^2/n$ (if $C_X=\tfrac1n XX^{\top}$) & scale of mode $i$ \\
+$\sigma^2$ & Variance of a scalar variable/sequence & spread/energy \\
+$U$ & Left singular vectors of $X$ (columns) & orthonormal basis of column space \\
+$V$ & Right singular vectors of $X$ (columns) & orthonormal basis of row space \\
+$\hat u_i$ & $i$-th left singular vector; $\hat u_i=\tfrac{1}{\sigma_i}X\hat v_i$ & output direction of mode $i$ \\
+$\hat v_i$ & $i$-th eigenvector of $X^{\top}X$ (right singular vector) & input direction of mode $i$ \\
+$X\in\mathbb{R}^{m\times n}$ & Data matrix (columns are centered samples) & stacked measurements \\
+$x^{(j)}$ & $j$-th sample vector (a column of $X$) & per-sample measurement \\
+$Y=PX$ & Data expressed in PCA coordinates & projections onto PCs \\
+$Z=U^{\top}X$ & Coordinates in the left-singular basis & transformed data \\
+$\lambda_i$ & $i$-th eigenvalue of $C_X$ & variance along the $i$-th PC \\
+$\delta_{ij}$ & Kronecker delta ($=1$ if $i=j$, else $0$) & orthogonality indicator \\
+$\|\cdot\|$ & Euclidean norm & vector length \\
+$(\cdot)^{\top}$ & Transpose & matrix/vector transpose \\
+$\cdot$ & Dot product & inner product \\
+\bottomrule
+\end{tabular}
 \end{table}
-\end{Mathmatical Notations}
+
 
 % =========================
 
