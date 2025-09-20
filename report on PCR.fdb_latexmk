@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1758290697.38259 "/Users/dby051225/Desktop/科研训练/week1 PCA/Brian.github.io/report on PCR.tex" "report on PCR.pdf" "report on PCR" 1758290698.91335 0
-  "/Users/dby051225/Desktop/科研训练/week1 PCA/Brian.github.io/report on PCR.tex" 1758290697.09684 9448 ededb1c9086c66baa0caabb6fb24161c ""
+["pdflatex"] 1758330054.37871 "/Users/dby051225/Desktop/科研训练/week1 PCA/Brian.github.io/report on PCR.tex" "report on PCR.pdf" "report on PCR" 1758330056.51078 0
+  "/Users/dby051225/Desktop/科研训练/week1 PCA/Brian.github.io/report on PCR.tex" 1758330051.31744 9402 be411dec322150c061eee89604978fcc ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -131,6 +131,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg" 1739394495 5929 11976688d7d8ed4d0d05efd1b3d5a7e9 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg" 1739394495 5594 d52d5015abe666fae752ed7674c2dd73 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty" 1731446765 6696 886c9f3087d0b973ed2c19aa79cb3023 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/placeins/placeins.sty" 1137110565 4087 636308456f60d2b31cbf97867db5708d ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657483315 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty" 1670275497 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
@@ -144,10 +145,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1757810983 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1757810818 3345730 ca2c0481f761e60ed647c77ff940a4a2 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "report on PCR.aux" 1758290698.6767 2314 4f219dace6f72aa2f13738926cb81850 "pdflatex"
-  "report on PCR.out" 1758290698.67779 1737 b56a8a80c4a19e5687ee645fc50529f7 "pdflatex"
-  "report on PCR.tex" 1758290697.09684 9448 ededb1c9086c66baa0caabb6fb24161c ""
-  "report on PCR.toc" 1758290698.67825 885 1656abc1ddaf108602739ece374bd2f1 "pdflatex"
+  "report on PCR.aux" 1758330056.18769 2312 9708f41b99c796a6c50353b6b46ff101 "pdflatex"
+  "report on PCR.out" 1758330056.18888 1729 25dddbf88668c5dd8f2da599d3f0b69e "pdflatex"
+  "report on PCR.tex" 1758330051.31744 9402 be411dec322150c061eee89604978fcc ""
+  "report on PCR.toc" 1758330056.18951 884 b7840a94b69d2ea607fb34f5611dcff3 "pdflatex"
   (generated)
   "report on PCR.aux"
   "report on PCR.log"

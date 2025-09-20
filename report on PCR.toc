@@ -6,6 +6,6 @@
 \contentsline {subsection}{\numberline {3.3}Results: 2D Visualization}{3}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Analysis}{3}{subsection.3.4}%
 \contentsline {section}{\numberline {4}Discussion and Conclusion}{3}{section.4}%
-\contentsline {section}{\numberline {A}Mathmatical Notations)}{4}{appendix.A}%
-\contentsline {section}{\numberline {B}Derivations (Optional)}{4}{appendix.B}%
-\contentsline {section}{\numberline {C}Reproducibility (Optional)}{4}{appendix.C}%
+\contentsline {section}{\numberline {A}Mathmatical Notations}{4}{appendix.A}%
+\contentsline {section}{\numberline {B}Derivations (Optional)}{6}{appendix.B}%
+\contentsline {section}{\numberline {C}Reproducibility (Optional)}{6}{appendix.C}%

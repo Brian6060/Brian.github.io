@@ -16,6 +16,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{tabularx}
 \usepackage{array} % for \newcolumntype
+\usepackage{placeins}
+
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X} % 左对齐可换行列
 
 % ---------- Safe helpers (no external-file errors) ----------
@@ -135,8 +137,8 @@ Summarize SNR/covariance $\to$ diagonalization $\to$ ED/SVD routes; practical ga
 % =========================
 
 \appendix
-\section{Mathmatical Notations)}\label{sec:mathmatical notations}
-\begin{table}[htbp]
+\section{Mathmatical Notations}\label{sec:mathmatical notations}
+\begin{table}[h]
 \centering
 \caption{Alphabetical summary of mathematical notations used in the PCA tutorial}
 \begin{tabular}{@{}l p{0.42\textwidth} p{0.36\textwidth}@{}}
@@ -160,23 +162,23 @@ $\mathrm{SNR}=\sigma^2_{\text{signal}}/\sigma^2_{\text{noise}}$ & Signal-to-nois
 $\Sigma=\diag(\sigma_1,\ldots,\sigma_r)$ & Diagonal matrix of singular values & covarience in new basis \\
 $\sigma_i$ & $i$-th singular value of $X$; $\lambda_i=\sigma_i^2/n$ (if $C_X=\tfrac1n XX^{\top}$) & scale of mode $i$ \\
 $\sigma^2$ & Variance of a scalar variable/sequence & spread/energy \\
-$U$ & Left singular vectors of $X$ (columns) & orthonormal basis of column space \\
-$V$ & Right singular vectors of $X$ (columns) & orthonormal basis of row space \\
+$U$ & Left singular vectors of $X$ & orthonormal basis of column space \\
+$V$ & Right singular vectors of $X$ & orthonormal basis of row space \\
 $\hat u_i$ & $i$-th left singular vector; $\hat u_i=\tfrac{1}{\sigma_i}X\hat v_i$ & output direction of mode $i$ \\
-$\hat v_i$ & $i$-th eigenvector of $X^{\top}X$ (right singular vector) & input direction of mode $i$ \\
-$X\in\mathbb{R}^{m\times n}$ & Data matrix (columns are centered samples) & stacked measurements \\
+$\hat v_i$ & $i$-th eigenvector of $X^{\top}X$ & input direction of mode $i$ \\
+$X\in\mathbb{R}^{m\times n}$ & Data matrix  & stacked measurements dataset \\
 $x^{(j)}$ & $j$-th sample vector (a column of $X$) & per-sample measurement \\
 $Y=PX$ & Data expressed in PCA coordinates & projections onto PCs \\
 $Z=U^{\top}X$ & Coordinates in the left-singular basis & transformed data \\
 $\lambda_i$ & $i$-th eigenvalue of $C_X$ & variance along the $i$-th PC \\
-$\delta_{ij}$ & Kronecker delta ($=1$ if $i=j$, else $0$) & orthogonality indicator \\
+$\delta_{ij}$ & element $U$($=1$ if $i=j$, else $0$) & orthogonality indicator \\
 $\|\cdot\|$ & Euclidean norm & vector length \\
-$(\cdot)^{\top}$ & Transpose & matrix/vector transpose \\
+$(\cdot)^{\top}$ & Transpose & matrix transpose \\
 $\cdot$ & Dot product & inner product \\
 \bottomrule
 \end{tabular}
 \end{table}
-
+\FloatBarrier
 
 % =========================
 
