@@ -19,18 +19,14 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/needspace/needspace.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/needspace/needspace.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
@@ -53,6 +49,18 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
@@ -65,12 +73,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty
@@ -154,6 +156,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/placeins/placeins.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT ./report on PCR.aux
@@ -168,6 +172,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/grfext/grfext.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/grfext/grfext.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
@@ -233,21 +239,24 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
 OUTPUT report on PCR.toc
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbi1095.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
+INPUT ./data_raw.png
+INPUT ./data_raw.png
+INPUT ./data_raw.png
+INPUT ./data_raw.png
+INPUT ./data_raw.png
+INPUT ./data_pca.png
+INPUT ./data_pca.png
+INPUT ./data_pca.png
+INPUT ./data_pca.png
+INPUT ./data_pca.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbi1095.tfm
 INPUT report on PCR.aux
 INPUT ./report on PCR.out
 INPUT ./report on PCR.out
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb

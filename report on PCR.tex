@@ -1,13 +1,13 @@
 \documentclass[11pt,a4paper]{article}
 
 % ---------- Packages ----------
-
 \usepackage[margin=1in]{geometry}
+\usepackage{subcaption}
+\usepackage{needspace}
+\usepackage{amsmath,amssymb,mathtools,bm}
 \usepackage{microtype}
 \usepackage{setspace}
-\usepackage{amsmath,amssymb,mathtools,bm}
 \usepackage{graphicx}
-\usepackage{subcaption}
 \usepackage{booktabs,multirow}
 \usepackage{enumitem}
 \usepackage{hyperref}
@@ -16,12 +16,8 @@
 \usepackage{titling}
 \usepackage[T1]{fontenc}
 \usepackage{tabularx}
-\usepackage{array} % for \newcolumntype
+\usepackage{array} 
 \usepackage{placeins}
-
-% --- math packages ---
-\usepackage{amsmath,amssymb,mathtools,bm}
-
 
 % --- common math operators/macros ---
 \newcommand{\R}{\mathbb{R}}
@@ -38,21 +34,22 @@
 \newcommand{\vx}{\mathbf{x}}
 \newcommand{\vX}{\mathbf{X}}
 \newcommand{\vy}{\mathbf{y}}
+\newcommand{\vY}{\mathbf{Y}}
 \newcommand{\vC}{\mathbf{C}}
 \newcommand{\vP}{\mathbf{P}}
 \newcommand{\vU}{\mathbf{U}}
 \newcommand{\vV}{\mathbf{V}}
 \newcommand{\vE}{\mathbf{E}}
-\newcommand{\vSigma}{\bm{\Sigma}} % 用 \bm 加粗希腊字母更稳
+\newcommand{\vSigma}{\bm{\Sigma}} 
+\newcommand{\vp}{\mathbf{p}}
 
 % --- paired delimiters ---
 \newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
 \newcommand{\inner}[2]{\left\langle #1,\, #2 \right\rangle}
 
-\newcolumntype{Y}{>{\raggedright\arraybackslash}X} % 左对齐可换行列
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X} 
 
-
-% ---------- Safe helpers (no external-file errors) ----------
+% ---------- Safe helpers ----------
 \makeatletter
 \newcommand{\maybeincludegraphics}[2][]{%
   \IfFileExists{#2}{\includegraphics[#1]{#2}}{%
@@ -62,8 +59,6 @@
   \IfFileExists{#2}{\lstinputlisting[#1]{#2}}{%
     \noindent\emph{(File \texttt{#2} not found; listing omitted.)}}}
 \makeatother
-
-
 
 % ---------- Lists ----------
 \setlist[itemize]{noitemsep,topsep=3pt}
@@ -83,6 +78,21 @@ School of Software,\textbf{ Sichuan University}\\
 {Email:2024151470021@stu.scu.edu.cn}}
 \date{\today}
 
+% ---------- Document Formatting ----------
+\setlength{\parindent}{0pt}    % 取消首行缩进
+\setlength{\parskip}{0.8em}    % 段落间距
+
+% 避免标题与正文分隔
+\usepackage[compact]{titlesec}
+\titlespacing*{\section}{0pt}{*2}{0.5em}
+\titlespacing*{\subsection}{0pt}{*1.5}{0.3em}
+\titlespacing*{\paragraph}{0pt}{*1}{0.2em}
+
+% 避免孤行寡行
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+
 \begin{document}
 \maketitle
 
@@ -90,209 +100,187 @@ School of Software,\textbf{ Sichuan University}\\
 \textbf{Primary Source:} J.~Shlens, ``A Tutorial on Principal Component Analysis,'' 2014.
 
 \begin{abstract}
-PCA is a powerful and fundamental technique for extracting useful information from complex(high-dimensional) data by lowering dimension onto basic features of the data. The essence of PCA lies in its ability to identify the directions of maximum variance in the data, which are represented by the principal components. By projecting the data onto these components, PCA effectively reduces redundancy and highlights the most informative aspects of the dataset. The tutorial emphasizes two main approaches to PCA: eigen-decomposition (ED) of the covariance matrix and singular value decomposition (SVD) of the data matrix. Both methods yield equivalent results with the help of eigenvector. However they has a common weakness that they rely on the assumption that principal components are orthogonal which limits the two techniques to extract non-vertical principal component, but Independent Component Analysis can handle this problem efficiently. "about the experiment of MNIST..."
+PCA is a powerful and fundamental technique for extracting useful information from complex(high-dimensional) data by lowering dimension onto basic features of the data. The essence of PCA lies in its ability to identify the directions of maximum variance in the data, which are represented by the principal components. By projecting the data onto these components, PCA effectively reduces redundancy and highlights the most informative aspects of the dataset. The tutorial emphasizes two main approaches to PCA: eigen-decomposition (ED) of the covariance matrix and singular value decomposition (SVD) of the data matrix. Both methods yield same results with the help of eigenvector. However they has a common weakness that they rely on the assumption that principal components are orthogonal which limits the two techniques to extract non-vertical principal component, but Independent Component Analysis can handle this problem efficiently. "about the experiment of MNIST..."
+\\
+\\
+\\
 \\\textbf{Keywords:} PCA, covariance, eigen-decomposition, SVD, variance.
-
 \end{abstract}
 \clearpage
+
 \tableofcontents
 \vspace{0.5em}
 \clearpage
+
+
 % =========================
 % ========== A. Problem & Setting (4.(0/1/3)) ==========
 \section{Foundation \& Settings}
 \label{sec:problem}
 \paragraph{}
-A matrix in Principal Component Analysis can serves as a linear operator that performs a change of basis: it re-expresses the recorded data $X$ as $Y$ via $PX=Y$. Geometrically,it represent the transformation of a rotation and stretch, and the rows of $P$ serve as a new set of basis vectors for expressing the columns of $X$. In the tutorial’s spring–mass example, three cameras yield six-dimensional measurements that are both noisy and redundant, whereas the true motion is essentially one-dimensional along the physical $x$-axis. Principal Component Analysis (PCA) aims to find the most meaningful basis that filters noise and reveals structure by finding directions of largest variance (high signal-to-noise ratio) and by transforming the covariance into a diagonal form; and the orthogonal martrix which realizes this contains the principal components.
+Principal Component Analysis(PCA) is a technique to extract useful and hiden information and knowlegde form confuse and big datasets. It completely bases on linear algebra to achieve the goal of dimension reduction of data, in which, the vector and matrix is crucial and foundamental elements. Like the example of a flunctuate spring, PCA can extract a main movement in a single axis $x$ from three different path record in different angle which is both noisy and redundant. A matrix in PCA can serve multiple roles such as a 
+\begin{equation}
+X=[x^{(1)}\ \cdots\ x^{(n)}]\in\mathbb{R}^{m\times n}
+\end{equation}
+In which each column is a sample and each row reflect a dimension of datasets,
 
-% ========== B. Assumptions & Limits (4.(2)) ==========
-\section{Assumptions \& Limits of PCA}
-\paragraph*{\emph Assumptions}
-\paragraph*{I. Linearity}
-PCA assumes a \emph{linear change of basis}. With centered data $X\in\mathbb{R}^{m\times n}$ and covariance $C_X=\tfrac{1}{n}XX^\top$, it searches an orthonormal transform:
-$$
-Y=PX,\qquad P\in O(m),\ \ P^\top P=I_m.
-$$
+and \textbf{linear transformation} as stretch or rotation and projection:
+\begin{equation}
+C_Y = P C_X P^\top
+\end{equation}
+$P$ projects $C_X$ onto a new basis where the off-diagonal elements equal to zero.
+\\In the process of PCA, we measure the dataset from different directions orthonormally and find the direction with largest variance which is called \textbf{principal component(PC)}. So in linear algebra, we use a set of orthonormal vertors as basis, to reveal the the way we measure the data.
+The essence of PCA is to find a linear transformation $P$ to project the data $X$ onto a new basis $Y=PX$ where the covariance $C_Y$ becomes a diagnoal matrix in order to remove the noise and redundancy in raw data material.
 
-\paragraph*{II. Variance-as-Structure \textit{High SNR}}
-
-% data and covariance (original symbols)
-$$
-X\ \text{centered},\qquad C_X \equiv \tfrac{1}{n} X X^T\ \ \text{(sample covariance)}.
-$$
-
-% linear change of basis used by PCA
-$$
-Y = P X,\qquad C_Y \equiv \tfrac{1}{n} Y Y^T = P\,C_X\,P^T = D\ \ \text{(decorrelated / diagonal)}.
-$$
-
-% diagonal form and ordering = "large variance = important"
-$$
-D=\operatorname{diag}(\lambda_1,\ldots,\lambda_m),\quad \lambda_1 \ge \cdots \ge \lambda_m,
-\quad (C_Y)_{ii}=\lambda_i\ \ \text{(variance along row $p_i$ of $P$)}.
-$$
-
-% equivalent eigen-decomposition statement in the original derivation
-$$
-C_X = E D E^T,\quad P \equiv E^T\ \ \text{(rows of $P$ are principal components)}.
-$$
-
-% one-line English takeaway in-place
-$$
-\text{Interpretation: larger } \lambda_i \ \Rightarrow\ \text{``interesting structure'' (high SNR); smaller } \lambda_i \ \Rightarrow\ \text{``noise''.}
-$$
-
-\paragraph*{III. The principal components are orthogonal}
-
-% covariance and eigendecomposition (original symbols)
-$$
-C_X=\tfrac{1}{n}XX^T,\qquad C_X=EDE^T,\qquad
-D=\operatorname{diag}(\lambda_1,\ldots,\lambda_m),\ \ \lambda_1\ge\cdots\ge\lambda_m.
-$$
-
-% choose P from eigenvectors; orthogonality
-$$
-P \equiv E^T,\qquad Y=PX,\qquad C_Y=PC_XP^T=D,
-$$
-$$
-E^T E=I \ \Longleftrightarrow\ P P^T=I,\qquad
-p_i^T p_j = 0\ (i\neq j),\ \ p_i^T p_i = 1.
-$$
-\clearpage
-
-% ========== C. Covariance, Redundancy & SNR ==========
+% ========== B. Covariance, Redundancy & SNR ==========
 
 \section{Covariance, Redundancy, and SNR}
 
 \subsection{Covariance}
-\paragraph*{Sample covariance.}
-For centered data $X\in\mathbb{R}^{m\times n}$ (columns are samples),
-\[
+\label{sec:Covariance}
+\paragraph*{Intuitive Definition of Covariance}\mbox{}\\
+Covariance represents the relationship between two variables. In PCA, it reflects the the degree of different dimensions of datasets overlapped which we called \emph{Redundancy}. The larger the covariance is , the more two dimensions are correlated and overlapped which means bigger redundancy.
+\begin{equation}
 C_X=\tfrac{1}{n}\,X X^T,\qquad (C_X)_{ij}=\tfrac{1}{n}\sum_{\ell=1}^n X_{i\ell}\,X_{j\ell}.
-\]
+\end{equation}
 
-\paragraph{Deeper quantities.}
-Diagonal entries $(C_X)_{ii}$ are variances; off–diagonal entries $(C_X)_{ij}$ are covariances. The magnitude $|(C_X)_{ij}|$ quantifies linear redundancy between channels $i$ and $j$ which reveals the overlapping information between variables.
 \subsection{Covariance, Redundancy, and Noise}
+\paragraph*{}\mbox{}\\In contrast of covariance, the diagonal elements of $C_X$ represent the variance of each dimension which reflects the useful information of the data we call this direction\emph{Signal}. And the emph{noise} is the opposite infomation in the direction vertical to the signal.
+So we first divide the covariance matrix into two parts: diagonal elements and off-diagonal elements. The former consists of the variance of signal direction and the noise direction. The latter consists of the covariance between different dimensions.
+Now it is clear that PCA aims to reduce both the irrelavant information(noise) and the repetitive information(redundancy) by finding a new basis to project the data onto where the covariance matrix becomes diagonal and the variance along each dimension is ordered from large to small.
 
-\paragraph*{Covariance decomposition.}
-For centered data $X$, the sample covariance is
-\[
-C_X=\tfrac{1}{n}XX^T.
-\]
-Decompose it into signal and noise parts:
-\[
-C_X=C_{\mathrm{sig}}+C_{\mathrm{noise}},\qquad
-C_{\mathrm{noise}}=\sigma^2 I
-\]
 
-\paragraph{Redundancy encoded in covariance.}
-Off–diagonal entries quantify linear redundancy between channels:
-\[
-\text{redundancy}_{ij}\ \propto\ |(C_X)_{ij}|=|(C_{\mathrm{sig}})_{ij}+(C_{\mathrm{noise}})_{ij}|\quad (i\neq j).
-\]
-In the direction of large varience, $(C_{\mathrm{noise}})_{ij}=0$ for $i\neq j$, so redundancy arises from $C_{\mathrm{sig}}$.
-\paragraph{Effect of change of basis.}
-Let $Y=PX$ with $P$ orthonormal chosen to diagonalize $C_X$:
-\[
-C_Y=\tfrac{1}{n}YY^T=PC_XP^T=D,\qquad D=\operatorname{diag}(\lambda_1,\ldots,\lambda_m).
-\]
-Redundancy is removed in $Y$ (off–diagonals $=0$). The diagonal entries split signal and noise power along principal directions $p_i$ (rows of $P$):
-\[
-\lambda_i=p_i^T C_{\mathrm{sig}}\,p_i\;+\;p_i^T C_{\mathrm{noise}}\,p_i,
-\]
-and in the direction of max varience,
-\[
-p_i^T C_{\mathrm{noise}}\,p_i=\sigma^2,\qquad
-D-\sigma^2 I=\operatorname{diag}\big(p_1^T C_{\mathrm{sig}} p_1,\ldots,p_m^T C_{\mathrm{sig}} p_m\big).
-\]
+\subsection{SNR \& Variance}
+\paragraph*{}\mbox{}\\
+Before we take steps to decrease the noise, we measure the quality of data by compare the variance between signal and noise. So logically, we define the \emph{Signal-to-Noise Ratio(SNR)} as:
+\begin{equation}
+\mathrm{SNR} = \frac{\sigma^2_{\text{signal}}}{\sigma^2_{\text{noise}}}
+\end{equation}
+where $\sigma^2_{\text{signal}}$ is the variance along the signal direction and $\sigma^2_{\text{noise}}$ is the variance along the noise direction. A higher SNR indicates a cleaner and more reliable measurement, while a lower SNR suggests that the data is more contaminated by noise.
+In PCA, we make effort to increase the SNR by seeking directions where $\sigma^2_{\text{noise}}$ closes in on zero.
 
-\section{SNR, Variance, and Redundancy}
+% ========== C. Assumptions & Limits (4.(2)) ==========
+\section{Assumptions \& Limits of PCA}
+\label{sec:Ass-Lim}
+\paragraph*{I. Linearity}\mbox{}\\
+PCA assumes a \textbf{linear change of basis}. With dataset $X\in\mathbb{R}^{m\times n}$ and covariance $C_X=\tfrac{1}{n}XX^\top$, it seeks a linear transformation $P$ to project $X$ onto a new basis $Y=PX$ where the covariance $C_Y=\tfrac{1}{n}YY^\top$ becomes diagonal. 
+\begin{equation}
+Y = PX, \quad
+P \in O(m),
+\quad P^\top P = I_m.
+\end{equation}
+However, this assumption restricts PCA to only extract linear features from data, but Independent Component Analysis(ICA) can further tackle this problem efficiently.
+\paragraph*{II. Large Variance = Important Structure}\mbox{}\\
+PCA assumes that directions with largest variance correspond to the most important underlying structure which contains the most valuable information.
+We assume that the useful information is embedded in direction $G$, so this assumption is:
+\begin{equation}
+\forall g_{ij}\in G,\ \sigma^2 = \mathbf{g}_{ij} C_X \mathbf{g}_{ij}^\top \to \infty
+\end{equation}
+However, this assumption may not always be correct, and in real cases, this often leads to a wrong direction.
 
-\subsection{Definitions}
-\paragraph*{Variance}
-For any unit $p$, the projected variance is
-\[
-\operatorname{Var}(p^T x)=p^T C_X p.
-\]
-For principal directions $p_i$ with $C_X p_i=\lambda_i p_i$,
-\[
-\operatorname{Var}(p_i^T x)=\lambda_i.
-\]
+\paragraph*{III. The principal components are orthogonal}\mbox{}\\
+PCA assumes that the principal components are orthogonal to each other. Now we demonstrate this assumption in the process of PCA:
+PCA seeks a linear transformation $P$ to project $X$ onto a new basis $Y=PX$ where
 
-\paragraph*{Redundancy (pairwise).}
-For two centered scalar matrix $A,B$,
-\[
-\operatorname{Cov}(A,B)=\tfrac{1}{n}\sum_{\ell=1}^n a_\ell b_\ell,
-\]
-and in matrix form $|(C_X)_{ij}|$ measures linear redundancy between row $i$ and $j$.
+\begin{equation}
+C_Y = P C_X P^\top
+\end{equation}
 
-\paragraph*{Signal-to-Noise Ratio (SNR).}
-With $C_X=C_{\mathrm{sig}}+\sigma^2 I$,
-\[
-\mathrm{SNR}_i=\frac{\lambda_i-\sigma^2}{\sigma^2},\qquad
-\lambda_i=p_i^T C_{\mathrm{sig}} p_i+\sigma^2.
-\]
-
-\subsection{Relations (Content Requirements)}
-\paragraph*{Variance–SNR link.}
-Larger $\lambda_i$ implies larger $\mathrm{SNR}_i$ under a common noise floor $\sigma^2$; principal components are ranked by $\lambda_i$ and equivalently by $\mathrm{SNR}_i$.
-
-\paragraph*{Covariance–Redundancy link.}
-Large $|(C_X)_{ij}|$ indicates strong redundancy; PCA finds $P$ so that $C_Y=PC_XP^T=D$ becomes diagonal, eliminating pairwise redundancy in $Y$.
-
-\paragraph*{Combined PCA criterion.}
-Let $C_X=E D E^T$ with $E^T E=I$ and $D=\operatorname{diag}(\lambda_1,\ldots,\lambda_m)$. Choosing $P=E^T$ yields $C_Y=D$ (decorrelation) and orders coordinates by $\lambda_i$ (high–SNR directions first). For $k$–dimensional retention with $E_k=[p_1,\ldots,p_k]$,
-\[
-E_k^T C_X E_k=\operatorname{diag}(\lambda_1,\ldots,\lambda_k),\qquad
-\sum_{i=1}^k \lambda_i\ \text{(retained power)},\quad
-\sum_{i=k+1}^m \lambda_i\ \text{(discarded power)}.
-\]
+becomes diagonal. And we assume that:
+\begin{equation}
+P\in O(m),(p_i^\top p_j=0, \forall i\neq j)\ \\\ P^\top P=I_m(\forall i=j, p_i^\top p_j=1)
+\end{equation}
+This assumption is crucial because it ensures that the principal components are uncorrelated, which simplifies the analysis and interpretation of the data. However, it also limits the ability of PCA to capture non-orthogonal features in the data.
 
 % ========== D. PCA as Change of Basis (4.(6/7/8/9)) ==========
-\section{(PCA as a Change of Basis)}
+\section{PCA as a Change of Basis}
 \label{sec:pca-cob}
 \paragraph{Change-of-Basis Formulation.}
 \begin{equation}
   \vy = \vP \vx, \qquad \vC_Y = \vP \vC_X \vP^\top
 \end{equation}
-%% TODO: Choose \vP to diagonalize \vC_Y; define principal components and their ordering.
-\paragraph{Projection and Re-expression.}
-%% TODO: j-th PC score = \inner{\mathbf{p}_j}{\vx}; geometric intuition and visualization notes.
-\paragraph{Relation to Covariance.}
-%% TODO: When \vP is the transpose of the eigenvector matrix of \vC_X, \vC_Y becomes diagonal; provide a one-sentence proof sketch.
+Principal components is the process where we change the basis of the data matrix; it is the very way we change our directions of measurement and evaluation on the data, reducing the noise and redundancy to approach the best condition. So the principal component is embedded in the matrix $\vP$ that makes $\vC_Y$ diagonal.
+Every row of $\vP$ is a principal component, and the variance along that component is given by the corresponding diagonal element of $\vC_Y$.
 
-% ========== E. Connections: PCA–ED–SVD (4.(10/11)) ==========
-\section{(Connections: PCA–ED–SVD)}
+\paragraph{Projection and Re-expression}\mbox{}\\
+The way we re-express the data in the new basis is by projecting the data onto each principal component. The projection of a data point $x$ onto a principal component $p_i$ is produced by the dot product $\inner{\vp_i}{\vx}$. This projection gives us the coordinate of the data point in the new basis along that principal component.
+And we visualize it as the rotation and stretch of the basis vectors.
+
+\begin{figure}[htbp]
+  \centering
+  % 第一张图
+  \begin{subfigure}{0.45\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{data_raw.png}
+    \caption{Raw data with a random basis}
+    \label{fig:raw}
+  \end{subfigure}
+  \hfill
+  % 第二张图
+  \begin{subfigure}{0.45\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{data_pca.png}
+    \caption{After PCA}
+    \label{fig:pca}
+  \end{subfigure}
+  \caption{Comparison of data before and after PCA.}
+  \caption{figure(a) shows the raw data in a random basis,where the axes are not aligned with the data's main variance direction, leading to a noisy and redundant representation. Figure (b) illustrate the same data after PCA, where the axes are aligned with the principal components, resulting in a clearer and more structured representation.}
+  \label{fig:data-compare}
+\end{figure}
+
+
+\paragraph{Relation to Covariance}\mbox{}\\
+PCA is a linear transformation that re-expresses the dataset in a new orthonormal basis so that the covariance matrix becomes diagonal. In this process, the off-diagonal which represent redundancy between variables are eliminated, and the diagonal elements is the variances along the principal components. 
+In conclusion, PCA is a tool to change the basis of data, and the covariance matrix is a measure of how well the data is represented in that basis. 
 \label{sec:edsvd}
-\paragraph{ED Route (Eigendecomposition).}
+
+
+% ========== E. ED \& SVD Routes (4.(10/11)) ==========
+\section{Two powerful route to PCA: ED \& SVD}
+\label{sec:edsvd}
+\paragraph{ED Route \emph{Eigen decomposition}}\mbox{}\\
+As we mentioned before, PCA seeks a linear transformation $\vP$ to project $\vX$ onto a new basis $\vY=\vP\vX$ where the covariance $\vC_Y=\tfrac{1}{n}\vY\vY^\top$ becomes diagonal. 
+In linear algebra, we know that a symmetric matrix can be diagonalized by its eigenvectors. So we can find the eigenvectors of the covariance matrix $\vC_X=\tfrac{1}{n}\vX\vX^\top$ to form the projection matrix $\vP$. The eigenvectors of $\vC_X$ are orthogonal and can be used as the new basis for the data. 
+Intuitively, the eigenvectors represent the directions of maximum variance in the data, and the corresponding eigenvalues represent the amount of variance along those directions. By projecting the data onto the eigenvectors, we can effectively reduce redundancy and highlight the most informative aspects of the dataset.
+
 \begin{equation}
   \vC_X = \vE \mathbf{D} \vE^\top, \quad \text{PCs} \equiv \text{columns of } \vE,\; \text{variance} \equiv \text{diag}(\mathbf{D})
 \end{equation}
-\paragraph{SVD Route (Singular Value Decomposition).}
+
+\paragraph{SVD Route \emph{Singular Value Decomposition}}\mbox{}\\
+Another viable way to PCA is to use the Singular Value Decomposition(SVD) of the data matrix $\vX$. 
+The left singular vectors $u_i$ and right singular vectors $v_i$ of $\vX$ are the eigenvectors of $\vX\vX^\top$ and $\vX^\top\vX$ respectively. The singular values $\sigma_i$ are the square roots of the eigenvalues of $\vX^\top\vX$.
+SVD decomposes $\vX$ into three matrix: $\vU$, $\vSigma$, and $\vV^\top$. The columns of $\vV$ are the right singular vectors of $\vX$, which correspond to the principal components. The diagonal elements of $\vSigma$ are the singular values, which are related to the variance along each principal component.
+
+
 \begin{equation}
-  \vX = \vU \vSigma \vV^\top, \quad \text{PCs} \equiv \text{columns of } \vV,\; \text{scores} \equiv \vSigma \vV^\top
+  \vX = \vU \vSigma \vV^\top, \quad \text{PCs} \equiv \text{columns of } \vV
 \end{equation}
-%% TODO: When to prefer SVD (numerical stability/centering) and the "rotate–stretch–rotate" intuition.
+Till now, it's clear and easy to see the pros and cons of the two methods:
+\textbf{ED} is more intuitive and directly related to the covariance matrix, but the realization of \textbf{ED} requries a couple of extra conditions of data matrix that it must be square and symmetric.
+\textbf{SVD} is more general and can deal with any data matrix, but it is less intuitive and the features of decomposing data into three matirx requires a surge of computation.
 
 % ========== F. Objective & Why DR Works (4.(12/13)) ==========
-\section{(Objective \& Why DR Works)}
-\label{sec:objective}
-\paragraph{Reconstruction-Error Minimization (MSE).}
+\section{The Viability of PCA in Dimensional Reduction}
+PCA as it's name suggests, is a method to find the principal components of the data. But the way we define "\textit{principal}" is not so clear. In the context of dimensional reduction, the degree to which a reduced representation can predict the original data is a how we define success and that reveals how principal the components we use to simplify the data are.
+Quantitatively, we use the \textbf{Mean Squared Error(MSE)} to measure the difference between the original data and the predict the data from the simplified representation.
 \begin{equation}
-  \min_{\text{rank}(\hat{\vX}) \le k} \norm{\vX - \hat{\vX}}_F^2
-  \quad \Longleftrightarrow \quad
-  \text{take the top } k \text{ principal components with largest variance.}
+  \text{MSE} = \frac{1}{n} \sum_{i=1}^n \| x^{(i)} - \hat{x}^{(i)} \|^2
 \end{equation}
-%% TODO: One-sentence optimality intuition (Eckart–Young); statistical/task implications of the trade-off.
-\clearpage
+To minimize the MSN, we need to maximize the variance along the principal components we choose to keep, and the mathmatical result is that we need to choose the top $k$ eigenvectors of the covariance matrix $\vC_X$ or the top $k$ right singular vectors of the data matrix $\vX$, just as we do in PCA.
+\begin{equation}
+  \text{MSE} = \sum_{i=k+1}^m \lambda_i
+\end{equation}
+So PCA is a viable method for dimensional reduction because it effectively captures the most important features of the data while minimizing the loss of information.
 % =========================
-
+% ========== G. Conclusion (4.(4/5)) ==========
+\section{Conclusion}
+PCA is a powerful and fundamental technique for extracting useful information from complex and high dimensional data by transform the data into a new basis where the covariance matrix becomes diagonal. The essence of PCA lies in its ability to identify the directions of maximum variance in the data, which are represented by the principal components. By projecting the data onto these components, PCA effectively reduces redundancy and highlights the most informative aspects of the dataset. And the way ED and SVD proved to be a viable and powerful method to achieve PCA as well as dimensional reduction. However, PCA has some limitations, such as its reliance on the assumption that principal components are orthogonal. In cases where these assumptions do not hold, substitute techniques such as Independent Component Analysis (ICA) may be more appropriate.
+\clearpage
 
 \appendix
-\section{Mathmatical Notations}\label{sec:mathmatical notations}
 \begin{table}[h]
-\centering
+\section{Mathmatical Notations}\label{sec:mathmatical notations}
 \caption{Alphabetical summary of mathematical notations used in the PCA tutorial}
 \begin{tabular}{@{}l p{0.42\textwidth} p{0.36\textwidth}@{}}
 \toprule
@@ -333,13 +321,8 @@ $\cdot$ & Dot product & inner product \\
 \end{table}
 \FloatBarrier
 
+
 % =========================
-
-\section{Derivations (Optional)}
-Sketch why eigenvectors of $C_X$ diagonalize $C_Y$; Eckart--Young link.
-
-\section{Reproducibility (Optional)}
-OS, Python/Matlab version, libs, seed, commands to regenerate figures.
 
 \begin{thebibliography}{9}
 \bibitem{Shlens2014}
