@@ -1,11 +1,24 @@
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {section}{\numberline {2}Core Concepts and Questions (Q0--Q13)}{2}{section.2}%
-\contentsline {section}{\numberline {3}Experiments on MNIST (Q14)}{3}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Dataset and Setup}{3}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Method}{3}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Results: 2D Visualization}{3}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Analysis}{3}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Discussion and Conclusion}{3}{section.4}%
-\contentsline {section}{\numberline {A}Mathmatical Notations}{4}{appendix.A}%
-\contentsline {section}{\numberline {B}Derivations (Optional)}{6}{appendix.B}%
-\contentsline {section}{\numberline {C}Reproducibility (Optional)}{6}{appendix.C}%
+\contentsline {section}{\numberline {1}Foundation \& Settings}{3}{section.1}%
+\contentsline {paragraph}{}{3}{section*.2}%
+\contentsline {section}{\numberline {2}Assumptions \& Limits of PCA}{3}{section.2}%
+\contentsline {section}{\numberline {3}Covariance, Redundancy, and SNR}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Covariance}{4}{subsection.3.1}%
+\contentsline {paragraph}{Deeper quantities.}{4}{section*.8}%
+\contentsline {subsection}{\numberline {3.2}Covariance, Redundancy, and Noise}{4}{subsection.3.2}%
+\contentsline {paragraph}{Redundancy encoded in covariance.}{4}{section*.10}%
+\contentsline {paragraph}{Effect of change of basis.}{4}{section*.11}%
+\contentsline {section}{\numberline {4}SNR, Variance, and Redundancy}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Definitions}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Relations (Content Requirements)}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {5}(PCA as a Change of Basis)}{5}{section.5}%
+\contentsline {paragraph}{Change-of-Basis Formulation.}{5}{section*.18}%
+\contentsline {paragraph}{Projection and Re-expression.}{5}{section*.19}%
+\contentsline {paragraph}{Relation to Covariance.}{5}{section*.20}%
+\contentsline {section}{\numberline {6}(Connections: PCA–ED–SVD)}{5}{section.6}%
+\contentsline {paragraph}{ED Route (Eigendecomposition).}{5}{section*.21}%
+\contentsline {paragraph}{SVD Route (Singular Value Decomposition).}{5}{section*.22}%
+\contentsline {section}{\numberline {7}(Objective \& Why DR Works)}{5}{section.7}%
+\contentsline {paragraph}{Reconstruction-Error Minimization (MSE).}{5}{section*.23}%
+\contentsline {section}{\numberline {A}Mathmatical Notations}{6}{appendix.A}%
+\contentsline {section}{\numberline {B}Derivations (Optional)}{8}{appendix.B}%
+\contentsline {section}{\numberline {C}Reproducibility (Optional)}{8}{appendix.C}%

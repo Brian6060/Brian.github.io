@@ -1,6 +1,7 @@
 \documentclass[11pt,a4paper]{article}
 
 % ---------- Packages ----------
+
 \usepackage[margin=1in]{geometry}
 \usepackage{microtype}
 \usepackage{setspace}
@@ -18,7 +19,38 @@
 \usepackage{array} % for \newcolumntype
 \usepackage{placeins}
 
+% --- math packages ---
+\usepackage{amsmath,amssymb,mathtools,bm}
+
+
+% --- common math operators/macros ---
+\newcommand{\R}{\mathbb{R}}
+\DeclareMathOperator{\rank}{rank}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\trace}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+% --- vectors/matrices (bold) ---
+\newcommand{\vx}{\mathbf{x}}
+\newcommand{\vX}{\mathbf{X}}
+\newcommand{\vy}{\mathbf{y}}
+\newcommand{\vC}{\mathbf{C}}
+\newcommand{\vP}{\mathbf{P}}
+\newcommand{\vU}{\mathbf{U}}
+\newcommand{\vV}{\mathbf{V}}
+\newcommand{\vE}{\mathbf{E}}
+\newcommand{\vSigma}{\bm{\Sigma}} % 用 \bm 加粗希腊字母更稳
+
+% --- paired delimiters ---
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\inner}[2]{\left\langle #1,\, #2 \right\rangle}
+
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X} % 左对齐可换行列
+
 
 % ---------- Safe helpers (no external-file errors) ----------
 \makeatletter
@@ -31,15 +63,7 @@
     \noindent\emph{(File \texttt{#2} not found; listing omitted.)}}}
 \makeatother
 
-% ---------- Math macros ----------
-\newcommand{\E}{\mathbb{E}}
-\newcommand{\Var}{\operatorname{Var}}
-\newcommand{\Cov}{\operatorname{Cov}}
-\newcommand{\trace}{\operatorname{tr}}
-\newcommand{\rank}{\operatorname{rank}}
-\newcommand{\diag}{\operatorname{diag}}
-\DeclareMathOperator*{\argmin}{arg\,min}
-\DeclareMathOperator*{\argmax}{arg\,max}
+
 
 % ---------- Lists ----------
 \setlist[itemize]{noitemsep,topsep=3pt}
@@ -66,75 +90,204 @@ School of Software,\textbf{ Sichuan University}\\
 \textbf{Primary Source:} J.~Shlens, ``A Tutorial on Principal Component Analysis,'' 2014.
 
 \begin{abstract}
-One paragraph (150--200 words): 
-objective of PCA, main insights from the tutorial, and your MNIST takeaway. Mention the ED/SVD equivalence briefly.
 PCA is a powerful and fundamental technique for extracting useful information from complex(high-dimensional) data by lowering dimension onto basic features of the data. The essence of PCA lies in its ability to identify the directions of maximum variance in the data, which are represented by the principal components. By projecting the data onto these components, PCA effectively reduces redundancy and highlights the most informative aspects of the dataset. The tutorial emphasizes two main approaches to PCA: eigen-decomposition (ED) of the covariance matrix and singular value decomposition (SVD) of the data matrix. Both methods yield equivalent results with the help of eigenvector. However they has a common weakness that they rely on the assumption that principal components are orthogonal which limits the two techniques to extract non-vertical principal component, but Independent Component Analysis can handle this problem efficiently. "about the experiment of MNIST..."
-\textbf{Keywords:} PCA, covariance, eigen-decomposition, SVD, variance.
+\\\textbf{Keywords:} PCA, covariance, eigen-decomposition, SVD, variance.
 
 \end{abstract}
-
+\clearpage
 \tableofcontents
 \vspace{0.5em}
-
-
-% =========================
-\section{Introduction}\label{sec:intro}
-Briefly introduce PCA as a linear, non-parametric technique for variance-maximizing, decorrelating representation; follow the change-of-basis view in Shlens (2014).
-
-% =========================
-\section{Core Concepts and Questions (Q0--Q13)}
-\subsection*{Q0. Essence of a Matrix} Linear map / basis-change views; minimal example.
-\subsection*{Q1. What Problems Does PCA Address?} Redundancy, meaningful axes of variation.
-\subsection*{Q2. Assumptions and Limits} Linearity; variance$\to$structure; orthogonality; failure cases.
-\subsection*{Q3. Basis in Linear Algebra} Basis, orthonormality, projection.
-\subsection*{Q4. Covariance and Redundancy} $\Cov$, off-diagonal dependence, diagonal dominance.
-\subsection*{Q5. SNR, Variance, Redundancy} $\Var$, SNR; why diagonalize $C_X$.
-\subsection*{Q6. Principal Component Meaning} Variance-maximizing directions under orthogonality.
-\subsection*{Q7. PCA as Basis Transformation} $Y=PX$; geometric interpretation.
-\subsection*{Q8. Re-expressing Inputs} Centering; dimensionality reduction by top-$k$ rows of $P$.
-\subsection*{Q9. PCA and Covariance} $C_Y=PC_XP^\top$; diagonalization.
-\subsection*{Q10. PCA, ED, SVD} ED of $C_X$ vs SVD route; equivalence and numerics.
-\subsection*{Q11. Intuition: ED and SVD} Rotations + stretch interpretations.
-\subsection*{Q12. Objective Function}
-\begin{align}
-\max_{\|w\|=1}~ w^\top C_X w \quad\Longleftrightarrow\quad
-\min_{\rank(\tilde X)\le k}\|X-\tilde X\|_F^2~(\text{Eckart--Young})
-\end{align}
-\subsection*{Q13. Why Dimension Reduction Works} Order by eigenvalues; preserve most variance.
-
-% =========================
-\section{Experiments on MNIST (Q14)}\label{sec:experiments}
-\subsection{Dataset and Setup}
-Use 2{,}000 train + 2{,}000 test images. Preprocess: flatten, center, optionally scale.
-
-\subsection{Method}
-PCA via ED or SVD. Report explained variance ratio for top-2/top-50 as sanity check.
-
-\subsection{Results: 2D Visualization}
-\begin{figure}[h]
-\centering
-
-\caption{PCA to 2D on MNIST. Distinct colors/markers per digit class.}
-\end{figure}
-
-\subsection{Analysis}
-Comment on class overlap; limits of linear PCA; when kernel PCA/ICA might help.
-
-% =========================
-\section{Discussion and Conclusion}
-Summarize SNR/covariance $\to$ diagonalization $\to$ ED/SVD routes; practical gains and limits.
-
-% =========================
-\section*{Compliance Checklist}
-\begin{itemize}
-\item Self-contained definitions (matrix, basis, projection, variance, covariance, SNR, redundancy, PC).
-\item High logic, concise writing.
-\item Q0--Q13 covered; Q14 plots and analysis present.
-\item Notation table completed in \cref{sec:notation}.
-\end{itemize}
-
 \clearpage
 % =========================
+% ========== A. Problem & Setting (4.(0/1/3)) ==========
+\section{Foundation \& Settings}
+\label{sec:problem}
+\paragraph{}
+A matrix in Principal Component Analysis can serves as a linear operator that performs a change of basis: it re-expresses the recorded data $X$ as $Y$ via $PX=Y$. Geometrically,it represent the transformation of a rotation and stretch, and the rows of $P$ serve as a new set of basis vectors for expressing the columns of $X$. In the tutorial’s spring–mass example, three cameras yield six-dimensional measurements that are both noisy and redundant, whereas the true motion is essentially one-dimensional along the physical $x$-axis. Principal Component Analysis (PCA) aims to find the most meaningful basis that filters noise and reveals structure by finding directions of largest variance (high signal-to-noise ratio) and by transforming the covariance into a diagonal form; and the orthogonal martrix which realizes this contains the principal components.
+
+% ========== B. Assumptions & Limits (4.(2)) ==========
+\section{Assumptions \& Limits of PCA}
+\paragraph*{\emph Assumptions}
+\paragraph*{I. Linearity}
+PCA assumes a \emph{linear change of basis}. With centered data $X\in\mathbb{R}^{m\times n}$ and covariance $C_X=\tfrac{1}{n}XX^\top$, it searches an orthonormal transform:
+$$
+Y=PX,\qquad P\in O(m),\ \ P^\top P=I_m.
+$$
+
+\paragraph*{II. Variance-as-Structure \textit{High SNR}}
+
+% data and covariance (original symbols)
+$$
+X\ \text{centered},\qquad C_X \equiv \tfrac{1}{n} X X^T\ \ \text{(sample covariance)}.
+$$
+
+% linear change of basis used by PCA
+$$
+Y = P X,\qquad C_Y \equiv \tfrac{1}{n} Y Y^T = P\,C_X\,P^T = D\ \ \text{(decorrelated / diagonal)}.
+$$
+
+% diagonal form and ordering = "large variance = important"
+$$
+D=\operatorname{diag}(\lambda_1,\ldots,\lambda_m),\quad \lambda_1 \ge \cdots \ge \lambda_m,
+\quad (C_Y)_{ii}=\lambda_i\ \ \text{(variance along row $p_i$ of $P$)}.
+$$
+
+% equivalent eigen-decomposition statement in the original derivation
+$$
+C_X = E D E^T,\quad P \equiv E^T\ \ \text{(rows of $P$ are principal components)}.
+$$
+
+% one-line English takeaway in-place
+$$
+\text{Interpretation: larger } \lambda_i \ \Rightarrow\ \text{``interesting structure'' (high SNR); smaller } \lambda_i \ \Rightarrow\ \text{``noise''.}
+$$
+
+\paragraph*{III. The principal components are orthogonal}
+
+% covariance and eigendecomposition (original symbols)
+$$
+C_X=\tfrac{1}{n}XX^T,\qquad C_X=EDE^T,\qquad
+D=\operatorname{diag}(\lambda_1,\ldots,\lambda_m),\ \ \lambda_1\ge\cdots\ge\lambda_m.
+$$
+
+% choose P from eigenvectors; orthogonality
+$$
+P \equiv E^T,\qquad Y=PX,\qquad C_Y=PC_XP^T=D,
+$$
+$$
+E^T E=I \ \Longleftrightarrow\ P P^T=I,\qquad
+p_i^T p_j = 0\ (i\neq j),\ \ p_i^T p_i = 1.
+$$
+\clearpage
+
+% ========== C. Covariance, Redundancy & SNR ==========
+
+\section{Covariance, Redundancy, and SNR}
+
+\subsection{Covariance}
+\paragraph*{Sample covariance.}
+For centered data $X\in\mathbb{R}^{m\times n}$ (columns are samples),
+\[
+C_X=\tfrac{1}{n}\,X X^T,\qquad (C_X)_{ij}=\tfrac{1}{n}\sum_{\ell=1}^n X_{i\ell}\,X_{j\ell}.
+\]
+
+\paragraph{Deeper quantities.}
+Diagonal entries $(C_X)_{ii}$ are variances; off–diagonal entries $(C_X)_{ij}$ are covariances. The magnitude $|(C_X)_{ij}|$ quantifies linear redundancy between channels $i$ and $j$ which reveals the overlapping information between variables.
+\subsection{Covariance, Redundancy, and Noise}
+
+\paragraph*{Covariance decomposition.}
+For centered data $X$, the sample covariance is
+\[
+C_X=\tfrac{1}{n}XX^T.
+\]
+Decompose it into signal and noise parts:
+\[
+C_X=C_{\mathrm{sig}}+C_{\mathrm{noise}},\qquad
+C_{\mathrm{noise}}=\sigma^2 I
+\]
+
+\paragraph{Redundancy encoded in covariance.}
+Off–diagonal entries quantify linear redundancy between channels:
+\[
+\text{redundancy}_{ij}\ \propto\ |(C_X)_{ij}|=|(C_{\mathrm{sig}})_{ij}+(C_{\mathrm{noise}})_{ij}|\quad (i\neq j).
+\]
+In the direction of large varience, $(C_{\mathrm{noise}})_{ij}=0$ for $i\neq j$, so redundancy arises from $C_{\mathrm{sig}}$.
+\paragraph{Effect of change of basis.}
+Let $Y=PX$ with $P$ orthonormal chosen to diagonalize $C_X$:
+\[
+C_Y=\tfrac{1}{n}YY^T=PC_XP^T=D,\qquad D=\operatorname{diag}(\lambda_1,\ldots,\lambda_m).
+\]
+Redundancy is removed in $Y$ (off–diagonals $=0$). The diagonal entries split signal and noise power along principal directions $p_i$ (rows of $P$):
+\[
+\lambda_i=p_i^T C_{\mathrm{sig}}\,p_i\;+\;p_i^T C_{\mathrm{noise}}\,p_i,
+\]
+and in the direction of max varience,
+\[
+p_i^T C_{\mathrm{noise}}\,p_i=\sigma^2,\qquad
+D-\sigma^2 I=\operatorname{diag}\big(p_1^T C_{\mathrm{sig}} p_1,\ldots,p_m^T C_{\mathrm{sig}} p_m\big).
+\]
+
+\section{SNR, Variance, and Redundancy}
+
+\subsection{Definitions}
+\paragraph*{Variance}
+For any unit $p$, the projected variance is
+\[
+\operatorname{Var}(p^T x)=p^T C_X p.
+\]
+For principal directions $p_i$ with $C_X p_i=\lambda_i p_i$,
+\[
+\operatorname{Var}(p_i^T x)=\lambda_i.
+\]
+
+\paragraph*{Redundancy (pairwise).}
+For two centered scalar matrix $A,B$,
+\[
+\operatorname{Cov}(A,B)=\tfrac{1}{n}\sum_{\ell=1}^n a_\ell b_\ell,
+\]
+and in matrix form $|(C_X)_{ij}|$ measures linear redundancy between row $i$ and $j$.
+
+\paragraph*{Signal-to-Noise Ratio (SNR).}
+With $C_X=C_{\mathrm{sig}}+\sigma^2 I$,
+\[
+\mathrm{SNR}_i=\frac{\lambda_i-\sigma^2}{\sigma^2},\qquad
+\lambda_i=p_i^T C_{\mathrm{sig}} p_i+\sigma^2.
+\]
+
+\subsection{Relations (Content Requirements)}
+\paragraph*{Variance–SNR link.}
+Larger $\lambda_i$ implies larger $\mathrm{SNR}_i$ under a common noise floor $\sigma^2$; principal components are ranked by $\lambda_i$ and equivalently by $\mathrm{SNR}_i$.
+
+\paragraph*{Covariance–Redundancy link.}
+Large $|(C_X)_{ij}|$ indicates strong redundancy; PCA finds $P$ so that $C_Y=PC_XP^T=D$ becomes diagonal, eliminating pairwise redundancy in $Y$.
+
+\paragraph*{Combined PCA criterion.}
+Let $C_X=E D E^T$ with $E^T E=I$ and $D=\operatorname{diag}(\lambda_1,\ldots,\lambda_m)$. Choosing $P=E^T$ yields $C_Y=D$ (decorrelation) and orders coordinates by $\lambda_i$ (high–SNR directions first). For $k$–dimensional retention with $E_k=[p_1,\ldots,p_k]$,
+\[
+E_k^T C_X E_k=\operatorname{diag}(\lambda_1,\ldots,\lambda_k),\qquad
+\sum_{i=1}^k \lambda_i\ \text{(retained power)},\quad
+\sum_{i=k+1}^m \lambda_i\ \text{(discarded power)}.
+\]
+
+% ========== D. PCA as Change of Basis (4.(6/7/8/9)) ==========
+\section{(PCA as a Change of Basis)}
+\label{sec:pca-cob}
+\paragraph{Change-of-Basis Formulation.}
+\begin{equation}
+  \vy = \vP \vx, \qquad \vC_Y = \vP \vC_X \vP^\top
+\end{equation}
+%% TODO: Choose \vP to diagonalize \vC_Y; define principal components and their ordering.
+\paragraph{Projection and Re-expression.}
+%% TODO: j-th PC score = \inner{\mathbf{p}_j}{\vx}; geometric intuition and visualization notes.
+\paragraph{Relation to Covariance.}
+%% TODO: When \vP is the transpose of the eigenvector matrix of \vC_X, \vC_Y becomes diagonal; provide a one-sentence proof sketch.
+
+% ========== E. Connections: PCA–ED–SVD (4.(10/11)) ==========
+\section{(Connections: PCA–ED–SVD)}
+\label{sec:edsvd}
+\paragraph{ED Route (Eigendecomposition).}
+\begin{equation}
+  \vC_X = \vE \mathbf{D} \vE^\top, \quad \text{PCs} \equiv \text{columns of } \vE,\; \text{variance} \equiv \text{diag}(\mathbf{D})
+\end{equation}
+\paragraph{SVD Route (Singular Value Decomposition).}
+\begin{equation}
+  \vX = \vU \vSigma \vV^\top, \quad \text{PCs} \equiv \text{columns of } \vV,\; \text{scores} \equiv \vSigma \vV^\top
+\end{equation}
+%% TODO: When to prefer SVD (numerical stability/centering) and the "rotate–stretch–rotate" intuition.
+
+% ========== F. Objective & Why DR Works (4.(12/13)) ==========
+\section{(Objective \& Why DR Works)}
+\label{sec:objective}
+\paragraph{Reconstruction-Error Minimization (MSE).}
+\begin{equation}
+  \min_{\text{rank}(\hat{\vX}) \le k} \norm{\vX - \hat{\vX}}_F^2
+  \quad \Longleftrightarrow \quad
+  \text{take the top } k \text{ principal components with largest variance.}
+\end{equation}
+%% TODO: One-sentence optimality intuition (Eckart–Young); statistical/task implications of the trade-off.
+\clearpage
+% =========================
+
 
 \appendix
 \section{Mathmatical Notations}\label{sec:mathmatical notations}
