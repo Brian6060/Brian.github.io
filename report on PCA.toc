@@ -9,9 +9,9 @@
 \contentsline {paragraph}{Change-of-Basis Formulation.}{5}{section.4}%
 \contentsline {paragraph}{Projection and Re-expression}{5}{equation.9}%
 \contentsline {paragraph}{Relation to Covariance}{5}{figure.caption.1}%
-\contentsline {section}{\numberline {5}Two powerful route to PCA: ED \& SVD}{5}{section.5}%
-\contentsline {paragraph}{ED Route \emph {Eigen decomposition}}{5}{section.5}%
-\contentsline {paragraph}{SVD Route \emph {Singular Value Decomposition}}{6}{equation.10}%
-\contentsline {section}{\numberline {6}The Viability of PCA in Dimensional Reduction}{6}{section.6}%
-\contentsline {section}{\numberline {7}Conclusion}{7}{section.7}%
-\contentsline {section}{\numberline {A}Mathmatical Notations}{8}{appendix.A}%
+\contentsline {section}{\numberline {5}Two Powerful Routes to PCA: ED \& SVD}{5}{section.5}%
+\contentsline {paragraph}{ED Route \emph {(Eigen Decomposition)}}{5}{section.5}%
+\contentsline {paragraph}{SVD Route \emph {(Singular Value Decomposition)}}{6}{equation.10}%
+\contentsline {section}{\numberline {6}The Viability of PCA in Dimensionality Reduction}{6}{section.6}%
+\contentsline {section}{\numberline {7}Conclusion}{6}{section.7}%
+\contentsline {section}{\numberline {A}Mathematical Notations}{8}{appendix.A}%

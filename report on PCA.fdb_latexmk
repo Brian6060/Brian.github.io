@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1758441151.65603 "/Users/dby051225/Desktop/科研训练/week1 PCA/Brian.github.io/report on PCR.tex" "report on PCR.pdf" "report on PCR" 1758441153.23109 0
-  "/Users/dby051225/Desktop/科研训练/week1 PCA/Brian.github.io/report on PCR.tex" 1758441149.45016 20220 cc68876eccd33fee647ba093f24f7984 ""
+["pdflatex"] 1758459542.63285 "/Users/dby051225/Desktop/科研训练/week1 PCA/Brian.github.io/report on PCA.tex" "report on PCA.pdf" "report on PCA" 1758459544.30387 0
+  "/Users/dby051225/Desktop/科研训练/week1 PCA/Brian.github.io/report on PCA.tex" 1758459540.58126 20367 9131a753b24d86ba51e65d43442cbb26 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbi1095.tfm" 1136768653 3072 19a65fbc725cfc66f5a5fc183b9d418b ""
@@ -152,14 +152,14 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "data_pca.png" 1758434443.68956 72800 4b82dd17745e06e084f3098bcaaea1b3 ""
   "data_raw.png" 1758434718.1149 39053 600874d9c76d7669c75faa14034b2a48 ""
-  "report on PCR.aux" 1758441152.97853 5076 d2723fcbc8acab18a8741e681228cf06 "pdflatex"
-  "report on PCR.out" 1758441152.97993 1984 0d6a0ce9f452cead7794e5ef9070b99c "pdflatex"
-  "report on PCR.tex" 1758441149.45016 20220 cc68876eccd33fee647ba093f24f7984 ""
-  "report on PCR.toc" 1758441152.98035 1350 86b4bc2f2ee7a883ecab3222ddd196de "pdflatex"
+  "report on PCA.aux" 1758459543.96962 5019 00be18d8f4d881761a668a52fa302ad6 "pdflatex"
+  "report on PCA.out" 1758459543.97092 2009 32f1d1eff14fadc0db90a5d3db4c0ba9 "pdflatex"
+  "report on PCA.tex" 1758459540.58126 20367 9131a753b24d86ba51e65d43442cbb26 ""
+  "report on PCA.toc" 1758459543.97136 1359 47b35908a172f5876324f85474770caf "pdflatex"
   (generated)
-  "report on PCR.aux"
-  "report on PCR.log"
-  "report on PCR.out"
-  "report on PCR.pdf"
-  "report on PCR.toc"
+  "report on PCA.aux"
+  "report on PCA.log"
+  "report on PCA.out"
+  "report on PCA.pdf"
+  "report on PCA.toc"
   (rewritten before read)
