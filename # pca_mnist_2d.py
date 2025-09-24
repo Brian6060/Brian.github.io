@@ -106,3 +106,6 @@ def main():
     Zte2 = pca_project(PCs, Xte_.copy() - mean_tr, k=2)
     # 5) 画图保存
     plot_2d(Ztr2, ytr, Zte2, yte, note, str(out))
+
+if __name__ == "__main__":
+    main()

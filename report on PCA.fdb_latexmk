@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1758699701.42174 "/Users/dby051225/Desktop/科研训练/week1 PCA/Brian.github.io/report on PCA.tex" "report on PCA.pdf" "report on PCA" 1758699703.79953 0
-  "/Users/dby051225/Desktop/科研训练/week1 PCA/Brian.github.io/report on PCA.tex" 1758699701.13152 24849 c89cf58760bd04b7312c37beee07658d ""
+["pdflatex"] 1758701284.49266 "/Users/dby051225/Desktop/科研训练/week1 PCA/Brian.github.io/report on PCA.tex" "report on PCA.pdf" "report on PCA" 1758701286.5325 0
+  "/Users/dby051225/Desktop/科研训练/week1 PCA/Brian.github.io/report on PCA.tex" 1758701281.99673 24851 3e068b349aaff4589fccb7b4c236e4a1 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbi1095.tfm" 1136768653 3072 19a65fbc725cfc66f5a5fc183b9d418b ""
@@ -164,11 +164,11 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "data_pca.png" 1758434443.68956 72800 4b82dd17745e06e084f3098bcaaea1b3 ""
   "data_raw.png" 1758434718.1149 39053 600874d9c76d7669c75faa14034b2a48 ""
-  "mnist_pca_2d.png" 1758699016.67685 517711 b9c0f1743fc8d32e3c3ad1a419c18c3f ""
-  "report on PCA.aux" 1758699703.32394 5928 bbbac4d61d96ff55eacbdd016f092402 "pdflatex"
-  "report on PCA.out" 1758699703.32677 2159 409ab05a789d18ef9c2edb154157153f "pdflatex"
-  "report on PCA.tex" 1758699701.13152 24849 c89cf58760bd04b7312c37beee07658d ""
-  "report on PCA.toc" 1758699703.32748 1707 b37efc56063ce70640151d9228dc50ed "pdflatex"
+  "mnist_pca_2d.png" 1758701234.30874 517381 0d7e88d62807b75b89b361bcce8a0d86 ""
+  "report on PCA.aux" 1758701286.26435 5928 bbbac4d61d96ff55eacbdd016f092402 "pdflatex"
+  "report on PCA.out" 1758701286.26587 2159 409ab05a789d18ef9c2edb154157153f "pdflatex"
+  "report on PCA.tex" 1758701281.99673 24851 3e068b349aaff4589fccb7b4c236e4a1 ""
+  "report on PCA.toc" 1758701286.26716 1707 b37efc56063ce70640151d9228dc50ed "pdflatex"
   (generated)
   "report on PCA.aux"
   "report on PCA.log"
