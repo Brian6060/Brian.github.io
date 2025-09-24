@@ -13,5 +13,11 @@
 \contentsline {paragraph}{ED Route \emph {(Eigen Decomposition)}}{6}{section.5}%
 \contentsline {paragraph}{SVD Route \emph {(Singular Value Decomposition)}}{6}{equation.11}%
 \contentsline {section}{\numberline {6}The Viability of PCA in Dimensionality Reduction}{7}{section.6}%
-\contentsline {section}{\numberline {7}Conclusion}{7}{section.7}%
-\contentsline {section}{\numberline {A}Mathematical Notations}{8}{appendix.A}%
+\contentsline {section}{\numberline {7}Experiments on MNIST}{7}{section.7}%
+\contentsline {paragraph}{Setup}{7}{section.7}%
+\contentsline {paragraph}{Procedure}{7}{section.7}%
+\contentsline {paragraph}{Results}{8}{section.7}%
+\contentsline {paragraph}{Analysis}{8}{figure.caption.2}%
+\contentsline {paragraph}{Conclusion of the experiment}{8}{figure.caption.2}%
+\contentsline {section}{\numberline {8}Conclusion}{8}{section.8}%
+\contentsline {section}{\numberline {A}Mathematical Notations}{9}{appendix.A}%

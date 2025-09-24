@@ -101,9 +101,11 @@ Email: 2024151470021@stu.scu.edu.cn}
 \textbf{Primary Source:} J.~Shlens, ``A Tutorial on Principal Component Analysis,'' 2014.
 
 \begin{abstract}
+PCA is a powerful, fundamental technique for extracting useful information from complex data by reducing dimensionality to the data’s essential features. The essence of PCA lies in its ability to identify the directions of maximum variance in the data, represented by the principal components. By representing the data in these components’ coordinates, PCA effectively reduces redundancy and highlights the most informative aspects of the dataset. The tutorial emphasizes two main approaches to PCA: eigen-decomposition (ED) of the covariance matrix and singular value decomposition (SVD) of the data matrix. Both methods yield the same principal components. However, they share a common limitation: they assume principal components are orthogonal, which restricts them from capturing non-orthogonal structure; Independent Component Analysis (ICA) can address this by seeking statistically independent components.
 
-PCA is a powerful, fundamental technique for extracting useful information from complex data by reducing dimensionality to the data’s essential features. The essence of PCA lies in its ability to identify the directions of maximum variance in the data, represented by the principal components. By representing the data in these components’ coordinates, PCA effectively reduces redundancy and highlights the most informative aspects of the dataset. The tutorial emphasizes two main approaches to PCA: eigen-decomposition (ED) of the covariance matrix and singular value decomposition (SVD) of the data matrix. Both methods yield the same principal components. However, they share a common limitation: they assume principal components are orthogonal, which restricts them from capturing non-orthogonal structure; Independent Component Analysis (ICA) can address this by seeking statistically independent  components. 
-``About the experiment on MNIST \dots’’\
+\textbf{About the experiment on MNIST.}
+\\We follow the tutorial pipeline: we load MNIST and arrange the data matrix \(X\in\mathbb{R}^{784\times n}\) with rows as pixel features and columns as samples. We then subtract the mean of each feature to center the data. Next, we compute PCA via SVD by forming \(Y=X^\top/\sqrt{n-1}\) and taking \(\mathrm{SVD}(Y)=U\Sigma V^\top\); the columns of \(V\) are the principal directions. Using the first \(2{,}000\) training images and \(2{,}000\) test images, we project the data onto the first two principal components (\(k=2\)) to obtain a 2D embedding \(Z=V_{1:2}^\top X\). In our notation, \(V_{1:2}\) denotes the submatrix consisting of the first two columns of \(V\) (the first two principal components), so \(Z = V_{1:2}^{\top} X\) is the projection of \(X\) onto this 2D PCA subspace.Finally, we plot the 2D points, using different colors or markers to indicate the ten digit classes.
+\\
 \\
 \textbf{Keywords:} PCA, covariance, eigen-decomposition, SVD, variance.
 \end{abstract}
@@ -296,9 +298,38 @@ To minimize the MSE, we need to maximize the variance along the principal compon
 \end{equation}
 Thus, PCA is a viable method for dimensionality reduction because it effectively captures the most important features of the data while minimizing the loss of information.
 
+% =========================
+% ========== G. Experiment ==========
+\section{Experiments on MNIST}
+\paragraph{Setup}
+We use the first 2k training and 2k test images from MNIST.
+Each MNIST picture has $28\times28$ gray pixels (numbers from 0 to 255). We first divide by 255 so the values are between 0 and 1. Then we simplify the picture: read the pixels row by row and put them one after another to make a long list of 784 numbers. This long list is one sample. We place many such lists side by side to build a big matrix $X$ where rows are pixel positions and columns are images. Before running PCA, for each row , which represents each pixel position, we subtract its average value across all images so the data are centered.
+Let $X\in\mathbb{R}^{m\times n}$ (rows = pixels, columns = samples).
+We center $X$ by columns and compute PCA via SVD following~\cite{Shlens2014}:
+let $Y=\frac{1}{\sqrt{n}}X^\top$, perform $\mathrm{SVD}(Y)=U\Sigma V^\top$; the columns of $V$ are principal components (PCs).
+
+\paragraph{Procedure}
+Using the PCs learned from the training set, we project both training and test data onto the first two components ($k=2$) to obtain a 2D embedding $Z=V_{1:2}^\top X$.In our notation, \(V_{1:2}\) denotes the submatrix consisting of the first two columns of \(V\) (the first two principal components), so \(Z = V_{1:2}^{\top} X\) is the projection of \(X\) onto this 2D PCA subspace.
+We then plot the 2D points and use different colors or markers to indicate the ten digit classes (0--9).
+
+\paragraph{Results}
+Fig.~\ref{fig:mnist2d} shows cluster-like patterns with partial overlap among classes.
+Digits with similar strokes (e.g., 4 and 9) tend to lie closer, while more distinct digits (e.g., 0 and 1) are farther apart.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\linewidth]{mnist_pca_2d.png}
+  \caption{MNIST projected to 2D by PCA.}
+  \label{fig:mnist2d}
+\end{figure}
+\paragraph{Analysis}
+\(V_{1:2}\) just means “the first two columns of \(V\).” These two columns are the first two main directions. When we compute \(Z = V_{1:2}^{\top} X\), we turn each image into two numbers. So \(Z\) is simply the 2D version of our data.
+The degree of overlap is high to some extent given 2D is a frankly low dimension for 784D data.
+\paragraph{Conclusion of the experiment}
+PCA makes a simple rotation to new axes and puts them in order from “changes the most” to “changes less.” Showing only the first two axes gives an easy 2D picture that lets us see rough groups. But because PCA is a linear method and the two axes must be at right angles, it cannot show more complex or curved patterns.
 
 % =========================
-% ========== G. Conclusion (4.(4/5)) ==========
+% ========== H. Conclusion (4.(4/5)) ==========
 \section{Conclusion}
 
 PCA is a powerful and fundamental technique for extracting useful information from complex, high-dimensional data by transforming the data into a new basis in which the covariance matrix becomes diagonal. The essence of PCA lies in its ability to identify the directions of maximum variance in the data, which are represented by the principal components. By expressing the data in these components’ coordinates, PCA effectively reduces redundancy and highlights the most informative aspects of the dataset. ED and SVD are viable and powerful methods for achieving PCA as well as dimensionality reduction. However, PCA has limitations, such as its reliance on the assumption that principal components are orthogonal. In cases where this assumption does not hold, alternative techniques such as Independent Component Analysis (ICA) may be more appropriate.
