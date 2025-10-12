@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {1}Introduction \& Goals}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Evaluation Metrics}{2}{subsection.1.1}%
+\contentsline {paragraph}{Point/series accuracy.}{2}{section*.1}%
+\contentsline {paragraph}{Classification quality.}{2}{section*.2}%
+\contentsline {paragraph}{Operational metrics.}{2}{section*.3}%
+\contentsline {section}{\numberline {2}Assumptions \& Notation}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Key Assumptions}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Notation Table}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Data \& Sources}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Datasets and Acquisition}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Preprocessing \& Uncertainty}{6}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Model / Algorithm}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Core Idea}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Mathematical Formulation}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Complexity \& Interpretability}{6}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Computation / Implementation}{7}{section.5}%
+\contentsline {section}{\numberline {6}Results}{7}{section.6}%
+\contentsline {section}{\numberline {7}Validation}{8}{section.7}%
+\contentsline {section}{\numberline {8}Sensitivity Analysis}{8}{section.8}%
+\contentsline {section}{\numberline {9}Strengths and Weaknesses}{9}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Strengths}{9}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Weaknesses}{9}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Decision Recommendations}{9}{section.10}%
+\contentsline {section}{\numberline {11}Conclusion}{10}{section.11}%
+\contentsline {section}{\numberline {12}Appendix}{10}{section.12}%

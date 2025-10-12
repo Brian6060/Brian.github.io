@@ -1,0 +1,388 @@
+\documentclass{mcmthesis}
+
+% —— Contest header (edit as needed) ——
+\mcmsetup{
+  tstyle=\color{black}\bfseries,
+  tcn = 1234,            % TODO: replace with your official team control number
+  problem = C,           % TODO: replace with the problem letter
+  sheet = true,          % Summary on a separate page
+  titleinsheet = true,
+  keywordsinsheet = true,
+  titlepage = false,
+  abstract = true
+}
+
+% —— Built-in packages only (no external assets) ——
+\usepackage{newtxtext,newtxmath}   % If missing fonts, fall back to: \usepackage{txfonts}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{mwe}                   % Provides example-image placeholders
+\usepackage{array}
+\usepackage{float}          % 提供 [H]
+\usepackage[section]{placeins} % 可选：保证每节内不跨越
+\usepackage{longtable}
+
+% —— Code listing style (tweak as needed) ——
+\lstset{
+  basicstyle=\ttfamily\small,
+  numbers=left,
+  numberstyle=\tiny,
+  frame=single,
+  breaklines=true
+}
+
+% —— Convenience macros ——
+\newcommand{\TODO}[1]{\textcolor{red}{\textbf{TODO:} #1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{A Ready-to-Use \LaTeX{} Template for \MCMversion}
+\author{(Removed per contest rules)}
+\date{\today}
+
+\begin{document}
+
+% ========================= Summary Page (≤1 page) =========================
+\begin{abstract}
+\noindent\textbf{Problem \& Goal.}
+\ TODO: Rephrase the problem in 1--2 sentences and state measurable goals; specify scope (who/where/when) and KPIs (e.g., cost, accuracy, coverage).
+
+\smallskip
+\noindent\textbf{Method.}
+\ TODO: Name the core model/algorithm and key ideas (e.g., conservation law / optimization / simulation); optionally cite the central equation or workflow.
+
+\smallskip
+\noindent\textbf{Key Results.}
+\ TODO: Report headline results with ``numbers + units'' (scenarios A/B/C with metrics X/Y/Z = \dots); add one sentence comparing to baseline/literature/common sense.
+
+\smallskip
+\noindent\textbf{Validation.}
+\ TODO: State consistency with historical observations / public benchmarks / expert ratings (error, correlation, or statistical significance).
+
+\smallskip
+\noindent\textbf{Implications.}
+\ TODO: Provide actionable recommendations (prioritized actions or cost--benefit trade-offs) in one concise sentence.
+
+\begin{keywords}
+optimization; simulation; modeling; sensitivity analysis; decision making
+\end{keywords}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.55\linewidth]{example-image}
+  \caption{Main result at a glance (placeholder; replace with your overview figure)}
+  \label{fig:Abstract}
+\end{figure}
+\end{abstract}
+
+\maketitle
+\tableofcontents
+\newpage
+
+% ========================= 1. Introduction & Goals =========================
+
+
+\section{Introduction \& Goals}
+
+\noindent\textbf{Background.}
+We consider the effects of [PHENOMENON] over [TIME HORIZON] on [REGION/SYSTEM/STAKEHOLDERS]. 
+This study is motivated by [CONTEXT \& SIGNIFICANCE], where prior efforts have focused on [PRIOR FOCUS] yet a gap remains in [GAP/LIMITATION]. 
+To make the problem concrete, we ask: (i) [SUB-QUESTION 1]? (ii) [SUB-QUESTION 2]? (iii) [SUB-QUESTION 3]? 
+We use data from [DATA SOURCE(S)] collected during [DATA WINDOW] and summarize key variables in [TABLE/FIGURE REF]. 
+To stress-test conclusions for decision-makers in [TARGET DOMAIN], we analyze [SCENARIOS/CASES] and report implications under [CONSTRAINTS/ASSUMPTIONS].
+
+\medskip
+\noindent\textbf{Goals \& KPIs.}
+Our goal is to [DESIGN/BUILD/PROPOSE] a [METHOD/SYSTEM] that: 
+(a) [GOAL 1], (b) [GOAL 2], and (c) [GOAL 3]. 
+We explicitly \emph{exclude} [OUT-OF-SCOPE 1], [2], [3]. 
+We evaluate success using pre-defined thresholds: [METRIC A] $\ge$ [THRESHOLD A], [METRIC B] $\le$ [THRESHOLD B], and [METRIC C] within [RANGE], under [TIME/MEMORY/COMPUTE] constraints. 
+The study scope includes [GEOGRAPHIC AREA/POPULATION], [APPLICATION SCENARIO], and the period [START DATE]–[END DATE].
+
+\subsection{Evaluation Metrics}
+We quantify performance along accuracy, efficiency, and coverage/cost dimensions:
+
+\paragraph{Point/series accuracy.}
+Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) are defined as
+\[
+\mathrm{MAE}=\frac{1}{n}\sum_{i=1}^{n}\big|y_i-\hat{y}_i\big|,\qquad
+\mathrm{RMSE}=\sqrt{\frac{1}{n}\sum_{i=1}^{n}\big(y_i-\hat{y}_i\big)^2 }.
+\]
+
+\paragraph{Classification quality.}
+Given true positives (TP), false positives (FP), false negatives (FN),
+\[
+\mathrm{Precision}=\frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FP}},\quad
+\mathrm{Recall}=\frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FN}},\quad
+\mathrm{F1}=2\cdot\frac{\mathrm{Precision}\cdot \mathrm{Recall}}{\mathrm{Precision}+\mathrm{Recall}}.
+\]
+We summarize the trade-off via the Precision–Recall Area Under Curve (PR–AUC) computed over the score threshold $\tau\in[0,1]$.
+
+\paragraph{Operational metrics.}
+Coverage and cost are computed as
+\[
+\mathrm{Coverage}=\frac{\text{served units}}{\text{eligible units}},\qquad
+\mathrm{Unit\ Cost}=\frac{\text{total cost (currency)}}{\text{output units}},
+\]
+and we also report throughput (items/s) and latency (s) under [HARDWARE/SETTINGS].
+
+\medskip
+\noindent We report all metrics with [CONFIDENCE LEVEL]\% confidence intervals over [NUMBER] independent runs or [FOLDS]-fold cross-validation, and we conduct ablation on [KEY COMPONENTS] to assess robustness.
+
+% -------- Optional: compact metric table (fill targets) --------
+\begin{table}[!htbp]
+\centering
+\small
+\begin{tabular}{|l|p{7.5cm}|p{5.8cm}|l|}
+\hline
+\textbf{Metric} & \textbf{Definition / How computed} & \textbf{Why it matters} & \textbf{Target} \\
+\hline
+MAE & $\frac{1}{n}\sum_i |y_i-\hat y_i|$; scale-sensitive absolute error. & Penalizes average absolute deviation; robust to outliers. & $\le$ [X] \\
+\hline
+RMSE & $\sqrt{\frac{1}{n}\sum_i (y_i-\hat y_i)^2}$; square-penalized error. & Emphasizes large errors; useful for safety-critical tasks. & $\le$ [X] \\
+\hline
+Precision / Recall / F1 & From TP/FP/FN as above, at threshold $\tau$. & Controls false alarms vs. misses; F1 balances both. & $\ge$ [X]/$\ge$ [Y]/$\ge$ [Z] \\
+\hline
+PR–AUC & Area under Precision–Recall curve over $\tau\in[0,1]$. & Stable under class imbalance; summary of ranking quality. & $\ge$ [X] \\
+\hline
+Coverage & $\frac{\text{served}}{\text{eligible}}$ over [REGION/TIME]. & Measures service reach / fairness / access. & $\ge$ [X]\% \\
+\hline
+Unit Cost & Currency per delivered unit. & Budget feasibility and scalability. & $\le$ [\$X] \\
+\hline
+Latency / Throughput & End-to-end response time / items per second. & Real-time deployability and user experience. & $\le$ [X] s / $\ge$ [Y] \\
+\hline
+\end{tabular}
+\caption{Evaluation metrics, computation, rationale, and targets. Replace bracketed \textit{[X]} with your thresholds.}
+\label{tab:metrics}
+\end{table}
+
+% =========================
+% Mini Glossary (EN–ZH)
+% =========================
+\subsection*{Mini Glossary (EN-ZH)}
+\begin{description}
+  \item[scope] spatial/temporal/population limits of the study.
+  \item[constraint] limits on time, memory, budget, or policy.
+  \item[validation] testing on held-out data or cross-validation.
+  \item[benchmark] a standard dataset/method used for comparison.
+  \item[ablation] removing components to isolate their effects.
+  \item[assumption] a stated condition required by the model.
+  \item[sensitivity analysis] vary inputs/params to test robustness.
+  \item[robustness] stability of results under perturbations/shifts.
+  \item[coverage] proportion of eligible items successfully served.
+  \item[latency/throughput] response time / processing rate.
+\end{description}
+
+% ========================= 2. Assumptions & Notation =========================
+\section{Assumptions \& Notation}
+\subsection{Key Assumptions}
+\begin{itemize}
+  \item \TODO{Assumption 1 (falsifiable and strongly tied to the model).}
+  \item \TODO{Assumption 2.}
+  \item \TODO{Assumption 3.}
+\end{itemize}
+
+\subsection{Notation Table}
+\begin{table}[h]
+\centering
+\begin{tabular}{|L{3cm}|L{9cm}|}
+\hline
+\textbf{Symbol} & \textbf{Meaning / Unit} \\
+\hline
+$i,\,j$ & Row / column indices of the Sudoku grid (1--9). \\
+$(i,j)$ & Coordinate of a cell (row $i$, column $j$). \\
+$B$ & A Sudoku board (grid). \\
+$S(B)$ & Sudoku Solution Graph (SSG): candidate digits set attached to each cell of board $B$. \\
+\textit{group} & A row, a column, or a $3\times3$ region (box). \\
+$X,\,Y,\,Z$ & Cell variables (uppercase italic). \\
+$x$ & A digit value ($1\!-\!9$). \\
+$(x, X)$ & Assignment: cell $X$ takes value $x$. \\
+$X^{?}$ & Candidate set for cell $X$. \\
+$P$ & A Sudoku puzzle (board with some given digits). \\
+$E(P)$ & Set of empty cells in puzzle $P$. \\
+$c(X)=|X^{?}|$ & Choice function: number of candidates of cell $X$. \\
+$\tilde{c}(P)$ & Choice histogram (vector) of puzzle $P$. \\
+$c_n(P)$ & The $n$-th bin count of $\tilde{c}(P)$. \\
+$w(n)$ & Weight function applied to bin $n$ when computing ease. \\
+$\mathrm{wef}(P)$ & Weighted ease function for $P$. \\
+$\mathrm{wnef}(P)$ & Weighted \emph{normalized} ease function for $P$. \\
+$N$ & Number of DLX solutions requested when seeding a generator. \\
+DLX & Knuth’s Dancing Links (Algorithm X) solver for exact cover. \\
+\hline
+$\Delta z$ & Sea-level change due to thermal expansion (cm). \\
+$\Delta T$ & Change in global temperature ($^\circ$C). \\
+$k$ & Diffusivity coefficient in upwelling–diffusion model. \\
+$\mathrm{local}(t)$ & Expected local sea-level rise at year $t$ (cm). \\
+$\mathrm{normalized}(t)$ & Global sea-level rise estimate relative to historical rate (cm). \\
+$\mathrm{trend}$ & Local historical rate of sea-level change (cm/yr). \\
+$\mathrm{global}(t)$ & Model-predicted global sea-level rise at year $t$ (cm). \\
+$S_1(t)$ & Temperature-proportional sea-level component, $S_1=\gamma\,\Delta T(t)$. \\
+$\gamma$ & Scaling $\displaystyle \gamma=\frac{\Delta S(2100)}{\Delta T(2100)}$. \\
+$S_2(t)$ & Heat-transfer component of sea-level rise. \\
+$q$ & Heat flux in generic heat-exchanger equation. \\
+$U_a$ & Thermal (convective) coefficient in heat-transfer term. \\
+$T_1,\,T_2$ & Temperatures of the two media in the heat-exchange model ($^\circ$C). \\
+$\alpha,\,\beta$ & Scaling coefficients from integration / calibration of $S_2(t)$. \\
+$t_f$ & Final time (year) for the integration window. \\
+$\Delta S(t)$ & Total sea-level rise: $\Delta S(t)=0.55\,S_1(t)+0.45\,S_2(t)$ (cm). \\
+$\Delta T_{\text{Gr}}$ & Greenland temperature change; $\Delta T_{\text{Gr}}=2.2\,\Delta T_{\text{global}}$. \\
+$M$ & Mass balance of an ice sheet (accumulation $-$ ablation). \\
+$\mathrm{SLR}$ & Sea-level rise (often used as a shorthand variable/metric). \\
+$h$ & Ice-sheet height (km), $h=\dfrac{\mathrm{Volume}_{\mathrm{ice}}}{\mathrm{Surface}_{\mathrm{ice}}}$. \\
+$T_a,\,T_l$ & Upper-surface (air) and lower (permafrost) temperatures of ice sheet ($^\circ$C). \\
+\hline
+\end{tabular}
+\caption{Notation and definitions (symbols gathered from the 2008 MCM/ICM solutions volume).}
+\label{tab:notation}
+\end{table}
+
+% ========================= 3. Data & Sources =========================
+\section{Data \& Sources}
+\subsection{Datasets and Acquisition}
+\TODO{Inventory datasets, time ranges/versions, acquisition method and license (public repositories, agency portals, etc.).}
+
+\subsection{Preprocessing \& Uncertainty}
+\TODO{Describe missing-value handling, resampling/alignment, outliers, measurement error assumptions, and possible biases introduced.}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|L{3cm}|L{3.2cm}|L{3.2cm}|L{3.2cm}|}
+\hline
+\textbf{Dataset} & \textbf{Time Range} & \textbf{Source URL/Ref} & \textbf{Notes} \\
+\hline
+\TODO{Name A} & \TODO{2000--2024} & \TODO{Ref/Link} & \TODO{Resolution/License} \\
+\TODO{Name B} & \TODO{...}        & \TODO{...}      & \TODO{...} \\
+\hline
+\end{tabular}
+\caption{Data inventory.}
+\label{tab:data}
+\end{table}
+
+% ========================= 4. Model / Algorithm =========================
+\section{Model / Algorithm}
+\subsection{Core Idea}
+\TODO{Why this model: mechanistic interpretability / tractability / match to data. Refer to the overview in Fig.~\ref{fig:workflow}.}
+
+\subsection{Mathematical Formulation}
+% —— Example: optimization or equation system (replace as needed) ——
+We formulate the problem as
+\begin{equation}
+  \min_{\theta}\ J(\theta) = \sum_{i=1}^{n} \ell\!\big(f(\mathbf{x}_i;\theta),\, y_i\big)
+  \quad \text{s.t.}\quad \mathbf{g}(\theta)\le \mathbf{0},\ \mathbf{h}(\theta)=\mathbf{0}.
+  \label{eq:model}
+\end{equation}
+\TODO{Or provide differential/difference equations, constraints, and boundary conditions; include pseudocode/workflow if appropriate.}
+
+\subsection{Complexity \& Interpretability}
+\TODO{State time/space complexity order; list key hyperparameters and their meanings; specify interpretability hooks (feature importance, sensitivity paths, etc.).}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.75\linewidth]{example-image-a}
+  \caption{Workflow / model components (placeholder)}
+  \label{fig:workflow}
+\end{figure}
+
+% ========================= 5. Computation / Implementation =========================
+\section{Computation / Implementation}
+\TODO{Numerics (discretization, convergence/step size, stability), engineering (language/libs/hardware), and acceleration/robustness (pruning, caching, parallelism).}
+
+\begin{lstlisting}[language=Python, caption={Pseudocode or key routine (placeholder)}]
+# TODO: Replace with your algorithmic skeleton
+for epoch in range(E):
+    theta = update(theta, grad(J))
+    if converged(theta): break
+\end{lstlisting}
+
+% ========================= 6. Results =========================
+\section{Results}
+\TODO{Present primary figures/tables with quantitative conclusions. Aim for ``number + unit + comparator'' in every headline claim.}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.72\linewidth]{example-image-b}
+  \caption{Main quantitative results under scenarios A/B/C (placeholder)}
+  \label{fig:results}
+\end{figure}
+
+% ========================= 7. Validation =========================
+\section{Validation}
+\TODO{Check against history / third-party benchmarks / cross sources; report statistical significance or error bars.}
+\[
+\text{e.g., } \mathrm{MAE} = \TODO{~value},\quad r = \TODO{~value},\quad p<0.05.
+\]
+
+% ========================= 8. Sensitivity Analysis =========================
+\section{Sensitivity Analysis}
+\TODO{Perturb the most influential parameters (\(\pm 10\%\) / multi-scenario), show KPI variation (heatmap or tornado plot), and discuss robustness.}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.72\linewidth]{example-image-c}
+  \caption{Sensitivity of KPI to key parameters (placeholder)}
+  \label{fig:sensitivity}
+\end{figure}
+
+% ========================= 9. Strengths & Weaknesses =========================
+\section{Strengths and Weaknesses}
+\subsection{Strengths}
+\begin{itemize}
+  \item \textbf{Generality} — \TODO{Applicable to multiple scenarios; scalable.}
+  \item \textbf{Interpretability} — \TODO{Results are explainable and auditable.}
+  \item \textbf{Efficiency} — \TODO{Complexity/runtime advantages and resource friendliness.}
+\end{itemize}
+
+\subsection{Weaknesses}
+\begin{itemize}
+  \item \TODO{Data dependence / boundary conditions / extrapolation risks.}
+  \item \TODO{Sensitivity to hyperparameters / scenario setup.}
+  \item \TODO{Bias from simplifying assumptions.}
+\end{itemize}
+
+% ========================= 10. Decision Recommendations =========================
+\section{Decision Recommendations}
+\TODO{Actionable checklist for policy/engineering/operations with priorities, cost--benefit, and risks.}
+\begin{enumerate}
+  \item \TODO{Action 1: expected benefit, cost, and prerequisites.}
+  \item \TODO{Action 2: ...}
+  \item \TODO{Milestones \& evaluation: when/how to accept results.}
+\end{enumerate}
+
+% ========================= 11. Conclusion =========================
+\section{Conclusion}
+\TODO{Answer the original questions in 2--3 short paragraphs; restate contributions and applicability; outline future work. Cross-reference Eq.~(\ref{eq:model}), Fig.~\ref{fig:results}, and Fig.~\ref{fig:sensitivity}.}
+
+% ========================= 12. Appendix (expand as needed) =========================
+\section{Appendix}
+\subsection*{A. Derivations / Proofs}
+\TODO{Move lengthy derivations here to keep the main text concise.}
+
+\subsection*{B. Additional Algorithms / Pseudocode}
+\begin{lstlisting}[language=Python, caption={Example (inline)}]
+def selection_sort(arr):
+    for i in range(len(arr)):
+        m = i
+        for j in range(i+1, len(arr)):
+            if arr[j] < arr[m]:
+                m = j
+        arr[i], arr[m] = arr[m], arr[i]
+    return arr
+\end{lstlisting}
+
+\subsection*{C. Extra Figures and Tables}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.65\linewidth]{example-image}
+  \caption{Additional visualization (placeholder)}
+\end{figure}
+
+% ========================= References =========================
+\begin{thebibliography}{99}
+\bibitem{knuth} D.~E. Knuth, \textit{The \TeX{}book}, Addison--Wesley, 1984.
+\bibitem{lamport} L. Lamport, \textit{\LaTeX: A Document Preparation System}, Addison--Wesley, 1986.
+% TODO: Add data sources and references in a consistent format (avoid bare URLs; \url is fine)
+\end{thebibliography}
+
+\end{document}
