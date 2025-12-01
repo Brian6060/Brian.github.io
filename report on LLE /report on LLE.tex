@@ -1,0 +1,220 @@
+\documentclass[12pt,a4paper]{article}
+% 如果需要中文支持，用 ctexart：
+% \documentclass[UTF8,12pt,a4paper]{ctexart}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{caption}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% 一些常用数学命令（可选）
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\title{Report on Locally Linear Embedding and Its Application to MNIST}
+\author{Your Name\\
+Course Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This report studies Locally Linear Embedding (LLE) as a nonlinear dimensionality reduction method. We first introduce the problem setup and summarize all notations used throughout the report. Then we present the mathematical formulation of LLE, analyze its key properties, assumptions, and limitations, and compare it with the classical linear method PCA. Finally, we perform experiments on the MNIST dataset to evaluate LLE in terms of classification performance and parameter sensitivity, and compare the results with PCA. 
+\end{abstract}
+
+\tableofcontents
+
+\section{Introduction}
+% 对应：整体背景铺垫，无特定题号（为整份报告服务）
+% 建议内容：高维数据、降维、流形学习动机；PCA 的局限；LLE 的目标；本文结构概述。
+Locally linear embedding (LLE) is an unsupervised learning algorithm
+that computes low dimensional, neighborhood preserving embeddings of high dimensional data.
+It is an efficient approach with few parameters for reducing the dimensionality of data sampled from an underlying manifold, mapping it into a single global coordinate system.
+LLE is notably straightforward to implement, and—thanks to its use of symmetries in locally linear reconstructions and a formulation that reduces embedding to a sparse eigenvalue problem—it avoids issues with local minima during optimization and has less computational cost.
+
+\section{Problem Setup and Notations}
+% 对应：Q1 Summary Notations in tables
+
+\subsection{Problem Setup}
+
+We are given $N$ high-dimensional data points
+\[
+    \mathbf{x}_i \in \mathbb{R}^D, \quad i=1,\dots,N,
+\]
+which are assumed to lie near a low-dimensional manifold of intrinsic dimension $d \ll D$. The goal of dimensionality reduction is to find low-dimensional representations
+\[
+    \mathbf{y}_i \in \mathbb{R}^d, \quad i=1,\dots,N,
+\]
+such that certain geometric properties of the original data are preserved in the embedding space.
+
+In LLE, for each data point $\mathbf{x}_i$ we consider a neighborhood $\mathcal{N}(i)$ of size $K$, and define reconstruction weights $w_{ij}$ for $j \in \mathcal{N}(i)$.
+
+\subsection{Summary of Notations}
+% 用一张表格按字母表顺序给出符号说明和维度
+
+\section{Locally Linear Embedding: Model and Properties}
+% 对应：Q2–Q7
+
+\subsection{LLE Model and Objective Functions}
+% 为 Q2–Q7 提供数学基础：两个阶段的目标函数
+
+LLE consists of two main stages. In the first stage, for each point $\mathbf{x}_i$ we compute reconstruction weights $w_{ij}$ that best reconstruct $\mathbf{x}_i$ from its neighbors:
+\begin{equation}
+    \varepsilon(W) = \sum_{i=1}^N \left\| \mathbf{x}_i - \sum_{j \in \mathcal{N}(i)} w_{ij}\, \mathbf{x}_j \right\|^2,
+\end{equation}
+subject to
+\begin{equation}
+    \sum_{j \in \mathcal{N}(i)} w_{ij} = 1, \quad w_{ij} = 0 \ \text{if } j \notin \mathcal{N}(i).
+\end{equation}
+
+In the second stage, the same weights are used to find low-dimensional embeddings $\mathbf{y}_i$ by minimizing
+\begin{equation}
+    \Phi(Y) = \sum_{i=1}^N \left\| \mathbf{y}_i - \sum_{j} w_{ij}\, \mathbf{y}_j \right\|^2,
+\end{equation}
+under constraints such as zero mean $\sum_i \mathbf{y}_i = 0$ and identity covariance $\frac{1}{N}\sum_i \mathbf{y}_i\mathbf{y}_i^\top = I_d$.
+
+\subsection{Locally, Linear, and Embedding (Q2--Q4)}
+
+% Q2: Locally
+\paragraph{Locally (Q2).}
+The locality of LLE is enforced by restricting reconstruction to the neighbor set $\mathcal{N}(i)$:
+only $K$ nearest neighbors contribute to each $\mathbf{x}_i$, leading to a sparse weight matrix $W$.
+
+% Q3: Linear
+\paragraph{Linear (Q3).}
+The reconstruction is strictly linear: both in the input space and in the embedding space each point is approximated by a linear combination of its neighbors with fixed weights $w_{ij}$.
+
+% Q4: Embedding
+\paragraph{Embedding (Q4).}
+The embeddings $\mathbf{y}_i$ define a mapping
+\[
+    f: \mathbf{x}_i \mapsto \mathbf{y}_i \in \mathbb{R}^d,
+\]
+which places all points into a single global low-dimensional coordinate system while preserving local reconstruction relationships.
+
+\subsection{Assumptions, Problems and Limitations (Q5--Q7)}
+
+% Q5: Assumptions
+\paragraph{Assumptions of LLE (Q5).}
+Typical assumptions include: manifold assumption, local linearity, connectivity of the neighborhood graph, and sufficiently dense sampling, etc. Here you can list and explain them.
+
+% Q6: Problems to be solved
+\paragraph{Problems addressed by LLE (Q6).}
+LLE aims to recover a low-dimensional nonlinear manifold from high-dimensional data while preserving local neighborhood geometry. Here you explain what specific geometric relationships LLE tries to preserve and why they are important.
+
+% Q7: Limitations
+\paragraph{Limitations of LLE (Q7).}
+Discuss the main weaknesses of LLE, such as sensitivity to $K$, noise and non-uniform sampling, difficulties with complex topology and out-of-sample extension, etc.
+
+\section{Comparison between PCA and LLE}
+% 对应：Q8 + Q9(d) 的理论支撑
+
+\subsection{Objective Functions and Motivations (Q8)}
+
+Here you:
+\begin{itemize}[leftmargin=*]
+    \item Write down the objective function of PCA (e.g., maximizing variance or minimizing global reconstruction error) and explain its motivation.
+    \item Summarize LLE's objective functions from Section~\ref{ } (you can add labels) and their motivation.
+\end{itemize}
+
+\subsection{Structural Differences and Application Scenarios (Q8 + Q9(d))}
+
+Compare PCA and LLE in terms of:
+\begin{itemize}[leftmargin=*]
+    \item model type: global linear vs.\ locally linear / nonlinear embedding;
+    \item preserved structure: global covariance vs.\ local neighborhood geometry;
+    \item problems each method is designed to address and the advantages of LLE over PCA.
+\end{itemize}
+
+This section also provides theoretical support for the empirical comparison in Section~\ref{sec:mnist-exp} (Q9(d)).
+
+\section{Experiments on MNIST}
+\label{sec:mnist-exp}
+% 对应：Q9(a) + Q9(b) + Q9(c) + Q9(d)
+
+\subsection{Experimental Setup (Q9a)}
+
+Describe:
+\begin{itemize}[leftmargin=*]
+    \item the MNIST dataset (training / test split, image size, etc.);
+    \item preprocessing steps (flattening, normalization, etc.);
+    \item how LLE is applied to training and test data \emph{independently};
+    \item the main parameters used for LLE (e.g., $K$, $d$) and for PCA.
+\end{itemize}
+
+\subsection{Classification Results in Embedding Space (Q9b)}
+
+Explain how a 1-NN classifier (with $k=1$) is applied in the embedding spaces of LLE and PCA. Present test accuracies in tables, e.g.:
+
+\begin{table}[h]
+    \centering
+    \caption{1-NN classification accuracy with LLE embeddings (example)}
+    \begin{tabular}{@{}cccc@{}}
+        \toprule
+        $d$ & $K$ & Accuracy (\%) & Comment \\
+        \midrule
+        2 & 10 &  \quad &  \\
+        10 & 10 &  \quad &  \\
+        20 & 10 &  \quad &  \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Parameter Sensitivity and Comparison with PCA (Q9c \& Q9d)}
+
+\paragraph{Parameter Sensitivity (Q9c).}
+Identify user-specified parameters of LLE (e.g., $K$, $d$). Design experiments that:
+\begin{itemize}[leftmargin=*]
+    \item vary one parameter at a time;
+    \item keep the other parameters fixed;
+    \item observe how the classification accuracy changes.
+\end{itemize}
+Summarize the trends and discuss why they occur.
+
+\paragraph{Comparison with PCA (Q9d).}
+Compare LLE and PCA:
+\begin{itemize}[leftmargin=*]
+    \item in terms of 1-NN classification accuracy under the same embedding dimension $d$;
+    \item via 2D visualization of embeddings (if possible), commenting on cluster separation and local structure.
+\end{itemize}
+
+\section{Discussion and Conclusion}
+% 对应：综合 Q2–Q9 的总结
+
+Summarize:
+\begin{itemize}[leftmargin=*]
+    \item how the theoretical properties of LLE (local linearity, neighborhood preservation) relate to the experimental observations;
+    \item the main advantages and limitations of LLE compared with PCA;
+    \item possible future directions, such as improving robustness, handling out-of-sample data, or combining LLE with other methods.
+\end{itemize}
+
+\begin{thebibliography}{9}
+% 至少包括这两篇核心论文，按实际要求调整格式
+
+\bibitem{Roweis2000LLE}
+S.~T. Roweis and L.~K. Saul,
+\newblock ``Nonlinear Dimensionality Reduction by Locally Linear Embedding,''
+\newblock \emph{Science}, vol.~290, no. 5500, pp. 2323--2326, 2000.
+
+\bibitem{Saul2003ThinkGlobally}
+L.~K. Saul and S.~T. Roweis,
+\newblock ``Think Globally, Fit Locally: Unsupervised Learning of Low
+  Dimensional Manifolds,''
+\newblock \emph{Journal of Machine Learning Research}, vol.~4, pp. 119--155, 2003.
+
+% 可以根据作业要求添加更多引用
+\end{thebibliography}
+
+\end{document}
