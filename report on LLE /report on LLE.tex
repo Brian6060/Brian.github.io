@@ -1,9 +1,8 @@
 \documentclass[12pt,a4paper]{article}
-% 如果需要中文支持，用 ctexart：
-% \documentclass[UTF8,12pt,a4paper]{ctexart}
 
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{amsmath, amssymb, amsfonts}
+\usepackage{setspace}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{booktabs}
@@ -21,9 +20,10 @@
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareMathOperator*{\argmax}{arg\,max}
 
-\title{Report on Locally Linear Embedding and Its Application to MNIST}
-\author{Your Name\\
-Course Name}
+\title{\textbf{Report on Locally Linear Embedding}}
+\author{Sichuan University\\
+\textbf{Boyuan Du}\\
+2024151470021}
 \date{\today}
 
 \begin{document}
@@ -31,19 +31,21 @@ Course Name}
 \maketitle
 
 \begin{abstract}
-This report studies Locally Linear Embedding (LLE) as a nonlinear dimensionality reduction method. We first introduce the problem setup and summarize all notations used throughout the report. Then we present the mathematical formulation of LLE, analyze its key properties, assumptions, and limitations, and compare it with the classical linear method PCA. Finally, we perform experiments on the MNIST dataset to evaluate LLE in terms of classification performance and parameter sensitivity, and compare the results with PCA. 
+% ‼️摘要最后写
+
 \end{abstract}
+\textbf{Keywords:}
 
 \tableofcontents
-
+\newpage
 \section{Introduction}
-% 对应：整体背景铺垫，无特定题号（为整份报告服务）
-% 建议内容：高维数据、降维、流形学习动机；PCA 的局限；LLE 的目标；本文结构概述。
-Locally linear embedding (LLE) is an unsupervised learning algorithm
-that computes low dimensional, neighborhood preserving embeddings of high dimensional data.
-It is an efficient approach with few parameters for reducing the dimensionality of data sampled from an underlying manifold, mapping it into a single global coordinate system.
-LLE is notably straightforward to implement, and—thanks to its use of symmetries in locally linear reconstructions and a formulation that reduces embedding to a sparse eigenvalue problem—it avoids issues with local minima during optimization and has less computational cost.
-
+\begin{spacing}{1.2}
+In machine learning, datasets typically consist of high-dimensional data points. Therefore, a key preprocessing task is dimensionality reduction to obtain more useful representations. \\
+A longstanding challenge is computing a low-dimensional embedding of multidimensional data, which is assumed to be sampled from an underlying manifold and mapped to a global lower-dimensional coordinate system. Traditional eigenvector methods, such as Principal Component Analysis (PCA) and Multidimensional Scaling (MDS), are restricted to linear mappings and cannot handle highly nonlinear manifolds.\\
+To address this, Roweis and Saul proposed Locally Linear Embedding (LLE), a nonlinear dimensionality reduction method that preserves local neighborhood information and captures the underlying manifold’s geometric features while reducing dimensionality. \\
+LLE consists of three steps: (1) for each data point, find its K nearest neighbors; (2) compute the reconstruction weights that best represent each data point from its neighbors; and (3) compute low-dimensional embeddings that best preserve these reconstruction weights. The main optimization involves a sparse eigenvector problem that can be solved efficiently.\\
+In this report, we provide a comprehensive overview of LLE, including its problem setup, mathematical model, and properties, a comparison with PCA, and eventually, an implementation of LLE for classifying MNIST to demonstrate its effectiveness.
+\end{spacing}
 \section{Problem Setup and Notations}
 % 对应：Q1 Summary Notations in tables
 
