@@ -1,0 +1,2 @@
+criterion,max_depth,min_samples_leaf,random_state,n_splits,shuffle,accuracy,precision,recall,f1_score
+gini,,1,42,10,True,0.792873563218391,0.679112554112554,0.7166666666666667,0.6904761904761905
