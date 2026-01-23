@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1769154863.78371 "/Users/dby051225/Desktop/Brian.github.io/MCM Practice/Practice.tex" "Practice.pdf" "Practice" 1769154865.21665 0
-  "/Users/dby051225/Desktop/Brian.github.io/MCM Practice/Practice.tex" 1769154863.59517 15099 432541488b60c2cfc0b01877c75c4fed ""
+["pdflatex"] 1769155650.2967 "/Users/dby051225/Desktop/Brian.github.io/MCM Practice/Practice.tex" "Practice.pdf" "Practice" 1769155651.65624 0
+  "/Users/dby051225/Desktop/Brian.github.io/MCM Practice/Practice.tex" 1769155644.5664 15403 d3ebdb62d6499f299e790e81d48e73b9 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm" 1136768653 4712 9ef4d7d106579d4b136e1529e1a4533c ""
@@ -174,10 +174,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1757810983 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1757810818 3345730 ca2c0481f761e60ed647c77ff940a4a2 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Practice.aux" 1769154865.05321 3152 703d92f3e4074d830ac0b9090c404ce4 "pdflatex"
-  "Practice.out" 1769154865.05435 3280 48e0bc11fd491e7a1e8bade9388f72c2 "pdflatex"
-  "Practice.tex" 1769154863.59517 15099 432541488b60c2cfc0b01877c75c4fed ""
-  "Practice.toc" 1769154865.05482 1800 6590dda0a208596db386a2a31778c85a "pdflatex"
+  "Practice.aux" 1769155651.49677 3152 703d92f3e4074d830ac0b9090c404ce4 "pdflatex"
+  "Practice.out" 1769155651.49782 3280 48e0bc11fd491e7a1e8bade9388f72c2 "pdflatex"
+  "Practice.tex" 1769155644.5664 15403 d3ebdb62d6499f299e790e81d48e73b9 ""
+  "Practice.toc" 1769155651.49829 1800 6590dda0a208596db386a2a31778c85a "pdflatex"
   (generated)
   "Practice.aux"
   "Practice.log"

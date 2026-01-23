@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.14)  23 JAN 2026 15:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.14)  23 JAN 2026 16:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -660,17 +660,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.69 \newpage
               [1]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 81.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+Overfull \hbox (2.66824pt too wide) in paragraph at lines 74--76
+\T1/ptm/m/n/12 loss, un-der-mines gov-er-nance, and threat-ens ecosys-tem ser-vices. Global syn-the-ses of seizure records
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 78.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 101.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 85.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 101.
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 85.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -682,7 +686,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2]
 
 
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 147.
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 145.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -692,14 +696,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3]
-Overfull \hbox (7.81583pt too wide) in paragraph at lines 155--177
+Overfull \hbox (7.81583pt too wide) in paragraph at lines 153--175
  [][] 
  []
 
 
 
 
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 182.
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 180.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -711,7 +715,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [4]
 
 
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 194.
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 192.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -723,7 +727,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [5]
 
 
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 209.
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 207.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -735,7 +739,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [6]
 
 
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 226.
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 224.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -765,7 +769,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  90i,13n,93p,1028b,457s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Practice.pdf (8 pages, 150350 bytes).
+Output written on Practice.pdf (8 pages, 150719 bytes).
 PDF statistics:
  238 PDF objects out of 1000 (max. 8388607)
  200 compressed objects within 2 object streams
