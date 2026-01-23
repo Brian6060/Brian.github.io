@@ -2,7 +2,7 @@
 
 \mcmsetup{
     tstyle=\color{red}\bfseries, % 题号/队号样式
-    tcn = 0000, problem = A,    % 队号、参赛题（需修改为你的信息）
+    tcn = 0000, problem = F,    % 队号、参赛题（需修改为你的信息）
     sheet = true, 
     titleinsheet = false, 
     keywordsinsheet = true,
@@ -12,18 +12,39 @@
 
 % 2. 字体适配：替换为所有TeX发行版兼容的字体
 % 注释原字体包，改用基础兼容字体
-%\usepackage{newtxtext,newtxmath} % 仅TeX Live部分版本支持
 \usepackage{times} % 通用Times字体（所有发行版支持）
 
-\usepackage{indentfirst}  % 首行缩进
+
 \usepackage{lipsum}       % 填充文本（测试用）
 \usepackage{graphicx}     % 图片支持（确保已加载）
 \usepackage{url}          % 超链接支持（确保已加载）
+\usepackage{tocloft} % 自定义目录样式的核心包
 
+% ========== 关键修改：目录样式配置 ==========
+\renewcommand{\cftsecfont}{\bfseries} % 主标题（section）加粗
+\renewcommand{\cftsubsecfont}{\normalfont} % 副标题（subsection）不加粗
+% ========== TOC alignment: hierarchical number alignment ==========
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsecnumwidth}{2.2em}
+
+% 2nd level: "1.1" starts where section title text starts
+\setlength{\cftsubsecindent}{\cftsecnumwidth}
+\setlength{\cftsubsecnumwidth}{3.0em}
+
+% 3rd level: "1.1.1" starts where subsection title text starts
+\setlength{\cftsubsubsecindent}{\dimexpr\cftsubsecindent+\cftsubsecnumwidth\relax}
+\setlength{\cftsubsubsecnumwidth}{3.8em} % width for "3.1.1" + space, tune if needed
+% ================================================================
 % 3. 处理图片路径：若没有本地图片，替换为LaTeX内置示例图
 % （原代码中的mcmthesis-logo、qrcodewechat可替换为示例图）
 
-\title{The \LaTeX{} Template for MCM Version \MCMversion}
+% ========== 关键修改：主标题与副标题分离 ==========
+\title{The \LaTeX{} Template for Reducing Illegal Wildlife Trade \\ \large \MCMversion}
+% 说明：\\ 拆分主副标题，\large 让副标题字号略小于主标题（可改为\normalsize/\small调整）
+% ===========================================
+\setlength{\parindent}{0pt}
+\usepackage{setspace}
+\setstretch{1.15} % 行间距倍率：1.10~1.30 按需调整
 \date{\today}
 
 \begin{document}
@@ -47,239 +68,159 @@ keyword1; keyword2
 \tableofcontents
 \newpage
 
+%Intrduction
 \section{Introduction}
-\subsection{What's this all about? What's \LaTeX?}
-\LaTeX\ is a document preparation system which uses the \TeX\
-typesetting program. It enables you to produce
-publication-quality documents with great accuracy and
-consistency. \LaTeX\ works on any computer and produces
-industry-standard PDF. It is available both in free (open-source)
-and commercial implementations. \LaTeX\ can be used for any kind
-of document, but it is especially suited to those with complex
-structures, repetitive formatting, or notations like
-mathematics. Install the software from
-\url{www.tug.org/texlive/}.
+\subsection{Problem Background}
+Illegal wildlife trade (IWT) is a transnational environmental crime that accelerates biodiversity loss, undermines governance, and threatens ecosystem services. Recent global syntheses based on seizure records indicate that wildlife trafficking affects thousands of taxa and spans a large number of jurisdictions, while also exhibiting strong adaptability to enforcement pressure through route switching, concealment, and fragmentation of shipments. In parallel, operational intelligence from multinational enforcement actions suggests that contemporary IWT networks increasingly exploit high-throughput logistics systems such as international air cargo, postal and express parcels, and digitally mediated trading channels.
 
-\subsection{Creating and typesetting your document}
-Follow our WeChat official account for more LaTeX materials and information.
+From a policy and operations perspective, IWT presents two persistent challenges. First, the observed data are inherently biased, because seizures are a function of both underlying illegal flow and detection effort. As a consequence, a region with fewer seizures is not necessarily a region with less trafficking. Second, the system is dynamic and strategic. Targeted interdiction at a single border point can displace flows to alternative routes or modes rather than eliminate them, which implies that effective interventions must be designed at the network level and evaluated under plausible displacement scenarios. These characteristics motivate a data-driven, risk-based approach that can prioritize scarce enforcement resources, quantify expected impact, and remain robust to adaptation.
 
-\centerline{
-    \includegraphics[width=5cm]{example-image} % 替换为内置示例图
-}
-
-\subsection{Syntax (how to type \LaTeX\ commands --- these are the rules)}
-\lipsum[3]
+\subsection{Restatement of the Problem}
+The task is to design a data-driven five-year project that can produce a measurable and notable reduction in IWT, and to persuade a chosen client to implement the project. Specifically, the solution must:
 \begin{itemize}
-\item the angular velocity of the bat,
-\item the velocity of the ball, and
-\item the position of impact along the bat.
+  \item select a realistic client with the mandate and capacity to execute the proposed project;
+  \item justify why the project fits the client, supported by published literature and quantitative analysis;
+  \item identify the additional powers and resources required for implementation;
+  \item estimate the measurable impact of the project on IWT, including the analytical method used to obtain this estimate;
+  \item assess the likelihood of success and conduct a contextualized sensitivity analysis that highlights conditions that may disproportionately help or harm outcomes.
 \end{itemize}
-\lipsum[4]
-\emph{center of percussion} [Brody 1986], \lipsum[5]
+The problem statement also permits framing IWT as part of a larger complex system, provided that the benefits and drawbacks of this modeling decision are explicitly discussed and defended.
 
-\begin{Theorem} \label{thm:latex}
-\LaTeX
-\end{Theorem}
-\begin{Lemma} \label{thm:tex}
-\TeX .
-\end{Lemma}
-\begin{proof}
-The proof of theorem.
-\end{proof}
+\subsection{333}
 
-\subsection{Other Assumptions}
-\lipsum[6]
-\begin{itemize}
-\item 
-\item 
-\item 
-\item 
-\end{itemize}
-\lipsum[7]
+\subsection{Our Work}
+\vspace{0.5\baselineskip}
 
-\section{Analysis of the Problem}
-\begin{figure}[h]
-\small
+
+
+
+\section{Model Preparation}
+\subsection{Assumptions}
+\vspace{0.5\baselineskip}
+\textbf{Assumptions 1}: For all candidate clients, all indicators are measured within a consistent time window. Each indicator is strictly positive and has been oriented such that larger values indicate better performance and correspond to higher scores.
+
+\textbf{Assumptions 2}: 
+
+\subsection{Notations}
+\begin{table}[!htbp]
 \centering
-\includegraphics[width=8cm]{example-image-a} % 内置示例图（无需本地文件）
-\caption{The name of figure} \label{fig:aa}
-\end{figure}
+\caption{Notations used in the entropy weight model}
+\renewcommand{\arraystretch}{1.2} % increase row spacing
+\begin{tabular}{p{0.22\textwidth} p{0.72\textwidth}}
+\hline
+\textbf{Symbol} & \textbf{Description} \\
+\hline
+$m$ & The number of candidate institutions. \\
+$n$ & The number of evaluation indicators; in this study $n=13$. \\
+$\mathbf{X}$ & The original data matrix of size $m\times n$. \\
+$x_{ij}$ & The raw value of institution $i$ under indicator $j$. \\
+$i$ & The index of institution, $i=1,2,\ldots,m$. \\
+$j$ & The index of indicator, $j=1,2,\ldots,n$. \\
+$p_{ij}$ & Column-normalized value. \\
+$e_j$ & The information entropy. \\
+$d_j$ & The degree of diversification: $d_j=1-e_j$. \\
+$w_j$ & Entropy weight. \\
+$S_i$ & Comprehensive score. \\
+$k$ & Index of category. \\
+$M_k$ & The set of institutions belonging to category $k$. \\
+$|M_k|$ & The number of institutions in $M_k$. \\
+$\overline{S}_k$ & The average score of category $k$. \\
+$\ln(\cdot)$ & Natural logarithm. \\
+\hline
+\end{tabular}
+\renewcommand{\arraystretch}{1.0} % reset if needed
+\end{table}
 
-\lipsum[8] \eqref{aa}
+
+
+
+\subsection{Data Collection and Visualization}
+
+
+\section{Model Establishment}
+
+\subsection{Model I: Client Selection using Entropy Weighting and Decision Tree}
+
+We establish a two-stage framework to select a ideal and realistic client for the proposed five-year intervention.
+In Stage 1, we apply the Entropy Weight Method to identify the most suitable client category from three options: \textit{International Organizations}, \textit{Government Agencies}, and \textit{Technology Companies}.
+ Then in Stage 2, given that the candidates are more complex and numerous, we use an decision tree to select a specific institution within the chosen category.
+
+\subsubsection{Indicator System}
+
+A total of $n=13$ indicators are designed and organized into four dimensions: \textit{Authority}, \textit{Resources}, \textit{Coordination}, and \textit{Strategy}. Each indicator is positively oriented, meaning that larger values indicate stronger capability or better fit. Specifically:
+\begin{table}[!htbp]
+\centering
+\caption{Indicator system for Model I}
+\renewcommand{\arraystretch}{1.4} % larger row spacing
+\begin{tabular}{p{0.22\textwidth} p{0.16\textwidth} p{0.56\textwidth}}
+\hline
+\textbf{Dimension} & \textbf{Code} & \textbf{Description} \\
+\hline
+Authority (A) & A1 & Annual enforcement-related budget. \\
+Authority (A) & A2 & The number of enforcement and supervision personnel. \\
+Authority (A) & A3 & The number of policies or standards released. \\
+Authority (A) & A4 & Population coverage of legal influence. \\
+\hline
+Resources (B) & B1 & Annual total budget. \\
+Resources (B) & B2 & The number of technical personnel. \\
+Resources (B) & B3 & The number/scale of relevant databases. \\
+Resources (B) & B4 & The number of patents. \\
+Resources (B) & B5 & The number of publicly available models/reports. \\
+\hline
+Coordination (C) & C1 & The number of international cooperation agreements. \\
+Coordination (C) & C2 & The number of cross-border joint operations/actions. \\
+\hline
+Strategy (D) & D1 & Policy keyword matching degree. \\
+\hline
+\end{tabular}
+\renewcommand{\arraystretch}{1.0}
+\end{table}
+
+
+\subsubsection{Stage 1: Category Selection via Entropy Weight Method}
+Let $m$ denote the number of candidate institutions, and let $\mathbf{X} = (x_{ij})_{m \times n}$ be the raw indicator matrix, where ${x_{ij}}$ represents the observed value of institution $i$ on indicator $j$ ($j = 1, \ldots, 13$). In this matrix, each column corresponds to an evaluation indicator and each row to a specific institution. By construction of the indicator system and the accompanying data protocol, all entries of $\mathbf{X}$ are strictly positive and have already been oriented so that larger values uniformly indicate stronger capability or better suitability.
+
+\vspace{0.5\baselineskip}\textbf{Step1: Normalization.} \\
+Because the 13 indicators differ in magnitude and units, directly aggregating $x_{ij}$ would be inappropriate. To make institutions comparable within each indicator, we apply a column-wise proportion normalization: \begin{equation} p_{ij} = \frac{x_{ij}}{\sum_{i=1}^{m} x_{ij}}, \qquad i = 1,\ldots,m,\ \ j = 1,\ldots,n. \end{equation} This transformation converts each original value $x_{ij}$ into a proportion $p_{ij}$ for indicator $j$. By construction, $\sum_{i=1}^{m} p_{ij} = 1$ for every $j$, so each indicator column becomes a probability-like distribution over institutions. Intuitively, a larger $p_{ij}$ indicates that institution $i$ contributes more to the overall level of indicator $j$ among all candidates, reflecting a relatively stronger performance on that indicator.
+
+\vspace{0.5\baselineskip}
+\textbf{Step2: Entropy of each indicator.}
+\\ The entropy weight method (EWM) assigns indicator weights in an objective way, based on how much information is contained in their observed distributions. For indicator $j$, its entropy is defined as \begin{equation} e_j = -\frac{1}{\ln m} \sum_{i=1}^{m} p_{ij} \ln(p_{ij}), \end{equation} where the factor $1/\ln m$ ensures that $e_j \in [0,1]$. Here, entropy describes how even or uneven the distribution ${p_{1j},\ldots,p_{mj}}$ is.
+If the $p_{ij}$ values are almost the same across institutions, the indicator carries little information for comparison; the distribution is close to uniform and $e_j$ is near 1. In contrast, if the indicator differs a lot across institutions and only a few candidates show clear advantages, the distribution is more uneven and $e_j$ becomes smaller. Thus, indicators with lower entropy are seen as more useful for telling institutions apart and are given larger weights in EWM.
+
+\vspace{0.5\baselineskip}
+\textbf{Step3: Diversification degree and entropy weight.}\\
+To transform entropy into a direct measure of “useful variation,” we define the diversification degree as \begin{equation} d_j = 1 - e_j. \end{equation} A larger $d_j$ indicates that indicator $j$ displays greater dispersion and thus a stronger ability to distinguish among institutions. The entropy weight is then obtained by normalizing the diversification degrees: \begin{equation} w_j = \frac{d_j}{\sum_{j=1}^{n} d_j}. \end{equation} This construction guarantees $\sum_{j=1}^{n} w_j = 1$ and ensures that the weights are determined solely by data-driven variability rather than subjective preference. Consequently, more discriminative indicators receive higher weights, whereas indicators that are nearly uniform across the candidate set receive lower weights.
+
+\vspace{0.5\baselineskip}
+\textbf{Step 4: Institutional composite score.}\\
+ After the weights are determined, each institution’s overall performance is calculated as a weighted sum of its normalized indicator proportions: \begin{equation} S_i = \sum_{j=1}^{n} w_j , p_{ij}. \end{equation} The resulting $S_i$ serves as the institution’s aggregated competitiveness score across all 13 indicators, with each indicator’s contribution scaled by its information content. Since all indicators are positively oriented, a larger $S_i$ corresponds to stronger overall suitability within the evaluation framework.
+
+\vspace{0.5\baselineskip}
+\textbf{Step5: Category-level score and selection.}\\
+Since the primary goal of Stage 1 is to select the most appropriate \emph{client category} (rather than a specific institution), institutions are grouped into predefined categories. Let $M_k$ denote the set of institutions belonging to category $k$, and let $|M_k|$ be the number of institutions in that category. The category-level score is defined as the within-category mean:
 \begin{equation}
-a^2 \label{aa}
+\overline{S}_k=\frac{1}{|M_k|}\sum_{i\in M_k} S_i.
 \end{equation}
+This aggregation produces a representative score for each category, reflecting the average institutional strength under the same weighting scheme. The category with the largest $\overline{S}_k$ is selected as the target client type for the next stage, which allows the subsequent decision-tree screening to focus on the most promising organizational context for implementation.
 
-\[
-  \begin{pmatrix}{*{20}c}
-  {a_{11} } & {a_{12} } & {a_{13} }  \\
-  {a_{21} } & {a_{22} } & {a_{23} }  \\
-  {a_{31} } & {a_{32} } & {a_{33} }  \\
-  \end{pmatrix}
-  = \frac{{Opposite}}{{Hypotenuse}}\cos ^{ - 1} \theta \arcsin \theta
-\]
-\lipsum[9]
+\vspace{0.5\baselineskip} \textbf{Step 5: Category-level score and selection.}\ Because Stage 1 aims to identify the most suitable \emph{client category} rather than a single institution, institutions are first grouped into predefined categories. Let $M_k$ be the set of institutions in category $k$, and let $|M_k|$ denote the number of institutions in that category. The category-level score is defined as the average of the institutional scores within the category: \begin{equation} \overline{S}k = \frac{1}{|M_k|} \sum{i \in M_k} S_i. \end{equation} This produces a representative score for each category, capturing its average institutional strength under a common weighting scheme. The category with the highest $\overline{S}_k$ is chosen as the target client type for the next stage, so that the subsequent decision-tree screening focuses on the most promising organizational context for implementation.
 
-\[
-  p_{j}=\begin{cases} 0,&\text{if $j$ is odd}\\
-  r!\,(-1)^{j/2},&\text{if $j$ is even}
-  \end{cases}
-\]
-
-\lipsum[10]
-
-\[
-  \arcsin \theta  =
-  \mathop{{\int\!\!\!\!\!\int\!\!\!\!\!\int}} \limits_\varphi
-  {\mathop {\lim }\limits_{x \to \infty } \frac{{n!}}{{r!\left( {n - r}
-  \right)!}}} \eqno (1)
-\]
-
-\section{Calculating and Simplifying the Model  }
-\lipsum[11]
-
-\section{The Model Results}
-\lipsum[6]
-
-\section{Validating the Model}
-\lipsum[9]
-
-\section{Conclusions}
-\lipsum[6]
-
-\section{A Summary}
-\lipsum[6]
-
-\section{Evaluate of the Mode}
-
-\section{Strengths and weaknesses}
-\lipsum[12]
-
-\subsection{Strengths}
-\begin{itemize}
-\item \textbf{Applies widely}\\
-This  system can be used for many types of airplanes, and it also
-solves the interference during  the procedure of the boarding
-airplane,as described above we can get to the  optimization
-boarding time.We also know that all the service is automate.
-\item \textbf{Improve the quality of the airport service}\\
-Balancing the cost of the cost and the benefit, it will bring in
-more convenient  for airport and passengers.It also saves many
-human resources for the airline.
-\end{itemize}
-
-\subsection{How to cite?}
-bibliography cite use \cite{1,2,3}
-
-AI cite use \AIcite{AI1,AI2,AI3}
-
-\begin{thebibliography}{99}
-\bibitem{1} D.~E. KNUTH   The \TeX{}book  the American
-Mathematical Society and Addison-Wesley
-Publishing Company , 1984-1986.
-\bibitem{2}Lamport, Leslie,  \LaTeX{}: `` A Document Preparation System '',
-Addison-Wesley Publishing Company, 1986.
-\bibitem{3}\url{https://www.latexstudio.net/}
-\end{thebibliography}
-
-\begin{appendices}
-
-\section{First appendix}
-
-In addition, your report must include a letter to the Chief Financial Officer (CFO) of the Goodgrant Foundation, Mr. Alpha Chiang, that describes the optimal investment strategy, your modeling approach and major results, and a brief discussion of your proposed concept of a return-on-investment (ROI). This letter should be no more than two pages in length.
-
-\begin{letter}{Dear, Mr. Alpha Chiang}
-\lipsum[1-2]
-\vspace{\parskip}
-Sincerely yours,
-Your friends
-\end{letter}
-
-% 4. 处理代码文件路径：若没有本地代码，注释或替换为示例代码
-Here are simulation programmes we used in our model as follow.\\
-\textbf{\textcolor[rgb]{0.98,0.00,0.00}{Input matlab source:}}
-% 若没有./code/mcmthesis-matlab1.m，替换为示例代码
-\begin{lstlisting}[language=Matlab]
-% Example Matlab code
-clear; clc;
-x = 1:10;
-y = x.^2;
-plot(x,y);
-\end{lstlisting}
-
-\section{Second appendix}
-some more text \textcolor[rgb]{0.98,0.00,0.00}{\textbf{Input C++ source:}}
-% 若没有./code/mcmthesis-sudoku.cpp，替换为示例代码
-\begin{lstlisting}[language=C++]
-// Example C++ code
-#include <iostream>
-using namespace std;
-int main() {
-    cout << "Hello MCM!" << endl;
-    return 0;
-}
-\end{lstlisting}
-
-\end{appendices}
+\subsubsection{Stage 2: }
 
 
-\AImatter
-\begin{ReportAiUse}{9}
-\bibitem{AI1}
-Bing AI\\
-Query1: write a sort algorithm\\
-Output: Sure, I can help you with that. Here is a simple implementation of the selection sort algorithm in Python:
-\begin{lstlisting}[language=python]
-def selection_sort(arr):
-    for i in range(len(arr)):
-        min_idx = i
-        for j in range(i + 1, len(arr)):
-            if arr[min_idx] > arr[j]:
-                min_idx = j
-        arr[i], arr[min_idx] = arr[min_idx], arr[i]
-    return arr
-\end{lstlisting}
-This algorithm sorts an array by repeatedly finding the minimum element from the unsorted part of the array and putting it at the beginning. \href{https://www.geeksforgeeks.org/sorting-algorithms/}{The time complexity of this algorithm is O($n^2$)}.
+\subsection{Model II}
+\subsection{Model III}
 
-There are many other sorting algorithms available such as bubble sort, insertion sort, merge sort, quick sort, heap sort, and more. Each of these algorithms has its own advantages and disadvantages. You can learn more about them on GeeksforGeeks and Programiz.
+\section{Result and Discussion}
 
-I hope this helps!
+\section{Model Evaluation}
+\subsection{Sensitivity Analysis}
 
-\bibitem{AI2}
-OpenAl Enie (Nov 5, 2023 version, Ernie 4.0)\\
-Query1: <insert the exact wording of any subsequent input into the Al tool>\\
-Output: <insert the complete output from the second query>
+\section{Conclusion}
 
-\bibitem{AI3}
-Github CoPilot (Feb 3, 2024 version)\\
-Query1: <insert the exact wording you input into the Al tool>\\
-Output: <insert the complete output fron the Al tool>
+\section{Reference}
 
-\bibitem{AI4}
-Google Bard (Feb 2,2024 version)\\
-Query: <insert the exact wording of your query>\\
-Output: <irsert the complete output from the Al tool>
-
-\bibitem{AI5}
-Bing AI\\
-Query: write a FFT algorithm\\
-Output: Sure, here is a Python implementation of the Fast Fourier Transform (FFT) algorithm:
-\begin{lstlisting}[language=python]
-import numpy as np
-
-def fft(x):
-    n = len(x)
-    if n == 1:
-        return x
-    even = fft(x[0::2])
-    odd = fft(x[1::2])
-    T = [np.exp(-2j * np.pi * k / n) * odd[k] for k in range(n // 2)]
-    return [even[k] + T[k] for k in range(n // 2)] + [even[k] - T[k] for k in range(n // 2)]
-\end{lstlisting}
-The FFT is a widely used algorithm for computing the \textbf{Discrete Fourier Transform (DFT)} of a sequence. It reduces the number of computations needed from O(n$^2$) to O(n log n) 12. The basic idea of the FFT is to apply divide and conquer. We divide the coefficient vector of the polynomial into two vectors, recursively compute the DFT for each of them, and combine the results to compute the DFT of the complete polynomial 3.
-
-I hope this helps!
-
-\end{ReportAiUse}
+\section{Memo}
 
 \end{document}
