@@ -1,0 +1,87 @@
+\documentclass{mcmthesis}
+\usepackage{ctex}
+\mcmsetup{tstyle=\color{red}\bfseries,%修改题号，队号的颜色和加粗显示，黑色可以修改为 black
+        tcn = 2600043, problem = F, %修改队号，参赛题号
+        sheet = true, titleinsheet = false, keywordsinsheet = true,%修改sheet显示信息
+        titlepage = false, abstract = true}
+
+
+
+  %四款字体可以选择
+  \usepackage{times}
+  %\usepackage{newtxtext,newtxmath} %CTeX 无此字体，可用 txfonts 替代，请使用新版 TeXLive.
+  %\usepackage{palatino}
+  %\usepackage{txfonts}
+
+%\usepackage{indentfirst}  %首行缩进，注释掉，首行就不再缩进。
+\usepackage{lipsum}
+\usepackage{etoolbox}
+\usepackage{booktabs}
+\usepackage{tabularx}   % optional (not used below)
+\usepackage{arydshln}   % for dashed rules: \cdashline
+\usepackage{caption}
+\usepackage{float} 
+\usepackage{booktabs} % 用于表格美观横线，必加
+
+%% =========================
+%% 一页备忘录 Memo（中文）
+%% 放在结论后 / 参考文献前，单独成页
+%% =========================
+\memoto{三类院校管理层（大学/职业院校/艺术院校）}
+\memofrom{MCM Team \#2600043}
+\memosubject{面向生成式AI时代的专业培养改革：数据驱动的政策包与KPI}
+\memodate{\today}
+\begin{document}
+
+
+
+\begin{memo}[备忘录 Memorandum]
+
+\noindent\textbf{一、决策背景（为什么现在必须改）}
+生成式AI正在改变岗位的任务结构与技能需求。培养方案若不及时调整，会出现两类系统性风险。第一类是毕业生能力与劳动力市场脱节，导致就业情况变差、薪酬回报下降。第二类是AI使用缺乏规范管理，会增加学术诚信风险、署名合规成本以及资源消耗压力。本备忘录基于本文模型输出结果，为三类院校各制定一套可执行政策包，同时配套可量化的KPI，用于开展季度复盘工作。
+
+\vspace{4pt}
+\noindent\textbf{二、模型结论的直观含义（我们发现了什么）}
+（1）\textbf{影响存在明显差异} STEM类专业更多呈现人机互补、效率提升的特点。Trade类专业更多需要进行流程重组与技能升级。Arts类专业更容易实现产能提升，但会面临更大的原创压力与差异化竞争挑战。
+（2）\textbf{关键短板在评价与能力证明} 是否允许使用AI并非核心问题。核心是通过课程设置与考核机制，让学生形成可验证的能力，包括实操水平、项目经验、专业证书、口试或答辩表现、学习过程记录等。
+（3）\textbf{治理本身是绩效杠杆} 明确AI使用规范、建立可审计的作业机制，既能提高学习效率，又能降低违规风险与声誉损失。
+
+\vspace{4pt}
+\noindent\textbf{三、三类院校的政策包（未来12个月落地）}
+\textbf{A）职业/技工院校（Trade项目 例如铁道工程技术）}
+\begin{itemize}\setlength\itemsep{2pt}
+\item \textbf{课程结构} 提高实践课程与校企共建模块的占比，将AI定位为受控工具，应用于故障排查、工单解读、安全清单梳理等场景，同时强制加入能力核验环节。
+\item \textbf{证书与实训} 拓展短周期技能证书与岗位能力测评渠道，采用任务驱动式考核，替代单纯的笔试考核方式。
+\item \textbf{AI治理} 作业需披露AI使用情况并留存过程日志，关键技能考核以现场操作与能力复现为主，据此评定成绩。
+\end{itemize}
+
+\noindent\textbf{B）综合大学（STEM项目 例如商业分析/数据分析）}
+\begin{itemize}\setlength\itemsep{2pt}
+\item \textbf{课程结构} 强化统计推断、因果思维、数据工程等基础能力培养，新增AI辅助分析工作流实验课程，覆盖数据清洗、模型评估、结果可复现及风险控制等内容。
+\item \textbf{考核改革} 增加口试答辩、闭卷基础能力测试、版本控制项目考核与真实案例评估环节，减少无法核验的纯书面作业占比。
+\item \textbf{规模调节} 依据市场需求预测，弹性调整招生规模，同时通过微证书、辅修课程等方式，应对需求波动带来的不确定性。
+\end{itemize}
+
+\noindent\textbf{C）艺术院校（Arts项目 例如视觉传达/平面设计）}
+\begin{itemize}\setlength\itemsep{2pt}
+\item \textbf{课程结构} 聚焦概念生成、叙事表达、审美判断、创意指导与客户沟通能力培养，将生成式工具定位为制作加速器，而非创意替代品。
+\item \textbf{原创与署名} 强制要求提交过程型作品集，包含创作迭代过程、参考资料、提示词及工具使用记录。大型作品需附加作者声明与AI使用说明，保障创作过程可追溯。
+\item \textbf{市场对接} 与工作室、企业合作，开展命题式毕业设计，重点强化学生的差异化能力，包括审美品味、风格体系构建、跨媒介整合能力等。
+\end{itemize}
+
+\vspace{4pt}
+\noindent\textbf{四、KPI与合规检查（每季度跟踪）}
+\begin{itemize}\setlength\itemsep{2pt}
+\item \textbf{就业与回报} 跟踪6个月内就业率、实习转正率、雇主满意度，以及毕业生收入相对基准线的提升情况。
+\item \textbf{学习质量} 监测核心能力评分提升幅度、每百人学术诚信事件发生率、项目可复现率及通过率。
+\item \textbf{效率与资源} 统计课程利用率、单位毕业生培养成本、证书通过率，以及学生达到胜任标准所需时间。
+\item \textbf{治理} 核查AI使用披露合规率、抽检通过率，以及署名和版权相关问题的发生数量。
+\end{itemize}
+
+\vspace{4pt}
+\noindent\textbf{五、90天最小启动计划（怎么马上做）}
+成立专项项目工作组；发布AI使用与署名规范；优先完成2门核心课程及对应考核机制的改造；上线学习过程记录与抽检机制；通过KPI仪表盘完成第一次季度复盘，再将相关方案推广至全专业。
+ 
+\end{memo}
+
+\end{document}

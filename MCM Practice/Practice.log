@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.14)  23 JAN 2026 16:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.14)  23 JAN 2026 16:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -664,17 +664,17 @@ Overfull \hbox (2.66824pt too wide) in paragraph at lines 74--76
 \T1/ptm/m/n/12 loss, un-der-mines gov-er-nance, and threat-ens ecosys-tem ser-vices. Global syn-the-ses of seizure records
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 78.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 79.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 85.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 86.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 85.
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 86.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -686,7 +686,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2]
 
 
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 145.
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 146.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -696,14 +696,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3]
-Overfull \hbox (7.81583pt too wide) in paragraph at lines 153--175
+Overfull \hbox (7.81583pt too wide) in paragraph at lines 154--176
  [][] 
  []
 
 
 
 
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 180.
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 181.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -715,7 +715,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [4]
 
 
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 192.
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 193.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -727,7 +727,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [5]
 
 
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 207.
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 208.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -739,7 +739,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [6]
 
 
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 224.
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 225.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
