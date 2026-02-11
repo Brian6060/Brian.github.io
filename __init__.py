@@ -4,34 +4,37 @@
 # SPDX-License-Identifier: BSD 2-Clause License
 #
 
-import sys
-from importlib.metadata import version as lib_version
+from typing import Any, Dict
 
-from loguru import logger
-
-__version__ = lib_version("pipecat-ai")
-
-logger.info(f"ᓚᘏᗢ Pipecat {__version__} (Python {sys.version}) ᓚᘏᗢ")
+# Track which modules we've already warned about
+_warned_modules = set()
 
 
-def version() -> str:
-    """Returns the Pipecat version."""
-    return __version__
+def _warn_deprecated_access(globals: Dict[str, Any], attr, old: str, new: str):
+    # Only warn once per old->new module pair
+    module_key = (old, new)
+    if module_key not in _warned_modules:
+        import warnings
+
+        with warnings.catch_warnings():
+            warnings.simplefilter("always")
+            warnings.warn(
+                f"Module `pipecat.services.{old}` is deprecated, use `pipecat.services.{new}` instead.",
+                DeprecationWarning,
+                stacklevel=3,
+            )
+        _warned_modules.add(module_key)
+
+    return globals[attr]
 
 
-# We replace `asyncio.wait_for()` for `wait_for2.wait_for()` for Python < 3.12.
-#
-# In Python 3.12, `asyncio.wait_for()` is implemented in terms of
-# `asyncio.timeout()` which fixed a bunch of issues. However, this was never
-# backported (because of the lack of `async.timeout()`) and there are still many
-# remainig issues, specially in Python 3.10, in `async.wait_for()`.
-#
-# See https://github.com/python/cpython/pull/98518
+class DeprecatedModuleProxy:
+    def __init__(self, globals: Dict[str, Any], old: str, new: str):
+        self._globals = globals
+        self._old = old
+        self._new = new
 
-import asyncio
-
-if sys.version_info < (3, 12):
-    import wait_for2
-
-    # Replace asyncio.wait_for.
-    asyncio.wait_for = wait_for2.wait_for
+    def __getattr__(self, attr):
+        if attr in self._globals:
+            return _warn_deprecated_access(self._globals, attr, self._old, self._new)
+        raise AttributeError(f"module 'pipecat.services.{self._old}' has no attribute '{attr}'")
