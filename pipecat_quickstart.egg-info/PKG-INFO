@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: pipecat-quickstart
+Version: 0.1.0
+Summary: Quickstart example for building voice AI bots with Pipecat
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: pipecat-ai[cartesia,daily,deepgram,openai,runner,webrtc]
+Requires-Dist: pipecat-ai-cli
+Dynamic: license-file

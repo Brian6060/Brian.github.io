@@ -1,0 +1,2 @@
+pipecat-ai[cartesia,daily,deepgram,openai,runner,webrtc]
+pipecat-ai-cli
