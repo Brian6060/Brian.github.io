@@ -1,0 +1,35 @@
+.DS_Store
+**/.DS_Store
+**/__pycache__/
+**/*.pyc
+
+# Test A big data, ignore contents but keep folders
+Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug（Test A）/03_data/BMAD/_derived__20260225-163353/*
+Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug（Test A）/03_data/BMAD/datasets/*
+Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug（Test A）/03_data/BMAD/raw_zips/*
+
+# Large artifacts, never push
+**/*.ckpt
+**/*.tar.gz
+
+# Training outputs and archives
+Test/**/06_outputs/**/checkpoints/**
+Test/**/00_admin/archive/**
+
+# Never push large artifacts
+**/*.ckpt
+**/*.tar.gz
+
+# Outputs and archives that often contain large files
+Test/**/06_outputs/_trash/**
+Test/**/06_outputs/**/checkpoints/**
+Test/**/00_admin/archive/**
+
+# Never push large artifacts
+**/*.ckpt
+**/*.tar.gz
+
+# Outputs and archives that often contain large files
+Test/**/06_outputs/_trash/**
+Test/**/06_outputs/**/checkpoints/**
+Test/**/00_admin/archive/**

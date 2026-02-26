@@ -1,0 +1,36 @@
+/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug（Test A）/06_outputs
+├── 20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug
+│   ├── checkpoints
+│   │   └── model.ckpt
+│   ├── images
+│   ├── metrics
+│   │   └── metrics__RESC__RD4AD__seed42__debug.csv
+│   └── results_engine
+│       └── reverse_distillation__RESC__run
+│           ├── 20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug -> /Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/06_outputs/results/reverse_distillation/RESC/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug
+│           ├── config_original.yaml
+│           ├── config.yaml
+│           ├── images -> /Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/99_tmp/pruned__20260225-113429/results/reverse_distillation/RESC/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/images
+│           ├── lightning_logs
+│           ├── logs
+│           └── weights
+├── checkpoints
+├── metrics
+├── RESC
+│   └── RD4AD
+└── results
+    ├── reverse_distillation
+    │   └── RESC
+    │       └── 20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug
+    └── reverse_distillation__RESC__run
+        ├── config_original.yaml
+        ├── config.yaml
+        ├── images
+        │   ├── vis_b1_80
+        │   └── vis_b2_20
+        ├── logs
+        │   └── lightning_logs
+        └── weights
+            └── model.ckpt
+
+25 directories, 9 files

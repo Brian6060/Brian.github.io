@@ -1,0 +1,23 @@
+timestamp: 20260225-113429
+RUN_DIR: /Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug
+RUN_TAG: 20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug
+PRUNE_DELETE: 0
+ARCHIVE_DIR: 99_tmp/pruned__20260225-113429
+
+Top10 after prune:
+ 41G	./03_data
+1.5G	./06_outputs
+888M	./99_tmp
+113M	./02_src
+ 34M	./00_admin
+2.0M	./05_logs
+208K	./08_docs
+ 52K	./01_env
+ 44K	./04_configs
+4.0K	./09_paper_A__sanity__20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug
+
+Archive content:
+887M	99_tmp/pruned__20260225-113429/results
+644K	99_tmp/pruned__20260225-113429/qual
+116K	99_tmp/pruned__20260225-113429/nested_run__20260225-112136
+4.0K	99_tmp/pruned__20260225-113429/paper_assets

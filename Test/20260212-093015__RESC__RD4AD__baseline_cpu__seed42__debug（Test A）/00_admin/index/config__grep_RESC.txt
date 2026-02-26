@@ -1,0 +1,120 @@
+config/RESC_padim_resnet50.yaml:2:  name: RESC_resnet50
+config/RESC_padim_resnet50.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_padim_resnet50.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_padim_resnet50.yaml:16:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_padim_resnet50.yaml:17:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_padim_resnet50.yaml:18:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/RESC_stfpm.yaml:2:  name: RESC
+config/RESC_stfpm.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_stfpm.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_stfpm.yaml:16:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_stfpm.yaml:17:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_stfpm.yaml:18:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/bras2021_MKD.yaml:2:dataset_name: bras2021 # [RESC, OCT2017, camelyon, bras2021, liver, chest]
+config/OCT2017_MKD.yaml:2:dataset_name: OCT2017 # [RESC, OCT2017, camelyon, bras2021, liver, chest]
+config/RESC_draem.yaml:2:  name: RESC
+config/RESC_draem.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_draem.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_draem.yaml:16:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_draem.yaml:17:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_draem.yaml:18:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/camelyon_MKD.yaml:2:dataset_name: camelyon # [RESC, OCT2017, camelyon, bras2021, liver, chest]
+config/RESC_ganomaly.yaml:2:  name: RESC
+config/RESC_ganomaly.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_ganomaly.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_ganomaly.yaml:16:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_ganomaly.yaml:17:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_ganomaly.yaml:18:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/RESC_stfpm_test.yaml:2:  name: RESC
+config/RESC_stfpm_test.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_stfpm_test.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_stfpm_test.yaml:16:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Test/test/Ungood # name of the folder containing abnormal images.
+config/RESC_stfpm_test.yaml:17:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Test/test_label/Ungood #optional
+config/RESC_stfpm_test.yaml:18:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Test/test/good/ # optional
+config/RESC_stfpm_test.yaml:19:  # abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_stfpm_test.yaml:20:  # mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_stfpm_test.yaml:21:  # normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/RESC_patchcore_resnet50.yaml:2:  name: RESC_resnet50
+config/RESC_patchcore_resnet50.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_patchcore_resnet50.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_patchcore_resnet50.yaml:16:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_patchcore_resnet50.yaml:17:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_patchcore_resnet50.yaml:18:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/RESC_stfpm_resnet50_test.yaml:2:  name: RESC
+config/RESC_stfpm_resnet50_test.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_stfpm_resnet50_test.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_stfpm_resnet50_test.yaml:16:  # abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_stfpm_resnet50_test.yaml:17:  # mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_stfpm_resnet50_test.yaml:18:  # normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/RESC_stfpm_resnet50_test.yaml:19:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Test/test/Ungood # name of the folder containing abnormal images.
+config/RESC_stfpm_resnet50_test.yaml:20:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Test/test_label/Ungood #optional
+config/RESC_stfpm_resnet50_test.yaml:21:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Test/test/good/ # optional
+config/RESC_cfa.yaml:2:  name: RESC
+config/RESC_cfa.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_cfa.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_cfa.yaml:16:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_cfa.yaml:17:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_cfa.yaml:18:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/RESC_patchcore_test.yaml:2:  name: RESC
+config/RESC_patchcore_test.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_patchcore_test.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_patchcore_test.yaml:16:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Test/test/Ungood # name of the folder containing abnormal images.
+config/RESC_patchcore_test.yaml:17:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Test/test_label/Ungood #optional
+config/RESC_patchcore_test.yaml:18:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Test/test/good/ # optional
+config/RESC_patchcore_test.yaml:19:  # abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_patchcore_test.yaml:20:  # mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_patchcore_test.yaml:21:  # normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/liver_MKD.yaml:2:dataset_name: liver # [RESC, OCT2017, camelyon, bras2021, liver, chest]
+config/RESC_cfa_test.yaml:2:  name: RESC
+config/RESC_cfa_test.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_cfa_test.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_cfa_test.yaml:16:  # abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_cfa_test.yaml:17:  # mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_cfa_test.yaml:18:  # normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/RESC_cfa_test.yaml:19:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Test/test/Ungood # name of the folder containing abnormal images.
+config/RESC_cfa_test.yaml:20:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Test/test_label/Ungood #optional
+config/RESC_cfa_test.yaml:21:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Test/test/good/ # optional
+config/RESC_MKD.yaml:2:dataset_name: RESC # [RESC, OCT2017, camelyon, bras2021, liver, chest]
+config/RESC_stfpm_resnet50.yaml:2:  name: RESC_resnet50
+config/RESC_stfpm_resnet50.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_stfpm_resnet50.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_stfpm_resnet50.yaml:16:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_stfpm_resnet50.yaml:17:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_stfpm_resnet50.yaml:18:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/RESC_stfpm_resnet50.yaml:19:  # abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Test/test/Ungood # name of the folder containing abnormal images.
+config/RESC_stfpm_resnet50.yaml:20:  # mask: /home/jinan/Datasets/Medical-datasets/RESC/Test/test_label/Ungood #optional
+config/RESC_stfpm_resnet50.yaml:21:  # normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Test/test/good/ # optional
+config/RESC_ganomaly_test.yaml:2:  name: RESC
+config/RESC_ganomaly_test.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_ganomaly_test.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_ganomaly_test.yaml:16:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Test/test/Ungood # name of the folder containing abnormal images.
+config/RESC_ganomaly_test.yaml:17:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Test/test_label/Ungood #optional
+config/RESC_ganomaly_test.yaml:18:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Test/test/good/ # optional
+config/RESC_RD4AD.yaml:2:  name: RESC
+config/RESC_RD4AD.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_RD4AD.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_RD4AD.yaml:16:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_RD4AD.yaml:17:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_RD4AD.yaml:18:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/RESC_padim.yaml:2:  name: RESC
+config/RESC_padim.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_padim.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_padim.yaml:16:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_padim.yaml:17:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_padim.yaml:18:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/RESC_padim_resnet50_test.yaml:2:  name: RESC
+config/RESC_padim_resnet50_test.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_padim_resnet50_test.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_padim_resnet50_test.yaml:16:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Test/test/Ungood # name of the folder containing abnormal images.
+config/RESC_padim_resnet50_test.yaml:17:  mask: /home/jinan/Datasets/Medical-datasets/RESC/Test/test_label/Ungood #optional
+config/RESC_padim_resnet50_test.yaml:18:  normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Test/test/good/ # optional
+config/RESC_padim_resnet50_test.yaml:19:  # abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_padim_resnet50_test.yaml:20:  # mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_padim_resnet50_test.yaml:21:  # normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/RESC_patchcore_resnet50_test.yaml:2:  name: RESC
+config/RESC_patchcore_resnet50_test.yaml:4:  path: /home/jinan/Datasets/Medical-datasets/RESC
+config/RESC_patchcore_resnet50_test.yaml:15:  normal_dir: /home/jinan/Datasets/Medical-datasets/RESC/Train/train/good # name of the folder containing normal images.
+config/RESC_patchcore_resnet50_test.yaml:16:  # abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Val/val/Ungood # name of the folder containing abnormal images.
+config/RESC_patchcore_resnet50_test.yaml:17:  # mask: /home/jinan/Datasets/Medical-datasets/RESC/Val/val_label/Ungood #optional
+config/RESC_patchcore_resnet50_test.yaml:18:  # normal_test_dir: /home/jinan/Datasets/Medical-datasets/RESC/Val/val/good/ # optional
+config/RESC_patchcore_resnet50_test.yaml:19:  abnormal_dir:  /home/jinan/Datasets/Medical-datasets/RESC/Test/test/Ungood # name of the folder containing abnormal images.

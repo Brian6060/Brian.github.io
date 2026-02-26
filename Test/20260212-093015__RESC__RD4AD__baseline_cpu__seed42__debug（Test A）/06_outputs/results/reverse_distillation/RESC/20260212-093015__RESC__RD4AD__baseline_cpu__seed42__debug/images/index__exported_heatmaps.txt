@@ -1,0 +1,10 @@
+normal	/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/03_data/BMAD/datasets/RESC/test/good/img/10_1.png	anomaly_normal_00.png	overlay_normal_00.png
+normal	/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/03_data/BMAD/datasets/RESC/test/good/img/10_10.png	anomaly_normal_01.png	overlay_normal_01.png
+normal	/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/03_data/BMAD/datasets/RESC/test/good/img/10_100.png	anomaly_normal_02.png	overlay_normal_02.png
+normal	/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/03_data/BMAD/datasets/RESC/test/good/img/10_101.png	anomaly_normal_03.png	overlay_normal_03.png
+normal	/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/03_data/BMAD/datasets/RESC/test/good/img/10_102.png	anomaly_normal_04.png	overlay_normal_04.png
+abnormal	/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/03_data/BMAD/datasets/RESC/test/ungood/img/10_41.png	anomaly_abnormal_00.png	overlay_abnormal_00.png
+abnormal	/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/03_data/BMAD/datasets/RESC/test/ungood/img/10_42.png	anomaly_abnormal_01.png	overlay_abnormal_01.png
+abnormal	/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/03_data/BMAD/datasets/RESC/test/ungood/img/10_43.png	anomaly_abnormal_02.png	overlay_abnormal_02.png
+abnormal	/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/03_data/BMAD/datasets/RESC/test/ungood/img/10_44.png	anomaly_abnormal_03.png	overlay_abnormal_03.png
+abnormal	/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/03_data/BMAD/datasets/RESC/test/ungood/img/10_45.png	anomaly_abnormal_04.png	overlay_abnormal_04.png

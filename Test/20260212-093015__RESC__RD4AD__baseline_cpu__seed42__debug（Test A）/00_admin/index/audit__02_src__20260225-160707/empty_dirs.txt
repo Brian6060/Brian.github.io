@@ -1,0 +1,2 @@
+./BMAD/.git/objects/info
+./BMAD/.git/refs/tags

@@ -1,0 +1,394 @@
+\documentclass[UTF8,a4paper]{ctexart}
+
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+\setlist[itemize]{itemsep=3pt,topsep=4pt,leftmargin=2em}
+\setlist[enumerate]{itemsep=3pt,topsep=4pt,leftmargin=2em}
+
+\newcommand{\code}[1]{\texttt{#1}}
+
+\title{BMAD Essay Research Guideline}
+\author{杜博源}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{实验目标与设置说明}
+本文面向医学图像异常检测与定位任务，采用 BMAD 统一框架进行训练与评估。
+当前已完成 RESC 数据集上 RD4AD 的第一组对照实验。
+现阶段目标分三层。
+第一，形成覆盖 BMAD 六数据集的主结果对比，保证结论具备跨域代表性。
+第二，引入粒球机制作为核心改动，完成一组可清晰识别增益来源的主实验。
+第三，通过消融与鲁棒性证据闭环，支撑可复现、可解释与可用性论证。
+
+实验原则如下。
+训练阶段只使用正常样本。
+验证与测试阶段同时包含正常与异常样本。
+所有方法使用一致的输入尺寸、预处理流程与评测脚本。
+关键结果使用多个随机种子重复运行，并报告均值与标准差。
+所有 run 需要保存可复现快照与核心产物索引。
+
+\section{实验清单与论文落点}
+本节给出可直接执行的实验清单。
+每一项包含实验内容、实施方法、实验目的与论文呈现位置。
+
+\subsection{A 必做实验 主结果必须完整}
+
+\subsubsection{A0 管线验证（Sanity Check，baseline\_debug）}
+
+\paragraph{实验内容}
+在进入任何正式对比（baseline\_full）之前，先完成一轮最小闭环验证（baseline\_debug）。
+验证范围覆盖数据读取、训练与测试执行、指标计算、可视化导出、以及可复现快照。
+当前已完成 RD4AD@RESC 的 baseline\_debug，后续每个数据集与每个基线方法均需先过本步骤。
+
+\paragraph{成功判据}
+\begin{itemize}
+  \item 训练流程正常结束并生成权重文件。
+  \item 测试流程正常结束并导出至少一份核心指标文件，例如图像级 AUROC。
+  \item 导出至少一组异常热力图或定位可视化示例。
+  \item 保存可复现快照，包含运行指令、依赖版本、代码提交记录与关键日志。
+\end{itemize}
+
+\paragraph{实施方法}
+\begin{itemize}
+  \item debug 训练轮数设为 1 到 5，仅验证闭环可用。
+  \item 固定随机种子与运行环境标识，记录 code commit。
+  \item 产物目录必须包含 checkpoints、metrics、figures、logs。
+  \item 快照文件建议包含 env\_python.txt、env\_torch.txt、requirements\_freeze.txt、git\_commit.txt、git\_status.txt。
+\end{itemize}
+
+\paragraph{论文呈现}
+baseline\_debug 不进入主结果表。
+只作为复现实验链路证明，放附录或补充材料一段文字即可。
+
+\subsubsection{A1 BMAD 六数据集主表（baseline\_full）}
+
+\paragraph{实验内容}
+在 BMAD 六个数据集上完成完整对比，形成一张主结果表。
+像素级数据集为 RESC、BraTS、Liver。
+图像级数据集为 OCT2017、RSNA、Camelyon16。
+
+\paragraph{实施方法}
+\begin{itemize}
+  \item 每个数据集先完成 A0 的 baseline\_debug 验收，再进入 baseline\_full。
+  \item baseline\_full 阶段锁定全部训练与评估设置，避免中途改动导致不可比。
+  \item 每个数据集统一输入尺寸与预处理流程，全部使用 BMAD 官方 pipeline。
+  \item 每个方法统一训练轮数与评估脚本，保证比较公平。
+  \item 每个设置运行 3 个随机种子，报告 mean 与 std，并保留逐次运行结果与日志。
+  \item 指标口径统一：
+  \begin{itemize}
+    \item 图像级数据集：报告 Image-level AUROC。
+    \item 像素级数据集：报告 Image-level AUROC、Pixel-level AUROC、PRO。
+  \end{itemize}
+\end{itemize}
+
+\paragraph{实验目的}
+建立跨域主结论，并把复现成本压到可控范围。
+用统一脚本与统一口径，减少审稿人对公平性的质疑。
+
+\paragraph{论文呈现}
+六数据集主结果表放正文。
+完整训练细节、额外指标与实现说明放附录。
+
+\subsubsection{A2 强基线对齐（baseline\_full，至少 6 个）}
+
+\paragraph{实验内容}
+在每个数据集上，除 RD4AD 外补齐足够强的 BMAD 内置基线。
+建议覆盖三类方法，每类不少于 2 个，总数不少于 6 个。
+所有基线都必须先完成 A0 的 baseline\_debug 验收，再纳入 baseline\_full。
+
+\paragraph{基线建议}
+\begin{itemize}
+  \item 特征检索类：包含 PaDiM 与 PatchCore 的同类方法。
+  \item 蒸馏或重建类：在 RD4AD 之外增加至少 1 个同类强基线。
+  \item 一类学习或正则化类：从 BMAD 已集成方法中选择 1 到 2 个代表方法。
+\end{itemize}
+
+\paragraph{实施方法}
+\begin{itemize}
+  \item 对每个基线，先跑 baseline\_debug，确认 checkpoints、metrics、figures、logs 与快照齐全。
+  \item 对进入主表的 baseline\_full，锁定输入分辨率、训练轮数、评测脚本与随机种子集合。
+  \item run 命名必须包含 dataset、model、variant、seed、host，便于批量统计与追溯。
+\end{itemize}
+
+\paragraph{实验目的}
+避免只与弱基线对比，避免只覆盖单一路线。
+提升主结论可信度，同时降低复现与排错成本。
+
+\paragraph{论文呈现}
+与 A1 合并为同一张主表，或在主表中加入 Baselines 分组说明。
+完整命令与配置快照放附录。
+
+\subsection{B 主实验 引入粒球机制（GBR 主方法）}
+本节新增一个主实验，用粒球多粒度表示替换“像素或固定网格 token”作为基本计算单元。
+目标是把性能增益与机制增益同时做成可识别证据。
+该实验是论文方法贡献的主承载位置。
+
+\subsubsection{B0 方法定义与实现边界（GBR-AD，BMAD 插件化）}
+
+\paragraph{实验内容}
+实现一个粒球表示学习异常检测方法，记为 \textbf{GBR-AD}。
+该方法包含四个模块。
+粒球表示与图构建模块、异常检测模块、定位与分割读出模块、证据与可解释性模块。
+
+\paragraph{方法要点}
+\begin{itemize}
+  \item \textbf{粒球生成（从粗到细）}：对输入做轻度平滑，计算梯度，优先从低梯度位置启动区域生长。
+  通过纯度与方差阈值约束控制最细粒度。
+  \item \textbf{粒球节点表征}：每个粒球用其覆盖区域的统计量描述。
+  例如中心、尺度与均值方差等。
+  可用如下统计定义中心与半径：
+  \begin{equation}
+    C=\frac{1}{n}\sum_{i=1}^{n}x_i,\qquad
+    r=\frac{1}{n}\sum_{i=1}^{n}\lVert x_i-C\rVert .
+  \end{equation}
+  \item \textbf{图构建}：以“重叠即连边”为主规则。
+  可选加入邻接边与包含边，形成多关系图。
+  \item \textbf{异常打分与反投影}：训练阶段只用正常样本拟合正常图分布。
+  测试阶段输出图像级异常分数，以及节点级分数。
+  节点级分数按覆盖关系反投影回像素域生成 anomaly map。
+  重叠区域采用加权融合，得到连续热图。
+\end{itemize}
+
+\paragraph{两种输入路径（必须都做）}
+\begin{itemize}
+  \item \textbf{GRI 路径}：直接在原图上生成粒球图，再做后续学习。
+  \item \textbf{GRFM 路径}：先提取预训练 CNN 特征图，再在特征图上生成粒球图并学习。
+  该路径通常收敛更快，泛化更强，作为默认主配置。
+\end{itemize}
+
+\paragraph{成功判据}
+\begin{itemize}
+  \item GBR-AD 在 RESC 上跑通 train 和 test，产物齐全。
+  \item 粒球数量统计稳定，能输出每张图的节点数分布与平均重叠度。
+  \item 能导出三类可视化：粒球划分叠加图、证据子图、反投影热图。
+\end{itemize}
+
+\paragraph{论文呈现}
+方法结构图与伪代码放方法章节。
+粒球划分与证据热图示例放可视化小节。
+
+\subsubsection{B1 主对比实验（RD4AD vs GBR-AD）}
+
+\paragraph{实验内容}
+在像素级三数据集（RESC、BraTS、Liver）上做主对比。
+把 RD4AD 作为蒸馏代表基线。
+对比对象包含：
+RD4AD，GBR-AD(GRFM)，GBR-AD(GRI)。
+
+\paragraph{实施方法}
+\begin{itemize}
+  \item 训练数据只用正常样本。
+  \item 三个随机种子，统一训练轮数与评测脚本。
+  \item 对每个数据集报告：
+  Image-level AUROC，Pixel-level AUROC，PRO。
+  \item 同时报告效率侧指标：
+  每张图平均粒球数，推理耗时，显存峰值。
+\end{itemize}
+
+\paragraph{实验目的}
+用最小对比集合证明两件事。
+粒球机制带来定位与检测增益。
+粒球机制带来效率与稳定性收益。
+
+\paragraph{论文呈现}
+这部分进入正文主结果区，单独成表或作为主表中的 Proposed 分组。
+效率指标单独成表，正文给结论句，细节放附录。
+
+\subsubsection{B2 受控识别实验（小病灶与低对比专测）}
+
+\paragraph{实验内容}
+构造两个专测子集，用来放大机制差异，使增益更可识别。
+\begin{enumerate}
+  \item \textbf{小病灶子集}：按 GT mask 面积占比划分，选择占比最低的一档样本作为子集。
+  \item \textbf{低对比子集}：按病灶区域与邻域背景的灰度差或标准化对比度划分，选择最低的一档样本作为子集。
+\end{enumerate}
+
+\paragraph{实施方法}
+\begin{itemize}
+  \item 子集划分只用 GT 与输入统计，不改动训练数据与训练流程。
+  \item 在同一模型输出上同时评估全量与子集指标。
+  \item 指标建议增加一组固定阈值下的召回率对比，例如在相同 FPR 下的 TPR，或在固定像素误报预算下的病灶召回。
+\end{itemize}
+
+\paragraph{实验目的}
+直接对应医学异常检测的两类核心困难。
+证明粒球的“背景大粒球压缩 + 边界小粒球细化 + 重叠建边”在困难样本上更有效。
+
+\paragraph{论文呈现}
+正文给一张子集对比表或一张曲线图。
+附录给划分规则与阈值定义。
+
+\subsubsection{B3 证据链可解释性（证据子图与报告式输出）}
+
+\paragraph{实验内容}
+在像素级三数据集各抽取 6 到 8 张代表性异常样本。
+输出四联图：
+输入图像，粒球划分叠加，证据子图，证据热图与预测掩膜。
+
+\paragraph{实施方法}
+\begin{itemize}
+  \item 用节点分数与注意力权重选取 Top-K 节点构建证据子图。
+  \item 证据子图按覆盖关系反投影得到证据热图。
+  \item 统计证据子图的稀疏度与覆盖率，例如 Top-K 节点覆盖的 GT 比例。
+\end{itemize}
+
+\paragraph{实验目的}
+给出可审查证据，而不是只给分数。
+让审稿人看到模型为何判为异常，以及异常主要落在何处。
+
+\paragraph{论文呈现}
+正文放 1 张代表性可视化大图。
+附录放更多案例与失败案例。
+
+\subsection{C 必做实验 证明贡献来自核心模块}
+
+\subsubsection{C1 消融实验（至少 4 组）}
+
+\paragraph{实验内容}
+将 GBR-AD 拆分为核心模块，逐个移除或替换。
+优先在 RESC 与 BraTS 上完成下列消融。
+\begin{enumerate}
+  \item 去掉粒球多粒度机制，只保留固定网格 token。
+  \item 去掉重叠建边，只保留邻接边。
+  \item 去掉关系推理，只做节点独立打分。
+  \item 去掉反投影融合，改为无重叠的硬分配反投影。
+\end{enumerate}
+
+\paragraph{实施方法}
+每次只改变一个因素，其余训练设置保持一致。
+每组消融运行 3 个随机种子，报告 mean 与 std。
+
+\paragraph{实验目的}
+证明提升来自粒球与图结构本身，而不是训练技巧或偶然超参。
+
+\paragraph{论文呈现}
+消融主表放正文。
+更多补充消融放附录。
+
+\subsubsection{C2 超参敏感性（粒球阈值与图结构）}
+
+\paragraph{实验内容}
+仅改变 1 到 2 个关键超参，输出性能曲线或小表。
+建议覆盖：
+粒球阈值强度，节点数上限，重叠边比例，图层数。
+
+\paragraph{实验目的}
+展示方法对超参不脆弱，减少调参嫌疑，并给出默认范围。
+
+\paragraph{论文呈现}
+放入附录一页。
+正文用一句话概述并引用附录图表。
+
+\subsection{D 强烈建议实验 医学场景加分项}
+
+\subsubsection{D1 数据效率}
+
+\paragraph{实验内容}
+在 RESC 与 BraTS 上做训练数据比例实验。
+训练集只使用正常样本，分别取 10\%，25\%，50\%，100\%。
+其他设置保持不变。
+
+\paragraph{实验目的}
+突出结构先验与泛化能力。
+体现低数据条件下的优势。
+
+\paragraph{论文呈现}
+给出一张曲线图或小表，放正文补充实验或附录。
+
+\subsubsection{D2 鲁棒性测试}
+
+\paragraph{实验内容}
+对测试集施加轻度扰动，不修改标注。
+扰动包括噪声、模糊、亮度变化、对比度变化、小角度旋转与轻微缩放。
+
+\paragraph{实验目的}
+验证方法在噪声与设备差异下的稳定性。
+对齐临床使用场景。
+
+\paragraph{论文呈现}
+给出一张鲁棒性曲线图或小表。
+
+\subsubsection{D3 跨域泛化}
+
+\paragraph{实验内容}
+用一个域训练，在另一个域测试，尽量保持同一套超参设置。
+给出至少一组代表性设置。
+
+\paragraph{实验目的}
+强化多域医学异常检测的泛化结论，形成完整证据链。
+
+\paragraph{论文呈现}
+正文一小表或附录一小表均可。
+
+\subsection{E 必做实验 代价与可解释性}
+
+\subsubsection{E1 计算开销与效率}
+
+\paragraph{实验内容}
+报告参数量与推理耗时，至少给出每张图的推理时间。
+同时报告显存峰值或可用 batch size 上限。
+对 GBR-AD 额外报告粒球数与边数的统计。
+
+\paragraph{实验目的}
+若方法引入图结构与粒球生成，需要说明代价是否合理。
+同时给出性能与效率权衡。
+
+\paragraph{论文呈现}
+效率表可放正文或附录。
+正文建议用一行总结效率差异。
+
+\subsubsection{E2 定性可视化与错误分析}
+
+\paragraph{实验内容}
+在 RESC、BraTS、Liver 每个数据集选择 8 到 12 张典型样本。
+展示输入图像、GT mask、预测 anomaly map 与二值化结果。
+同时选择 4 到 6 张失败案例，按误检与漏检分类并分析原因。
+
+\paragraph{实验目的}
+医学异常检测强调定位可解释性。
+定性结果与错误分析提升可信度与可审查性。
+
+\paragraph{论文呈现}
+定性图放正文。
+更多案例放附录。
+
+\section{推荐推进顺序}
+建议按如下顺序推进，以较小成本形成完整证据。
+\begin{enumerate}
+  \item 先把 A0 跑通并固化目录与快照规范。
+  \item 完成 A1 与 A2 的像素级部分，先覆盖 RESC，再扩展到 BraTS 与 Liver。
+  \item 实现 B0，先在 RESC 上完成 GBR-AD 的 debug 闭环。
+  \item 完成 B1 主对比，再做 B2 困难子集专测，把增益做成可识别证据。
+  \item 完成 C 组消融，优先验证粒球阈值与重叠建边的贡献。
+  \item 补齐 D 与 E，形成鲁棒性、泛化性、效率与可解释性闭环。
+\end{enumerate}
+
+\section{论文交付物清单}
+最终需要交付的图表与材料如下。
+\begin{itemize}
+  \item 主结果表 1 张，覆盖六数据集与全部方法，报告 mean 与 std。
+  \item Proposed 主实验表 1 张，至少包含 RD4AD、GBR-AD(GRFM)、GBR-AD(GRI)。
+  \item 困难子集对比表或曲线 1 张，覆盖小病灶与低对比专测。
+  \item 消融表 1 张，至少 4 行关键消融设置。
+  \item 鲁棒性图或小表 1 张。
+  \item 数据效率图或小表 1 张。
+  \item 效率表 1 张，包含推理耗时、显存、粒球数与边数统计。
+  \item 定性可视化图 1 到 2 张，包含粒球划分、证据子图与证据热图，并附失败案例分析。
+\end{itemize}
+
+\end{document}

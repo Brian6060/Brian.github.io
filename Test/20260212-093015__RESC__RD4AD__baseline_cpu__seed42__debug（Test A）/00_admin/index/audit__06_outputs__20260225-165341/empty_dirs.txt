@@ -1,0 +1,5 @@
+./20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/images
+./checkpoints
+./metrics
+./RESC/RD4AD
+./results/reverse_distillation/RESC/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/weights

@@ -1,0 +1,70 @@
+Metadata-Version: 2.4
+Name: anomalib
+Version: 0.5.0.dev0
+Summary: anomalib - Anomaly Detection Library
+Home-page: 
+Author: Intel OpenVINO
+Author-email: help@openvino.intel.com
+License: Copyright (c) Intel - All Rights Reserved. Licensed under the Apache License, Version 2.0 (the "License")See LICENSE file for more details.
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: albumentations>=1.1.0
+Requires-Dist: av>=10.0.0
+Requires-Dist: einops>=0.3.2
+Requires-Dist: freia>=0.2
+Requires-Dist: imgaug==0.4.0
+Requires-Dist: jsonargparse[signatures]>=4.3
+Requires-Dist: kornia<0.6.10,>=0.6.6
+Requires-Dist: matplotlib>=3.4.3
+Requires-Dist: omegaconf>=2.1.1
+Requires-Dist: opencv-python>=4.5.3.56
+Requires-Dist: pandas>=1.1.0
+Requires-Dist: pytorch-lightning<1.10.0,>=1.7.0
+Requires-Dist: timm<=0.6.12,>=0.5.4
+Requires-Dist: torchmetrics==0.10.3
+Provides-Extra: extra
+Requires-Dist: comet-ml>=3.31.7; extra == "extra"
+Requires-Dist: gradio>=2.9.4; extra == "extra"
+Requires-Dist: tensorboard; extra == "extra"
+Requires-Dist: wandb==0.12.17; extra == "extra"
+Requires-Dist: GitPython; extra == "extra"
+Requires-Dist: ipykernel; extra == "extra"
+Provides-Extra: full
+Requires-Dist: furo==2022.9.29; extra == "full"
+Requires-Dist: ipykernel; extra == "full"
+Requires-Dist: myst-parser; extra == "full"
+Requires-Dist: pandoc; extra == "full"
+Requires-Dist: sphinx>=4.1.2; extra == "full"
+Requires-Dist: sphinx-autoapi; extra == "full"
+Requires-Dist: sphinxemoji==0.1.8; extra == "full"
+Requires-Dist: nbsphinx>=0.8.9; extra == "full"
+Requires-Dist: defusedxml==0.7.1; extra == "full"
+Requires-Dist: requests==2.26.0; extra == "full"
+Requires-Dist: networkx~=2.5; extra == "full"
+Requires-Dist: nncf>=2.1.0; extra == "full"
+Requires-Dist: onnx>=1.10.1; extra == "full"
+Requires-Dist: openvino-dev>=2022.3.0; extra == "full"
+Requires-Dist: comet-ml>=3.31.7; extra == "full"
+Requires-Dist: gradio>=2.9.4; extra == "full"
+Requires-Dist: tensorboard; extra == "full"
+Requires-Dist: wandb==0.12.17; extra == "full"
+Requires-Dist: GitPython; extra == "full"
+Requires-Dist: ipykernel; extra == "full"
+Provides-Extra: openvino
+Requires-Dist: defusedxml==0.7.1; extra == "openvino"
+Requires-Dist: requests==2.26.0; extra == "openvino"
+Requires-Dist: networkx~=2.5; extra == "openvino"
+Requires-Dist: nncf>=2.1.0; extra == "openvino"
+Requires-Dist: onnx>=1.10.1; extra == "openvino"
+Requires-Dist: openvino-dev>=2022.3.0; extra == "openvino"
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# anomalib

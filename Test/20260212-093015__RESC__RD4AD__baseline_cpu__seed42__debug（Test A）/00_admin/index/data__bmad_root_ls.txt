@@ -1,0 +1,6 @@
+total 7436216
+drwxr-xr-x  5 dby051225  staff   160B Feb 12 18:15 .
+drwxr-xr-x  4 dby051225  staff   128B Feb 12 13:05 ..
+-rw-r--r--@ 1 dby051225  staff   6.0K Feb 12 17:53 .DS_Store
+-rw-r--r--  1 dby051225  staff   382M Feb 18  2025 Brain_AD.zip
+-rw-r--r--  1 dby051225  staff   3.2G Feb 12 23:49 Chest-AD.zip_xbpo53j.part

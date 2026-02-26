@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/02_src/BMAD/anomalib/tools/train.py", line 15, in <module>
+    from pytorch_lightning import Trainer, seed_everything
+ModuleNotFoundError: No module named 'pytorch_lightning'

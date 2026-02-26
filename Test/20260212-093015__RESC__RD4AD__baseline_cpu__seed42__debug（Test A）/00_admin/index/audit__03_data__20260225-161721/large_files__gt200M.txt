@@ -1,0 +1,5 @@
+-rw-r--r--  1 dby051225  staff   382M  2 18  2025 ./BMAD/raw_zips/Brain_AD.zip
+-rw-r--r--@ 1 dby051225  staff   8.9G  2 13 12:05 ./BMAD/raw_zips/Chest-AD.zip
+-rw-r--r--  1 dby051225  staff   853M  2 13 09:24 ./BMAD/raw_zips/Histopathology_AD.zip
+-rw-r--r--@ 1 dby051225  staff   8.2G  2 13 10:41 ./BMAD/raw_zips/Retina_OCT2017_AD.zip
+-rw-r--r--@ 1 dby051225  staff   2.0G  2 13 11:17 ./BMAD/raw_zips/Retina_RESC_AD.zip

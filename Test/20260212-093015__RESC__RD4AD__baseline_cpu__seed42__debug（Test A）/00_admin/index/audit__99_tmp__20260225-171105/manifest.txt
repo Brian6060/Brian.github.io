@@ -1,0 +1,16 @@
+total 72
+drwxr-xr-x  15 dby051225  staff   480B  2 25 17:11 .
+drwxr-xr-x  60 dby051225  staff   1.9K  2 25 17:11 ..
+-rw-r--r--   1 dby051225  staff   765B  2 25 17:11 du__d2.txt
+-rw-r--r--   1 dby051225  staff   2.7K  2 25 17:11 du__d4.txt
+-rw-r--r--   1 dby051225  staff    98B  2 25 17:11 du__top.txt
+-rw-r--r--   1 dby051225  staff   186B  2 25 17:11 empty_dirs.txt
+-rw-r--r--   1 dby051225  staff     0B  2 25 17:11 large_files__gt200M.txt
+-rw-r--r--   1 dby051225  staff     0B  2 25 17:11 manifest.txt
+-rw-r--r--   1 dby051225  staff     0B  2 25 17:11 symlinks.txt
+-rw-r--r--   1 dby051225  staff   2.0K  2 25 17:11 top200_files_by_size.txt
+-rw-r--r--   1 dby051225  staff   1.7K  2 25 17:11 tree__FULL.txt
+-rw-r--r--   1 dby051225  staff   304B  2 25 17:11 tree__L2.txt
+-rw-r--r--   1 dby051225  staff   758B  2 25 17:11 tree__L4.txt
+-rw-r--r--   1 dby051225  staff   1.7K  2 25 17:11 tree__L8.txt
+-rw-r--r--   1 dby051225  staff     0B  2 25 17:11 zero_bytes.txt

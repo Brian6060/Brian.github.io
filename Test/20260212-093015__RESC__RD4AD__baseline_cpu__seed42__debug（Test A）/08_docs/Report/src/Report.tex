@@ -1,0 +1,343 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+\documentclass[a4paper,11pt,UTF8]{ctexart}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{iftex}
+
+\usepackage{xurl}      % 让 \path/\url 更容易断行
+
+% 标题左对齐
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+
+% 必须使用 XeLaTeX 或 LuaLaTeX
+\ifPDFTeX
+  \errmessage{Compile with XeLaTeX or LuaLaTeX, NOT pdfLaTeX.}
+\fi
+
+% 打印包含 _ / __ 的字符串（文件名、路径、实验名）不需要手动转义
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+
+\setlist[itemize]{leftmargin=2em}
+\setlist[enumerate]{leftmargin=2em}
+
+% listings 比 verbatim 在列表环境里更稳
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  breaklines=true,
+  frame=single
+}
+\lstset{breaklines=true, breakatwhitespace=false, columns=fullflexible}
+
+% hyperref 最后加载
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+\title{实验报告：BMAD Pipeline 验证运行（RD4AD@RESC，baseline\_debug）}
+\author{负责人：杜博源}
+\date{2026-02-12（Beijing,China）}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+本实验在 BMAD 框架下对 RD4AD 方法开展快速调试运行，对应任务为 baseline\_debug。实验用于验证 RESC 数据读取、训练与测试流程、指标导出以及异常热力图导出链路是否闭环可用，并将环境、配置与产物按统一目录规范归档，便于后续 baseline\_full 与方法改进实验的公平对照与复现。本次运行不追求发表级性能结果。
+\end{abstract}
+
+\section{实验元信息}
+\begin{itemize}
+  \item 原始实验名：\code{20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug}
+  \item 实验性质：Pipeline Sanity Check（Debug run）
+  \item 数据集：RESC（BMAD 重组版本）
+  \item 方法：RD4AD（Reverse Distillation for Anomaly Detection）
+  \item 随机种子：42
+  \item 运行环境：Mac Intel CPU
+  \item 代码版本：BMAD（commit：\code{5b6d583898b0a53c72aaebfa9a3f075c126e1bd5}）
+\end{itemize}
+
+\subsection{本次实验根目录与清理后目录约定}
+本次运行统一使用以下根目录（Test A）：
+\begin{itemize}
+  \item \code{/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug（Test A）}
+\end{itemize}
+
+清理与归档后，关键路径固定为：
+\begin{itemize}
+  \item 环境快照：\code{01_env/}
+  \item 代码：\code{02_src/BMAD/}
+  \item 数据：\code{03_data/BMAD/datasets/} 与 \code{03_data/BMAD/raw_zips/}
+  \item 配置快照：\code{04_configs/}
+  \item 日志：\code{05_logs/}
+  \item 运行输出（权重、图、结果目录）：\code{06_outputs/}
+  \item 论文图表素材：\code{07_figures/} 与 \code{09_paper/03_visualization/}
+\end{itemize}
+
+\section{实验目的与成功判据}
+\subsection{实验目的}
+\begin{enumerate}
+\item 确认数据组织与读取过程正常
+\item 确认训练与测试流程可完整执行
+\item 确认指标与可视化产物可稳定导出
+\item 固化环境、配置、代码版本与产物路径，形成可复现基线起点
+\end{enumerate}
+
+\subsection{成功判据}
+\begin{itemize}
+\item 训练流程结束并生成权重文件（checkpoint）
+\item 测试流程结束并生成指标文件（如 AUROC，PRO 等）
+\item 导出至少一组异常热力图或 overlay 可视化
+\item 保存可复现快照，包含环境、配置、代码提交记录与运行日志
+\end{itemize}
+
+\section{材料与方法}
+\subsection{数据集与划分（RESC）}
+\begin{itemize}
+  \item 数据目录：\code{03_data/BMAD/datasets/RESC/}
+  \item 绝对路径：\code{/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug（Test A）/03_data/BMAD/datasets/RESC}
+  \item 数据组织：\code{train/}、\code{val/}、\code{test/}
+  \item 本地统计：
+  \begin{itemize}
+    \item 训练集：总数 \code{4,297}，正常 \code{4,297}，异常 \code{0}
+    \item 验证集：总数 \code{185}，正常 \code{45}，异常 \code{140}
+    \item 测试集：总数 \code{2,569}，正常 \code{1,041}，异常 \code{1,528}
+  \end{itemize}
+\end{itemize}
+
+\subsection{方法（RD4AD）的数理逻辑}
+
+\paragraph{一类学习设定}
+仅给定正常样本训练集 $\mathcal{X}_n=\{I_i\}_{i=1}^{N}$，目标是在测试时对任意输入 $I$ 输出
+像素级异常热力图与图像级异常分数。
+
+\paragraph{Teacher--Student 结构与符号}
+RD4AD 由三部分组成：冻结的教师编码器 $E$，可训练的一类瓶颈嵌入模块 $B$（OCBE），可训练的学生解码器 $D$。
+选取 $K$ 个尺度层用于蒸馏，对应教师与学生的第 $k$ 个块分别记为 $E_k$ 与 $D_k$。
+对输入图像 $I$，教师多尺度特征为
+\begin{equation}
+f_E^k(I)=E_k(I)\in \mathbb{R}^{C_k\times H_k\times W_k},\quad k=1,\dots,K.
+\end{equation}
+OCBE 将教师多尺度特征投影到紧凑瓶颈码
+\begin{equation}
+\phi(I)=B\!\left(\{f_E^k(I)\}_{k=1}^K\right),
+\end{equation}
+学生解码器从 $\phi(I)$ 反向重构教师在各尺度的响应
+\begin{equation}
+f_D^k(I)=D_k(\phi(I))\in \mathbb{R}^{C_k\times H_k\times W_k}.
+\end{equation}
+
+\paragraph{逐位置余弦差异与多尺度蒸馏损失}
+对每个尺度 $k$ 的每个空间位置 $(h,w)$，将通道向量记为
+$f_E^k(h,w)\in\mathbb{R}^{C_k}$ 与 $f_D^k(h,w)\in\mathbb{R}^{C_k}$，
+定义点位异常图（距离图）
+\begin{equation}
+M^k(h,w)
+=
+1-\frac{\big(f_E^k(h,w)\big)^{\top} f_D^k(h,w)}
+{\left\|f_E^k(h,w)\right\|\left\|f_D^k(h,w)\right\|}.
+\label{eq:rd4ad_mk}
+\end{equation}
+训练阶段在正常样本上最小化多尺度平均距离
+\begin{equation}
+\mathcal{L}_{KD}
+=
+\sum_{k=1}^{K}\frac{1}{H_kW_k}
+\sum_{h=1}^{H_k}\sum_{w=1}^{W_k} M^k(h,w).
+\label{eq:rd4ad_loss}
+\end{equation}
+
+\paragraph{测试阶段像素级异常热力图}
+将各尺度 $M^k$ 上采样到输入分辨率并累加得到像素级异常分数图
+\begin{equation}
+S_{AL}(I)
+=
+\sum_{k=1}^{K}\Psi\!\left(M^k\right),
+\label{eq:rd4ad_sal}
+\end{equation}
+其中 $\Psi(\cdot)$ 表示双线性上采样。实践中对 $S_{AL}$ 进行高斯平滑以抑制噪声。
+
+\paragraph{图像级异常分数}
+为避免小病灶被平均池化稀释，图像级异常分数取热力图的最大响应
+\begin{equation}
+S_{AD}(I)=\max_{(u,v)} S_{AL}(I)[u,v].
+\label{eq:rd4ad_sad}
+\end{equation}
+
+\paragraph{OCBE 的数理作用与可解释直觉}
+将异常视作对正常模式的扰动。对某尺度 $k$，可写作
+\begin{equation}
+f_E^k(I)=f_N^k(I)+\delta^k(I),
+\end{equation}
+其中 $f_N^k$ 表示正常模式下的特征成分，$\delta^k$ 表示异常引入的偏移。
+OCBE 的目标是构造紧凑瓶颈 $\phi$，在正常样本上仍足以让 $D$ 重构 $f_N^k$，
+但对异常扰动 $\delta^k$ 的传播具有抑制效应，因此测试时更倾向于
+\begin{equation}
+f_D^k(I)\approx f_N^k(I).
+\end{equation}
+于是异常响应主要体现在教师与学生的方向差异上，即式 \eqref{eq:rd4ad_mk} 的余弦距离增大。
+多尺度累加式 \eqref{eq:rd4ad_sal} 使浅层对局部纹理异常敏感，深层对结构与语义异常敏感，
+最终用式 \eqref{eq:rd4ad_sad} 给出稳健的图像级判别。
+
+\paragraph{局限与缺陷}
+面积较小或对比度较低的异常在特征空间变化弱，异常响应可能不显著。多尺度特征的下采样与上采样会损失精细结构，影响定位精度。教师网络的域偏移会降低跨中心稳定性，并可能在伪影或复杂纹理区域产生假阳性响应。
+
+\subsection{评估指标}
+\begin{itemize}
+\item \textbf{Image-level AUROC}：依据图像异常分数区分正常样本与异常样本
+\item \textbf{Pixel-level AUROC}：依据异常热力图完成像素级 ROC 评估
+\item \textbf{PRO}：以连通区域为单位衡量定位效果
+\end{itemize}
+
+\subsection{训练设置（debug）}
+\begin{itemize}
+  \item epochs：\code{2}
+  \item batch size：\code{4}
+  \item num\_workers：\code{0}
+  \item 输入分辨率：\code{256x256}
+  \item 优化器：\code{AdamW}
+  \item 学习率：\code{1e-4}
+\end{itemize}
+
+\subsection{运行命令与配置快照}
+\begin{itemize}
+  \item 配置快照 \code{04_configs/}：
+  \begin{lstlisting}
+04_configs/RESC_RD4AD__final.yaml
+04_configs/RESC_RD4AD_test__final.yaml
+  \end{lstlisting}
+
+  \item 训练命令：
+  \begin{lstlisting}
+cd 02_src/BMAD
+python main.py --mode train --data RESC --model RD4AD
+  \end{lstlisting}
+
+  \item 测试命令：
+  \begin{lstlisting}
+cd 02_src/BMAD
+python main.py --mode test --data RESC --model RD4AD \
+  --weight ../../06_outputs/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/checkpoints/model.ckpt
+  \end{lstlisting}
+\end{itemize}
+
+\subsection{产物检查}
+\begin{itemize}
+  \item 权重文件：
+  \begin{lstlisting}
+06_outputs/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/checkpoints/model.ckpt
+  \end{lstlisting}
+
+  \item Lightning 指标与超参记录：
+  \begin{lstlisting}
+05_logs/lightning/reverse_distillation__RESC__run/lightning_logs/version_0/metrics.csv
+05_logs/lightning/reverse_distillation__RESC__run/lightning_logs/version_0/hparams.yaml
+  \end{lstlisting}
+
+  \item 可视化热图：
+  \begin{lstlisting}
+06_outputs/results/reverse_distillation/RESC/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/images/vis_b1_80/
+06_outputs/results/reverse_distillation/RESC/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/images/vis_b2_20/
+  \end{lstlisting}
+
+  \item 论文可用 ROC 图：
+  \begin{lstlisting}
+09_paper/03_visualization/20260212-093015__RESC__RD4AD__baseline_cpu_debug_visb1_80__seed42__roc_image__auc0p70.png
+09_paper/03_visualization/20260212-093015__RESC__RD4AD__baseline_cpu_debug_visb1_80__seed42__roc_pixel__auc0p94.png
+  \end{lstlisting}
+
+  \item 图表归档：
+  \begin{lstlisting}
+07_figures/exported_heatmaps/vis_b1_80/
+07_figures/exported_heatmaps/vis_b2_20/
+  \end{lstlisting}
+\end{itemize}
+
+\subsection{量化指标}
+\begin{table}[H]
+\centering
+\caption{RD4AD@RESC baseline\_debug 运行结果}
+\begin{tabular}{lccc}
+\toprule
+Run & Image-level AUROC & Pixel-level AUROC & PRO \\
+\midrule
+baseline\_debug & \code{0.6745703816413879} & \code{0.9425088763237} & \code{0.4913395941257477} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{定性可视化}
+\begin{itemize}
+  \item \textbf{正常样本伪响应模式：}
+  正常样本存在伪响应，高亮多出现在高纹理与结构边缘区域，呈散点或条带状扩散，导致图像级异常分数偏高。可用 normal Top10 作为代表性案例，例如
+  \path{overlay__0023__2_125.png}、
+  \path{overlay__0020__15_88.png}、
+  \path{overlay__0017__15_118.png}、
+  \path{overlay__0036__6_99.png}。
+
+  \item \textbf{异常样本覆盖情况：}
+  异常热图通常能突出主要异常区域，但覆盖强度与连贯性不稳定。弱覆盖样例表现为响应面积较小，提示小病灶或低对比区域易欠响应。abnormal 弱覆盖样例包括
+  \path{overlay__0056__2_87.png}、
+  \path{overlay__0073__8_47.png}、
+  \path{overlay__0077__9_35.png}、
+  \path{overlay__0066__5_117.png}、
+  \path{overlay__0046__12_55.png}。
+
+  \item \textbf{失败模式：}
+  误报通常来自正常纹理区域伪高响应。漏检多发生在小病灶或低对比区域。热图高响应区域可能出现扩张或碎片化，进一步影响阈值化定位的稳定性。
+\end{itemize}
+
+\section{讨论}
+本次 A 实验以 RD4AD@RESC（seed42，debug，CPU）为对象，验证了 BMAD 在本机环境下训练到测试到导出的闭环可用性，并完成目录与产物的归一化归档。当前闭环覆盖：数据读取与 split 一致性、权重写入（\path{model.ckpt}）、指标导出（\path{metrics.csv}）、可视化生成与筛选（\path{vis_b1_80} 与 \path{vis_b2_20}），以及依赖与代码版本快照（\path{01_env} 与 commit 记录）。
+
+工程风险主要来自路径映射与产物归档。在清理过程中曾存在指向临时目录的软链接风险。当前已通过固定热图输出的稳定路径并清理临时目录残留，降低后续整理导致的断链概率。后续若出现性能异常或热力图偏置，建议按以下顺序排查：
+\begin{enumerate}
+  \item 数据路径是否正确指向 \path{03_data/BMAD/datasets/RESC}，以及 \path{train/val/test} 结构是否完整。
+  \item 预处理与输入尺寸是否与评估脚本一致，重点检查 resize、normalize、通道顺序与插值方式。
+  \item 权重加载是否对应同一 run 的 checkpoint，避免混用不同 run 的权重与指标。
+  \item 评估脚本与阈值策略是否固定。上采样、平滑与二值化阈值会显著改变可视化与定位指标。
+\end{enumerate}
+
+从定性结果看，RD4AD 的热图呈现平滑与低分辨率趋势，与特征图 stride 与插值有关。同时形成两类可用于后续对照的缺陷证据：正常样本的结构性误检与异常样本的小目标漏检。后续 baseline\_full 将固定数据版本、预处理、训练轮数、seed 与评估脚本，在多 seed 下报告均值与方差，并以本次筛选案例作为对照证据，突出后续方法对伪响应抑制与小目标定位稳定性的改进点。
+
+\section{结论}
+A 实验完成 BMAD 在本机环境下 RD4AD@RESC 的调试闭环验证。实验产物已生成并按统一 filetree 归档，包括：权重文件、核心指标文件、热图与 overlay 可视化、以及环境与版本快照。本闭环为后续 baseline\_full 与方法改动实验提供统一且可追溯的起点。
+
+\appendix
+\section{可复现性快照}
+\begin{itemize}
+  \item 环境文件：
+  \begin{lstlisting}
+01_env/env__conda.yml
+01_env/env__conda_explicit.txt
+01_env/env__pip_freeze.txt
+01_env/env__python.txt
+01_env/env__torch.txt
+01_env/env__runtime.txt
+01_env/env__platform_torch.txt
+  \end{lstlisting}
+
+  \item 若需重新生成快照，可执行：
+  \begin{lstlisting}
+conda env export > 01_env/env__conda.yml
+conda list --explicit > 01_env/env__conda_explicit.txt
+pip freeze --all > 01_env/env__pip_freeze.txt
+python -V > 01_env/env__python.txt
+python -c "import torch; print(torch.__version__)" > 01_env/env__torch.txt
+  \end{lstlisting}
+\end{itemize}
+
+\end{document}

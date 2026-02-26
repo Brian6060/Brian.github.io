@@ -1,0 +1,1 @@
+python: can't open file '/Users/dby051225/Desktop/GB Essay 2026/main.py': [Errno 2] No such file or directory

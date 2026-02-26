@@ -1,0 +1,7 @@
+Fill the exact commands you used for this A sanity run.
+
+train:
+python main.py --mode train --data RESC --model RD4AD --seed 42 ...
+
+test:
+python main.py --mode test --data RESC --model RD4AD --seed 42 ...

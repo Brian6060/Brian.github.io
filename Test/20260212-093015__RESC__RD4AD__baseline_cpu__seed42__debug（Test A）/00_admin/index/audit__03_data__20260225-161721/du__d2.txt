@@ -1,0 +1,4 @@
+ 20G	./BMAD/raw_zips
+ 21G	./BMAD/datasets
+ 41G	.
+ 41G	./BMAD

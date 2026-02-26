@@ -1,0 +1,45 @@
+/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug（Test A）/03_data
+└── BMAD
+    ├── datasets
+    │   ├── BraTS2021_slice
+    │   │   ├── test
+    │   │   ├── train
+    │   │   └── valid
+    │   ├── camelyon16_256
+    │   │   ├── test
+    │   │   ├── train
+    │   │   └── valid
+    │   ├── Chest-RSNA
+    │   │   ├── test
+    │   │   ├── train
+    │   │   └── val
+    │   ├── hist_DIY
+    │   │   ├── test
+    │   │   ├── train
+    │   │   └── valid
+    │   ├── OCT2017
+    │   │   ├── test
+    │   │   ├── train
+    │   │   └── val
+    │   ├── RESC
+    │   │   ├── reverse_distillation
+    │   │   ├── test
+    │   │   ├── train
+    │   │   └── val
+    │   ├── RESC__vis_b1_80
+    │   │   ├── test
+    │   │   ├── train
+    │   │   └── val
+    │   └── RESC__vis_b2_20
+    │       ├── test
+    │       ├── train
+    │       └── val
+    └── raw_zips
+        ├── Brain_AD.zip
+        ├── Chest-AD.zip
+        ├── Histopathology_AD.zip
+        ├── Liver_AD.zip
+        ├── Retina_OCT2017_AD.zip
+        └── Retina_RESC_AD.zip
+
+37 directories, 6 files

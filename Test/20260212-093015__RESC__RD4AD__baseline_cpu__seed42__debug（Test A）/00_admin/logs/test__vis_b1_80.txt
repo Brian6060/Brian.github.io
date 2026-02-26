@@ -1,0 +1,70 @@
+/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/02_src/BMAD/anomalib/src/anomalib/config/config.py:275: UserWarning: config.project.unique_dir is set to False. This does not ensure that your results will be written in an empty directory and you may overwrite files.
+  warn(
+Global seed set to 42
+/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/02_src/BMAD/anomalib/src/anomalib/data/utils/transform.py:106: UserWarning: Argument(s) 'always_apply' are not valid for transform Resize
+  transforms_list.append(A.Resize(height=resize_height, width=resize_width, always_apply=True))
+/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:36: UserWarning: Metric `PrecisionRecallCurve` will save all targets and predictions in buffer. For large datasets this may lead to large memory footprint.
+  warnings.warn(*args, **kwargs)
+FeatureExtractor is deprecated. Use TimmFeatureExtractor instead. Both FeatureExtractor and TimmFeatureExtractor will be removed in a future release.
+/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/02_src/BMAD/anomalib/src/anomalib/utils/callbacks/__init__.py:142: UserWarning: Export option: None not found. Defaulting to no model export
+  warnings.warn(f"Export option: {config.optimization.export_mode} not found. Defaulting to no model export")
+/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py:55: LightningDeprecationWarning: Setting `Trainer(resume_from_checkpoint=)` is deprecated in v1.5 and will be removed in v2.0. Please pass `Trainer.fit(ckpt_path=)` directly instead.
+  rank_zero_deprecation(
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+`Trainer(limit_train_batches=1.0)` was configured so 100% of the batches per epoch will be used..
+`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..
+`Trainer(limit_test_batches=1.0)` was configured so 100% of the batches will be used..
+`Trainer(limit_predict_batches=1.0)` was configured so 100% of the batches will be used..
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/02_src/BMAD/anomalib/src/anomalib/data/folder.py:91: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  samples["mask_path"].fillna("", inplace=True)
+/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/02_src/BMAD/anomalib/src/anomalib/data/folder.py:91: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  samples["mask_path"].fillna("", inplace=True)
+/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:36: UserWarning: Metric `ROC` will save all targets and predictions in buffer. For large datasets this may lead to large memory footprint.
+  warnings.warn(*args, **kwargs)
+/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:224: PossibleUserWarning: The dataloader, test_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+Testing: 0it [00:00, ?it/s]Testing:   0%|          | 0/80 [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/80 [00:00<?, ?it/s]Testing DataLoader 0:   1%|▏         | 1/80 [00:00<00:40,  1.93it/s]Testing DataLoader 0:   2%|▎         | 2/80 [00:00<00:34,  2.27it/s]Testing DataLoader 0:   4%|▍         | 3/80 [00:01<00:31,  2.43it/s]Testing DataLoader 0:   5%|▌         | 4/80 [00:01<00:29,  2.57it/s]Testing DataLoader 0:   6%|▋         | 5/80 [00:01<00:28,  2.66it/s]Testing DataLoader 0:   8%|▊         | 6/80 [00:02<00:27,  2.72it/s]Testing DataLoader 0:   9%|▉         | 7/80 [00:02<00:26,  2.77it/s]Testing DataLoader 0:  10%|█         | 8/80 [00:02<00:25,  2.79it/s]Testing DataLoader 0:  11%|█▏        | 9/80 [00:03<00:25,  2.82it/s]Testing DataLoader 0:  12%|█▎        | 10/80 [00:03<00:24,  2.84it/s]Testing DataLoader 0:  14%|█▍        | 11/80 [00:03<00:24,  2.86it/s]Testing DataLoader 0:  15%|█▌        | 12/80 [00:04<00:23,  2.87it/s]Testing DataLoader 0:  16%|█▋        | 13/80 [00:04<00:23,  2.89it/s]Testing DataLoader 0:  18%|█▊        | 14/80 [00:04<00:22,  2.90it/s]Testing DataLoader 0:  19%|█▉        | 15/80 [00:05<00:22,  2.91it/s]Testing DataLoader 0:  20%|██        | 16/80 [00:05<00:21,  2.91it/s]Testing DataLoader 0:  21%|██▏       | 17/80 [00:05<00:21,  2.92it/s]Testing DataLoader 0:  22%|██▎       | 18/80 [00:06<00:21,  2.91it/s]Testing DataLoader 0:  24%|██▍       | 19/80 [00:06<00:21,  2.88it/s]Testing DataLoader 0:  25%|██▌       | 20/80 [00:06<00:20,  2.87it/s]Testing DataLoader 0:  26%|██▋       | 21/80 [00:07<00:20,  2.86it/s]Testing DataLoader 0:  28%|██▊       | 22/80 [00:07<00:20,  2.86it/s]Testing DataLoader 0:  29%|██▉       | 23/80 [00:08<00:20,  2.84it/s]Testing DataLoader 0:  30%|███       | 24/80 [00:08<00:19,  2.84it/s]Testing DataLoader 0:  31%|███▏      | 25/80 [00:08<00:19,  2.84it/s]Testing DataLoader 0:  32%|███▎      | 26/80 [00:09<00:19,  2.83it/s]Testing DataLoader 0:  34%|███▍      | 27/80 [00:09<00:19,  2.77it/s]Testing DataLoader 0:  35%|███▌      | 28/80 [00:10<00:18,  2.77it/s]Testing DataLoader 0:  36%|███▋      | 29/80 [00:10<00:18,  2.77it/s]Testing DataLoader 0:  38%|███▊      | 30/80 [00:10<00:18,  2.76it/s]Testing DataLoader 0:  39%|███▉      | 31/80 [00:11<00:17,  2.75it/s]Testing DataLoader 0:  40%|████      | 32/80 [00:11<00:17,  2.75it/s]Testing DataLoader 0:  41%|████▏     | 33/80 [00:12<00:17,  2.75it/s]Testing DataLoader 0:  42%|████▎     | 34/80 [00:12<00:16,  2.74it/s]Testing DataLoader 0:  44%|████▍     | 35/80 [00:12<00:16,  2.74it/s]Testing DataLoader 0:  45%|████▌     | 36/80 [00:13<00:16,  2.72it/s]Testing DataLoader 0:  46%|████▋     | 37/80 [00:13<00:15,  2.71it/s]Testing DataLoader 0:  48%|████▊     | 38/80 [00:14<00:15,  2.71it/s]Testing DataLoader 0:  49%|████▉     | 39/80 [00:14<00:15,  2.71it/s]Testing DataLoader 0:  50%|█████     | 40/80 [00:14<00:14,  2.71it/s]Testing DataLoader 0:  51%|█████▏    | 41/80 [00:15<00:14,  2.71it/s]Testing DataLoader 0:  52%|█████▎    | 42/80 [00:15<00:14,  2.70it/s]Testing DataLoader 0:  54%|█████▍    | 43/80 [00:16<00:13,  2.68it/s]Testing DataLoader 0:  55%|█████▌    | 44/80 [00:16<00:13,  2.67it/s]Testing DataLoader 0:  56%|█████▋    | 45/80 [00:16<00:13,  2.67it/s]Testing DataLoader 0:  57%|█████▊    | 46/80 [00:17<00:12,  2.67it/s]Testing DataLoader 0:  59%|█████▉    | 47/80 [00:17<00:12,  2.67it/s]Testing DataLoader 0:  60%|██████    | 48/80 [00:17<00:11,  2.67it/s]Testing DataLoader 0:  61%|██████▏   | 49/80 [00:18<00:11,  2.66it/s]Testing DataLoader 0:  62%|██████▎   | 50/80 [00:18<00:11,  2.66it/s]Testing DataLoader 0:  64%|██████▍   | 51/80 [00:19<00:10,  2.66it/s]Testing DataLoader 0:  65%|██████▌   | 52/80 [00:19<00:10,  2.66it/s]Testing DataLoader 0:  66%|██████▋   | 53/80 [00:19<00:10,  2.66it/s]Testing DataLoader 0:  68%|██████▊   | 54/80 [00:20<00:09,  2.65it/s]Testing DataLoader 0:  69%|██████▉   | 55/80 [00:20<00:09,  2.64it/s]Testing DataLoader 0:  70%|███████   | 56/80 [00:21<00:09,  2.64it/s]Testing DataLoader 0:  71%|███████▏  | 57/80 [00:21<00:08,  2.64it/s]Testing DataLoader 0:  72%|███████▎  | 58/80 [00:21<00:08,  2.64it/s]Testing DataLoader 0:  74%|███████▍  | 59/80 [00:22<00:07,  2.64it/s]Testing DataLoader 0:  75%|███████▌  | 60/80 [00:22<00:07,  2.63it/s]Testing DataLoader 0:  76%|███████▋  | 61/80 [00:23<00:07,  2.62it/s]Testing DataLoader 0:  78%|███████▊  | 62/80 [00:23<00:06,  2.62it/s]Testing DataLoader 0:  79%|███████▉  | 63/80 [00:24<00:06,  2.62it/s]Testing DataLoader 0:  80%|████████  | 64/80 [00:24<00:06,  2.62it/s]Testing DataLoader 0:  81%|████████▏ | 65/80 [00:24<00:05,  2.62it/s]Testing DataLoader 0:  82%|████████▎ | 66/80 [00:25<00:05,  2.61it/s]Testing DataLoader 0:  84%|████████▍ | 67/80 [00:25<00:04,  2.61it/s]Testing DataLoader 0:  85%|████████▌ | 68/80 [00:26<00:04,  2.61it/s]Testing DataLoader 0:  86%|████████▋ | 69/80 [00:26<00:04,  2.61it/s]Testing DataLoader 0:  88%|████████▊ | 70/80 [00:26<00:03,  2.61it/s]Testing DataLoader 0:  89%|████████▉ | 71/80 [00:27<00:03,  2.61it/s]Testing DataLoader 0:  90%|█████████ | 72/80 [00:27<00:03,  2.62it/s]Testing DataLoader 0:  91%|█████████▏| 73/80 [00:27<00:02,  2.61it/s]Testing DataLoader 0:  92%|█████████▎| 74/80 [00:28<00:02,  2.61it/s]Testing DataLoader 0:  94%|█████████▍| 75/80 [00:28<00:01,  2.61it/s]Testing DataLoader 0:  95%|█████████▌| 76/80 [00:29<00:01,  2.61it/s]Testing DataLoader 0:  96%|█████████▋| 77/80 [00:29<00:01,  2.61it/s]Testing DataLoader 0:  98%|█████████▊| 78/80 [00:29<00:00,  2.61it/s]Testing DataLoader 0:  99%|█████████▉| 79/80 [00:30<00:00,  2.61it/s]Testing DataLoader 0: 100%|██████████| 80/80 [00:30<00:00,  2.61it/s]Traceback (most recent call last):
+  File "/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/02_src/BMAD/anomalib/tools/test.py", line 64, in <module>
+    test()
+  File "/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/02_src/BMAD/anomalib/tools/test.py", line 61, in test
+    trainer.test(model=model, datamodule=datamodule)
+  File "/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 794, in test
+    return call._call_and_handle_interrupt(
+  File "/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 38, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 842, in _test_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1112, in _run
+    results = self._run_stage()
+  File "/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1188, in _run_stage
+    return self._run_evaluate()
+  File "/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1228, in _run_evaluate
+    eval_loop_results = self._evaluation_loop.run()
+  File "/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 206, in run
+    output = self.on_run_end()
+  File "/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 198, in on_run_end
+    self._on_evaluation_end()
+  File "/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 262, in _on_evaluation_end
+    self.trainer._call_callback_hooks(hook_name, *args, **kwargs)
+  File "/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1394, in _call_callback_hooks
+    fn(self, self.lightning_module, *args, **kwargs)
+  File "/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/02_src/BMAD/anomalib/src/anomalib/utils/callbacks/visualizer/visualizer_metric.py", line 50, in on_test_end
+    img = np.frombuffer(fig.canvas.tostring_rgb(), dtype=np.uint8)
+AttributeError: 'FigureCanvasMac' object has no attribute 'tostring_rgb'. Did you mean: 'tostring_argb'?
+Testing DataLoader 0: 100%|██████████| 80/80 [00:32<00:00,  2.45it/s]

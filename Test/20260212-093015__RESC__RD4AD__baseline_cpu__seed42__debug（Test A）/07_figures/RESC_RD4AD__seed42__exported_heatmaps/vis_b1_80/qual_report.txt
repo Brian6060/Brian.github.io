@@ -1,0 +1,18 @@
+Total exported: 20
+Normal: 0  Abnormal: 20
+FP count (normal score > abnormal median 0.7759): 0
+FN count (abnormal score < normal p95 0.0000): 0
+
+Top-10 normal pseudo responses (score desc):
+
+Bottom-10 abnormal weak coverage (score asc):
+0.5749 area@0.5=0.0066  overlay__0073__8_47.png  src=8_47.png
+0.6355 area@0.5=0.0085  overlay__0077__9_35.png  src=9_35.png
+0.6393 area@0.5=0.0091  overlay__0066__5_117.png  src=5_117.png
+0.6591 area@0.5=0.0168  overlay__0071__8_30.png  src=8_30.png
+0.6850 area@0.5=0.0107  overlay__0060__3_56.png  src=3_56.png
+0.7469 area@0.5=0.0381  overlay__0067__5_73.png  src=5_73.png
+0.7516 area@0.5=0.0196  overlay__0074__8_86.png  src=8_86.png
+0.7544 area@0.5=0.0147  overlay__0062__4_109.png  src=4_109.png
+0.7628 area@0.5=0.0199  overlay__0076__9_30.png  src=9_30.png
+0.7723 area@0.5=0.0220  overlay__0068__5_86.png  src=5_86.png

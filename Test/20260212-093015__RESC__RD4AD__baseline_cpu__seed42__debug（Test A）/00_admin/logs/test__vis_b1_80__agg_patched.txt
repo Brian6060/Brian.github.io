@@ -1,0 +1,12 @@
+/Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+Traceback (most recent call last):
+  File "/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/02_src/BMAD/anomalib/tools/test.py", line 15, in <module>
+    from anomalib.utils.callbacks import get_callbacks
+  File "/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/02_src/BMAD/anomalib/src/anomalib/utils/callbacks/__init__.py", line 28, in <module>
+    from .visualizer import ImageVisualizerCallback, MetricVisualizerCallback
+  File "/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/02_src/BMAD/anomalib/src/anomalib/utils/callbacks/visualizer/__init__.py", line 8, in <module>
+    from .visualizer_metric import MetricVisualizerCallback
+  File "/Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/02_src/BMAD/anomalib/src/anomalib/utils/callbacks/visualizer/visualizer_metric.py", line 63
+    img = img.reshape(fig.canvas.get_width_height()[::-1] + (3,))
+IndentationError: unexpected indent

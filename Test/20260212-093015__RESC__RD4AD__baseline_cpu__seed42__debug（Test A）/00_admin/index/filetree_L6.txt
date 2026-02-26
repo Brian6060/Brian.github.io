@@ -1,0 +1,653 @@
+.
+├── 00_admin
+│   ├── archive_after_train.sh
+│   ├── conda_list__before_lightning_fix.txt
+│   ├── config__grep_RD4AD.txt
+│   ├── config__grep_RESC.txt
+│   ├── config__list.txt
+│   ├── data__bmad_root_ls.txt
+│   ├── export_heatmaps_v2.py
+│   ├── export_heatmaps.py
+│   ├── figures_index__20260224-145655.txt
+│   ├── filetree_L10.txt
+│   ├── filetree_L6.err
+│   ├── filetree_L6.txt
+│   ├── git__BMAD__commit.txt
+│   ├── git_commit__BMAD__20260224-145655.txt
+│   ├── git_commit.txt
+│   ├── git_status__BMAD__20260224-145655.txt
+│   ├── git_status.txt
+│   ├── logs_index__20260224-145655.txt
+│   ├── metrics
+│   │   └── compute_resc_metrics.py
+│   ├── patches
+│   │   └── visualizer.py.bak__20260224-151249
+│   ├── pip_freeze__before_lightning_fix.txt
+│   ├── run_dir.txt
+│   ├── summary__RESC__RD4AD__seed42__debug.txt
+│   └── vis
+│       ├── export_resc_vis_stream.py
+│       ├── export_resc_vis.py
+│       ├── make_resc_vis_subset.py
+│       ├── summarize_vis_qual_full.py
+│       └── summarize_vis_qual.py
+├── 01_env
+│   ├── env__conda_export__20260224-145655.yml
+│   ├── env__conda_gbessay_resc_rd4ad_cpu.yml
+│   ├── env__pip_freeze__20260224-145655.txt
+│   ├── env__pip_freeze.txt
+│   ├── env__platform_torch.txt
+│   ├── env__python__20260224-145655.txt
+│   ├── env__runtime.txt
+│   └── env__torch__20260224-145655.txt
+├── 02_src
+│   ├── BMAD
+│   │   ├── anomalib
+│   │   │   ├── README.md
+│   │   │   ├── requirements
+│   │   │   │   ├── base.txt
+│   │   │   │   ├── dev.txt
+│   │   │   │   ├── docs.txt
+│   │   │   │   ├── extras.txt
+│   │   │   │   └── openvino.txt
+│   │   │   ├── setup.py
+│   │   │   ├── src
+│   │   │   │   ├── anomalib
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── config
+│   │   │   │   │   ├── data
+│   │   │   │   │   ├── deploy
+│   │   │   │   │   ├── models
+│   │   │   │   │   ├── post_processing
+│   │   │   │   │   ├── pre_processing
+│   │   │   │   │   └── utils
+│   │   │   │   └── anomalib.egg-info
+│   │   │   │       ├── dependency_links.txt
+│   │   │   │       ├── entry_points.txt
+│   │   │   │       ├── PKG-INFO
+│   │   │   │       ├── requires.txt
+│   │   │   │       ├── SOURCES.txt
+│   │   │   │       └── top_level.txt
+│   │   │   ├── tests
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── helpers
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── aupro_reference.py
+│   │   │   │   │   ├── config.py
+│   │   │   │   │   ├── dataset.py
+│   │   │   │   │   ├── detection.py
+│   │   │   │   │   ├── dummy.py
+│   │   │   │   │   ├── inference.py
+│   │   │   │   │   ├── LICENSE
+│   │   │   │   │   ├── metrics.py
+│   │   │   │   │   ├── model.py
+│   │   │   │   │   └── shapes.py
+│   │   │   │   ├── nightly
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── models
+│   │   │   │   │   └── tools
+│   │   │   │   └── pre_merge
+│   │   │   │       ├── __init__.py
+│   │   │   │       ├── config
+│   │   │   │       ├── datasets
+│   │   │   │       ├── deploy
+│   │   │   │       ├── models
+│   │   │   │       ├── post_processing
+│   │   │   │       ├── pre_processing
+│   │   │   │       └── utils
+│   │   │   └── tools
+│   │   │       ├── benchmarking
+│   │   │       │   ├── __init__.py
+│   │   │       │   ├── benchmark_params.yaml
+│   │   │       │   ├── benchmark.py
+│   │   │       │   ├── README.md
+│   │   │       │   └── utils
+│   │   │       ├── hpo
+│   │   │       │   ├── __init__.py
+│   │   │       │   ├── configs
+│   │   │       │   └── sweep.py
+│   │   │       ├── inference
+│   │   │       │   ├── gradio_inference.py
+│   │   │       │   ├── lightning_inference.py
+│   │   │       │   ├── openvino_inference.py
+│   │   │       │   └── torch_inference.py
+│   │   │       ├── test.py
+│   │   │       └── train.py
+│   │   ├── config
+│   │   │   ├── bras2021_cfa_test.yaml
+│   │   │   ├── bras2021_cfa.yaml
+│   │   │   ├── bras2021_cflow_test.yaml
+│   │   │   ├── bras2021_cflow.yaml
+│   │   │   ├── bras2021_csflow.yaml
+│   │   │   ├── bras2021_cutpaste.yaml
+│   │   │   ├── bras2021_DeepSVDD.yaml
+│   │   │   ├── bras2021_draem_test.yaml
+│   │   │   ├── bras2021_draem.yaml
+│   │   │   ├── bras2021_fanogan.yaml
+│   │   │   ├── bras2021_ganomaly_test.yaml
+│   │   │   ├── bras2021_ganomaly.yaml
+│   │   │   ├── bras2021_MKD.yaml
+│   │   │   ├── bras2021_padim_resnet50_test.yaml
+│   │   │   ├── bras2021_padim_resnet50.yaml
+│   │   │   ├── bras2021_padim_test.yaml
+│   │   │   ├── bras2021_padim.yaml
+│   │   │   ├── bras2021_patchcore_resnet50_test.yaml
+│   │   │   ├── bras2021_patchcore_resnet50.yaml
+│   │   │   ├── bras2021_patchcore_test.yaml
+│   │   │   ├── bras2021_patchcore.yaml
+│   │   │   ├── bras2021_RD4AD_test.yaml
+│   │   │   ├── bras2021_RD4AD.yaml
+│   │   │   ├── bras2021_stfpm_resnet50_test.yaml
+│   │   │   ├── bras2021_stfpm_resnet50.yaml
+│   │   │   ├── bras2021_stfpm_test.yaml
+│   │   │   ├── bras2021_stfpm.yaml
+│   │   │   ├── bras2021_UTRAD.yaml
+│   │   │   ├── camelyon_cfa_test.yaml
+│   │   │   ├── camelyon_cfa.yaml
+│   │   │   ├── camelyon_cflow_test.yaml
+│   │   │   ├── camelyon_cflow.yaml
+│   │   │   ├── camelyon_csflow.yaml
+│   │   │   ├── camelyon_cutpaste.yaml
+│   │   │   ├── camelyon_DeepSVDD.yaml
+│   │   │   ├── camelyon_draem_test.yaml
+│   │   │   ├── camelyon_draem.yaml
+│   │   │   ├── camelyon_fanogan.yaml
+│   │   │   ├── camelyon_ganomaly_test.yaml
+│   │   │   ├── camelyon_ganomaly.yaml
+│   │   │   ├── camelyon_MKD.yaml
+│   │   │   ├── camelyon_padim_resnet50_test.yaml
+│   │   │   ├── camelyon_padim_resnet50.yaml
+│   │   │   ├── camelyon_padim_test.yaml
+│   │   │   ├── camelyon_padim.yaml
+│   │   │   ├── camelyon_patchcore_resnet50_test.yaml
+│   │   │   ├── camelyon_patchcore_resnet50.yaml
+│   │   │   ├── camelyon_patchcore_test.yaml
+│   │   │   ├── camelyon_patchcore.yaml
+│   │   │   ├── camelyon_RD4AD_test.yaml
+│   │   │   ├── camelyon_RD4AD.yaml
+│   │   │   ├── camelyon_stfpm_resnet50_test.yaml
+│   │   │   ├── camelyon_stfpm_resnet50.yaml
+│   │   │   ├── camelyon_stfpm_test.yaml
+│   │   │   ├── camelyon_stfpm.yaml
+│   │   │   ├── camelyon_UTRAD.yaml
+│   │   │   ├── chest_cfa_test.yaml
+│   │   │   ├── chest_cfa.yaml
+│   │   │   ├── chest_cflow_test.yaml
+│   │   │   ├── chest_cflow.yaml
+│   │   │   ├── chest_csflow.yaml
+│   │   │   ├── chest_cutpaste.yaml
+│   │   │   ├── chest_DeepSVDD.yaml
+│   │   │   ├── chest_draem_test.yaml
+│   │   │   ├── chest_draem.yaml
+│   │   │   ├── chest_fanogan.yaml
+│   │   │   ├── chest_ganomaly_test.yaml
+│   │   │   ├── chest_ganomaly.yaml
+│   │   │   ├── chest_MKD.yaml
+│   │   │   ├── chest_padim_resnet50_test.yaml
+│   │   │   ├── chest_padim_resnet50.yaml
+│   │   │   ├── chest_padim_test.yaml
+│   │   │   ├── chest_padim.yaml
+│   │   │   ├── chest_patchcore_resnet50.yaml
+│   │   │   ├── chest_patchcore_test.yaml
+│   │   │   ├── chest_patchcore.yaml
+│   │   │   ├── chest_RD4AD_test.yaml
+│   │   │   ├── chest_RD4AD.yaml
+│   │   │   ├── chest_stfpm_resnet50_test.yaml
+│   │   │   ├── chest_stfpm_resnet50.yaml
+│   │   │   ├── chest_stfpm_test.yaml
+│   │   │   ├── chest_stfpm.yaml
+│   │   │   ├── chest_UTRAD.yaml
+│   │   │   ├── liver_cfa_test.yaml
+│   │   │   ├── liver_cfa.yaml
+│   │   │   ├── liver_cflow_test.yaml
+│   │   │   ├── liver_cflow.yaml
+│   │   │   ├── liver_csflow.yaml
+│   │   │   ├── liver_cutpaste.yaml
+│   │   │   ├── liver_DeepSVDD.yaml
+│   │   │   ├── liver_draem_test.yaml
+│   │   │   ├── liver_draem.yaml
+│   │   │   ├── liver_fanogan.yaml
+│   │   │   ├── liver_ganomaly_test.yaml
+│   │   │   ├── liver_ganomaly.yaml
+│   │   │   ├── liver_MKD.yaml
+│   │   │   ├── liver_padim_resnet50.yaml
+│   │   │   ├── liver_padim_test.yaml
+│   │   │   ├── liver_padim.yaml
+│   │   │   ├── liver_patchcore_resnet50_test.yaml
+│   │   │   ├── liver_patchcore_resnet50.yaml
+│   │   │   ├── liver_patchcore_test.yaml
+│   │   │   ├── liver_patchcore.yaml
+│   │   │   ├── liver_RD4AD_test.yaml
+│   │   │   ├── liver_RD4AD.yaml
+│   │   │   ├── liver_stfpm_resnet50_test.yaml
+│   │   │   ├── liver_stfpm_resnet50.yaml
+│   │   │   ├── liver_stfpm_test.yaml
+│   │   │   ├── liver_stfpm.yaml
+│   │   │   ├── liver_UTRAD.yaml
+│   │   │   ├── OCT2017_cfa_test.yaml
+│   │   │   ├── OCT2017_cfa.yaml
+│   │   │   ├── OCT2017_cflow_test.yaml
+│   │   │   ├── OCT2017_cflow.yaml
+│   │   │   ├── OCT2017_csflow.yaml
+│   │   │   ├── OCT2017_cutpaste.yaml
+│   │   │   ├── OCT2017_DeepSVDD.yaml
+│   │   │   ├── OCT2017_draem_test.yaml
+│   │   │   ├── OCT2017_draem.yaml
+│   │   │   ├── OCT2017_fanogan.yaml
+│   │   │   ├── OCT2017_ganomaly_test.yaml
+│   │   │   ├── OCT2017_ganomaly.yaml
+│   │   │   ├── OCT2017_MKD.yaml
+│   │   │   ├── OCT2017_padim_resnet50_test.yaml
+│   │   │   ├── OCT2017_padim_resnet50.yaml
+│   │   │   ├── OCT2017_padim_test.yaml
+│   │   │   ├── OCT2017_padim.yaml
+│   │   │   ├── OCT2017_patchcore_resnet50_test.yaml
+│   │   │   ├── OCT2017_patchcore_resnet50.yaml
+│   │   │   ├── OCT2017_patchcore_test.yaml
+│   │   │   ├── OCT2017_patchcore.yaml
+│   │   │   ├── OCT2017_RD4AD_test.yaml
+│   │   │   ├── OCT2017_RD4AD.yaml
+│   │   │   ├── OCT2017_STFPM_resnet50_test.yaml
+│   │   │   ├── OCT2017_STFPM_resnet50.yaml
+│   │   │   ├── OCT2017_STFPM_test.yaml
+│   │   │   ├── OCT2017_STFPM.yaml
+│   │   │   ├── OCT2017_UTRAD.yaml
+│   │   │   ├── RESC_cfa_test.yaml
+│   │   │   ├── RESC_cfa.yaml
+│   │   │   ├── RESC_cflow_test.yaml
+│   │   │   ├── RESC_cflow.yaml
+│   │   │   ├── RESC_csflow.yaml
+│   │   │   ├── RESC_cutpaste.yaml
+│   │   │   ├── RESC_DeepSVDD.yaml
+│   │   │   ├── RESC_draem_test.yaml
+│   │   │   ├── RESC_draem.yaml
+│   │   │   ├── RESC_fanogan.yaml
+│   │   │   ├── RESC_ganomaly_test.yaml
+│   │   │   ├── RESC_ganomaly.yaml
+│   │   │   ├── RESC_MKD.yaml
+│   │   │   ├── RESC_padim_resnet50_test.yaml
+│   │   │   ├── RESC_padim_resnet50.yaml
+│   │   │   ├── RESC_padim_test.yaml
+│   │   │   ├── RESC_padim.yaml
+│   │   │   ├── RESC_patchcore_resnet50_test.yaml
+│   │   │   ├── RESC_patchcore_resnet50.yaml
+│   │   │   ├── RESC_patchcore_test.yaml
+│   │   │   ├── RESC_patchcore.yaml
+│   │   │   ├── RESC_RD4AD_test.yaml
+│   │   │   ├── RESC_RD4AD.yaml
+│   │   │   ├── RESC_stfpm_resnet50_test.yaml
+│   │   │   ├── RESC_stfpm_resnet50.yaml
+│   │   │   ├── RESC_stfpm_test.yaml
+│   │   │   ├── RESC_stfpm.yaml
+│   │   │   └── RESC_UTRAD.yaml
+│   │   ├── cs-flow
+│   │   │   ├── config.py
+│   │   │   ├── data.py
+│   │   │   ├── evaluate.py
+│   │   │   ├── extract_features.py
+│   │   │   ├── freia_funcs.py
+│   │   │   ├── main.py
+│   │   │   ├── model.py
+│   │   │   ├── Readme.md
+│   │   │   ├── requirements.txt
+│   │   │   ├── train.py
+│   │   │   └── utils.py
+│   │   ├── data -> /Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/03_data/BMAD/datasets
+│   │   ├── data_processing
+│   │   │   ├── brain
+│   │   │   │   ├── brain.py
+│   │   │   │   └── bras.py
+│   │   │   ├── chest
+│   │   │   │   ├── clean_data.py
+│   │   │   │   ├── stage_2_detailed_class_info.csv
+│   │   │   │   ├── stage_2_sample_submission.csv
+│   │   │   │   └── stage_2_train_labels.csv
+│   │   │   ├── histopathology
+│   │   │   │   ├── coords
+│   │   │   │   │   ├── test_bad.txt
+│   │   │   │   │   ├── test_good.txt
+│   │   │   │   │   ├── train_good.txt
+│   │   │   │   │   ├── valid_bad.txt
+│   │   │   │   │   └── valid_good.txt
+│   │   │   │   ├── preprocess
+│   │   │   │   │   └── patch_gen.py
+│   │   │   │   └── README.md
+│   │   │   ├── liver
+│   │   │   │   ├── liver_data_preprocessing.py
+│   │   │   │   ├── liver.py
+│   │   │   │   └── README.md
+│   │   │   └── retina
+│   │   │       └── count_data.py
+│   │   ├── Deep-SVDD
+│   │   │   ├── __init__.py
+│   │   │   ├── base
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── base_dataset.py
+│   │   │   │   ├── base_net.py
+│   │   │   │   ├── base_trainer.py
+│   │   │   │   └── torchvision_dataset.py
+│   │   │   ├── data.py
+│   │   │   ├── datasets
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── cifar10.py
+│   │   │   │   ├── main.py
+│   │   │   │   ├── mnist.py
+│   │   │   │   ├── preprocessing.py
+│   │   │   │   └── resc.py
+│   │   │   ├── deepSVDD.py
+│   │   │   ├── main.py
+│   │   │   ├── networks
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── cifar10_LeNet_elu.py
+│   │   │   │   ├── cifar10_LeNet.py
+│   │   │   │   ├── main.py
+│   │   │   │   └── mnist_LeNet.py
+│   │   │   ├── optim
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── ae_trainer.py
+│   │   │   │   └── deepSVDD_trainer.py
+│   │   │   ├── train.sh
+│   │   │   └── utils
+│   │   │       ├── __init__.py
+│   │   │       ├── collect_results.py
+│   │   │       ├── config.py
+│   │   │       └── visualization
+│   │   │           └── plot_images_grid.py
+│   │   ├── f-AnoGAN
+│   │   │   ├── fanogan
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── save_compared_images.py
+│   │   │   │   ├── test_anomaly_detection.py
+│   │   │   │   ├── train_encoder_izif.py
+│   │   │   │   └── train_wgangp.py
+│   │   │   ├── images
+│   │   │   │   ├── mnist_anomaly_scores.png
+│   │   │   │   ├── mnist_compared_images.png
+│   │   │   │   ├── mnist_pr_auc.png
+│   │   │   │   └── mnist_roc_auc.png
+│   │   │   ├── LICENSE
+│   │   │   ├── mnist
+│   │   │   │   ├── model.py
+│   │   │   │   ├── save_compared_images.py
+│   │   │   │   ├── test_anomaly_detection.py
+│   │   │   │   ├── tools.py
+│   │   │   │   ├── train_encoder_izif.py
+│   │   │   │   └── train_wgangp.py
+│   │   │   ├── mvtec_ad
+│   │   │   │   ├── model.py
+│   │   │   │   ├── save_compared_images.py
+│   │   │   │   ├── test_anomaly_detection.py
+│   │   │   │   ├── train_encoder_izif.py
+│   │   │   │   └── train_wgangp.py
+│   │   │   ├── paper
+│   │   │   │   └── f-AnoGAN.pdf
+│   │   │   ├── README.md
+│   │   │   ├── setup.py
+│   │   │   └── your_own_dataset
+│   │   │       ├── data.py
+│   │   │       ├── fanogan
+│   │   │       │   ├── __init__.py
+│   │   │       │   ├── save_compared_images.py
+│   │   │       │   ├── test_anomaly_detection.py
+│   │   │       │   ├── train_encoder_izif.py
+│   │   │       │   └── train_wgangp.py
+│   │   │       ├── run.sh
+│   │   │       ├── save_compared_images.py
+│   │   │       ├── test_anomaly_detection.py
+│   │   │       ├── train_encoder_izif.py
+│   │   │       └── train_wgangp.py
+│   │   ├── imgs
+│   │   │   ├── BMAD.png
+│   │   │   ├── Brain-BENCHMARK.png
+│   │   │   ├── chest-benchmark.png
+│   │   │   ├── F1.png
+│   │   │   ├── his-benchmark.png
+│   │   │   ├── LIVER-BENCHMARK.png
+│   │   │   ├── new-table.JPG
+│   │   │   ├── Retinal-oct.png
+│   │   │   ├── table.png
+│   │   │   ├── Table2.png
+│   │   │   ├── table3.png
+│   │   │   └── whole-vision.png
+│   │   ├── main.py
+│   │   ├── MKD
+│   │   │   ├── configs
+│   │   │   │   └── config.yaml
+│   │   │   ├── data.py
+│   │   │   ├── Images
+│   │   │   │   └── vgg_network_last.png
+│   │   │   ├── loss_functions.py
+│   │   │   ├── models
+│   │   │   │   └── network.py
+│   │   │   ├── README.md
+│   │   │   ├── requirements.txt
+│   │   │   ├── test_functions.py
+│   │   │   ├── test.py
+│   │   │   ├── train.py
+│   │   │   └── utils.py
+│   │   ├── pytorch-cutpaste
+│   │   │   ├── cutpaste.py
+│   │   │   ├── data.py
+│   │   │   ├── dataset.py
+│   │   │   ├── density.py
+│   │   │   ├── doc
+│   │   │   │   └── imgs
+│   │   │   │       ├── 3way_acc.png
+│   │   │   │       ├── 3way_eval_auc.png
+│   │   │   │       ├── 3way_loss.png
+│   │   │   │       ├── author_vs_thisimpl_CutPaste_3way.png
+│   │   │   │       ├── author_vs_thisimpl_CutPaste_scar.png
+│   │   │   │       ├── author_vs_thisimpl_CutPaste.png
+│   │   │   │       ├── compare_all.png
+│   │   │   │       ├── normal_acc.png
+│   │   │   │       ├── normal_eval_auc.png
+│   │   │   │       ├── normal_loss.png
+│   │   │   │       ├── scar_acc.png
+│   │   │   │       ├── scar_eval_auc.png
+│   │   │   │       └── scar_loss.png
+│   │   │   ├── eval
+│   │   │   │   └── models_perf.csv
+│   │   │   ├── eval.py
+│   │   │   ├── model.py
+│   │   │   ├── README.md
+│   │   │   ├── requirements.txt
+│   │   │   ├── run_training.py
+│   │   │   ├── run.sh
+│   │   │   └── utils.py
+│   │   ├── README.md
+│   │   └── UTRAD
+│   │       ├── data.py
+│   │       ├── datasets.py
+│   │       ├── main.py
+│   │       ├── models.py
+│   │       ├── options.py
+│   │       ├── README.md
+│   │       └── valid.py
+│   ├── BMAD.tar.gz
+│   └── watch_upload.py
+├── 03_data
+│   └── BMAD
+│       ├── datasets
+│       │   ├── __MACOSX
+│       │   │   ├── ._camelyon16_256
+│       │   │   └── camelyon16_256
+│       │   │       ├── ._test
+│       │   │       ├── ._train
+│       │   │       ├── ._valid
+│       │   │       ├── test
+│       │   │       ├── train
+│       │   │       └── valid
+│       │   ├── BraTS2021_slice
+│       │   │   ├── test
+│       │   │   │   ├── good
+│       │   │   │   └── Ungood
+│       │   │   ├── train
+│       │   │   │   └── good
+│       │   │   └── valid
+│       │   │       ├── good
+│       │   │       └── Ungood
+│       │   ├── camelyon16_256
+│       │   │   ├── test
+│       │   │   │   ├── good
+│       │   │   │   └── Ungood
+│       │   │   ├── train
+│       │   │   │   └── good
+│       │   │   └── valid
+│       │   │       ├── good
+│       │   │       └── Ungood
+│       │   ├── Chest-RSNA
+│       │   │   ├── test
+│       │   │   │   ├── good
+│       │   │   │   └── Ungood
+│       │   │   ├── train
+│       │   │   │   └── good
+│       │   │   └── val
+│       │   │       ├── good
+│       │   │       └── Ungood
+│       │   ├── hist_DIY
+│       │   │   ├── test
+│       │   │   │   ├── good
+│       │   │   │   └── ungood
+│       │   │   ├── train
+│       │   │   │   └── good
+│       │   │   └── valid
+│       │   │       ├── good
+│       │   │       └── ungood
+│       │   ├── OCT2017
+│       │   │   ├── test
+│       │   │   │   ├── good
+│       │   │   │   └── Ungood
+│       │   │   ├── train
+│       │   │   │   └── good
+│       │   │   └── val
+│       │   │       ├── good
+│       │   │       └── Ungood
+│       │   ├── RESC
+│       │   │   ├── reverse_distillation
+│       │   │   │   └── RESC
+│       │   │   ├── test
+│       │   │   │   ├── good
+│       │   │   │   └── ungood
+│       │   │   ├── train
+│       │   │   │   └── good
+│       │   │   └── val
+│       │   │       ├── good
+│       │   │       └── ungood
+│       │   ├── RESC__vis_b1_80
+│       │   │   ├── test
+│       │   │   │   ├── good
+│       │   │   │   └── ungood
+│       │   │   ├── train
+│       │   │   │   └── good -> /Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/03_data/BMAD/datasets/RESC/train/good
+│       │   │   └── val
+│       │   │       ├── good
+│       │   │       └── ungood
+│       │   └── RESC__vis_b2_20
+│       │       ├── test
+│       │       │   ├── good
+│       │       │   └── ungood
+│       │       ├── train
+│       │       │   └── good -> /Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/03_data/BMAD/datasets/RESC/train/good
+│       │       └── val
+│       │           ├── good
+│       │           └── ungood
+│       └── raw_zips
+├── 04_configs
+│   ├── diff__RESC_RD4AD__20260224-145655.patch
+│   ├── diff__RESC_RD4AD_test__20260224-145655.patch
+│   ├── orig__RESC_RD4AD_test.yaml
+│   ├── orig__RESC_RD4AD.yaml
+│   ├── patched__RESC_RD4AD_test.yaml
+│   ├── patched__RESC_RD4AD.yaml
+│   ├── RESC_RD4AD__final__20260224-145655.yaml
+│   └── RESC_RD4AD_test__final__20260224-145655.yaml
+├── 05_logs
+│   ├── RESC
+│   │   └── RD4AD
+│   │       ├── log_train__D-RESC__M-RD4AD__S-42.txt
+│   │       └── log_train__D-RESC__M-RD4AD__S-na.txt
+│   ├── reverse_distillation__RESC__run
+│   │   └── lightning_logs
+│   │       └── version_0
+│   │           ├── hparams.yaml
+│   │           └── metrics.csv
+│   ├── test__RESC__RD4AD__save_images_fast.log
+│   ├── test__RESC__RD4AD__save_images.log
+│   └── train__RESC__RD4AD__seed42__debug_local.log
+├── 06_outputs
+│   ├── checkpoints
+│   ├── metrics
+│   │   └── metrics__RESC__RD4AD__seed42__debug.csv
+│   ├── RESC
+│   │   └── RD4AD
+│   └── results
+│       ├── reverse_distillation
+│       │   └── RESC
+│       │       └── run
+│       │           ├── config__abs.yaml
+│       │           ├── config__final_test.yaml
+│       │           ├── config__patched_local_v2.yaml
+│       │           ├── config__patched_local.yaml
+│       │           ├── config__vis_b1_80.yaml
+│       │           ├── config__vis_b2_20.yaml
+│       │           ├── config_original.yaml
+│       │           ├── config.yaml
+│       │           ├── images
+│       │           ├── reverse_distillation
+│       │           └── weights
+│       └── reverse_distillation__RESC__run
+│           ├── config_original.yaml
+│           ├── config.yaml
+│           ├── images
+│           │   ├── vis_b1_80
+│           │   │   ├── abnormal
+│           │   │   ├── image_ROC.png
+│           │   │   ├── index__exported_heatmaps.txt
+│           │   │   ├── index__subset.txt
+│           │   │   ├── normal
+│           │   │   └── pixel_ROC.png
+│           │   └── vis_b2_20
+│           │       ├── abnormal
+│           │       ├── index__exported_heatmaps.txt
+│           │       ├── index__subset.txt
+│           │       └── normal
+│           └── weights
+├── 07_figures
+│   └── RESC_RD4AD_seed42_debug
+│       └── exported_heatmaps
+│           ├── anomaly_abnormal_00.png
+│           ├── anomaly_abnormal_01.png
+│           ├── anomaly_abnormal_02.png
+│           ├── anomaly_abnormal_03.png
+│           ├── anomaly_abnormal_04.png
+│           ├── anomaly_normal_00.png
+│           ├── anomaly_normal_01.png
+│           ├── anomaly_normal_02.png
+│           ├── anomaly_normal_03.png
+│           ├── anomaly_normal_04.png
+│           ├── index__exported_heatmaps.txt
+│           ├── overlay_abnormal_00.png
+│           ├── overlay_abnormal_01.png
+│           ├── overlay_abnormal_02.png
+│           ├── overlay_abnormal_03.png
+│           ├── overlay_abnormal_04.png
+│           ├── overlay_normal_00.png
+│           ├── overlay_normal_01.png
+│           ├── overlay_normal_02.png
+│           ├── overlay_normal_03.png
+│           └── overlay_normal_04.png
+├── 99_tmp
+├── Report
+│   ├── Report.aux
+│   ├── Report.fdb_latexmk
+│   ├── Report.fls
+│   ├── Report.log
+│   ├── Report.out
+│   ├── Report.pdf
+│   ├── Report.synctex.gz
+│   ├── Report.tex
+│   └── Report.xdv
+├── watch_copy_percent.sh
+└── watch_upload.py
+
+191 directories, 460 files

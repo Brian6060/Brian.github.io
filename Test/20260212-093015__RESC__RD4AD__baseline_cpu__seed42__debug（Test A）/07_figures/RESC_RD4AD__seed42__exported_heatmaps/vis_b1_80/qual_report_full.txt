@@ -1,0 +1,27 @@
+Total overlays: normal=40 abnormal=40 total=80
+FP count (normal score > abnormal median 0.7857): 10
+FN count (abnormal score < normal p95 0.8559): 30
+
+Top-10 normal pseudo responses (score desc):
+0.8883 area@0.5=0.0532  overlay__0023__2_125.png  src=2_125.png
+0.8659 area@0.5=0.0817  overlay__0020__15_88.png  src=15_88.png
+0.8554 area@0.5=0.0434  overlay__0017__15_118.png  src=15_118.png
+0.8433 area@0.5=0.0751  overlay__0024__2_17.png  src=2_17.png
+0.8430 area@0.5=0.0855  overlay__0036__6_99.png  src=6_99.png
+0.8330 area@0.5=0.0571  overlay__0015__14_72.png  src=14_72.png
+0.8067 area@0.5=0.0266  overlay__0004__12_104.png  src=12_104.png
+0.7972 area@0.5=0.0825  overlay__0003__11_17.png  src=11_17.png
+0.7918 area@0.5=0.0256  overlay__0037__7_103.png  src=7_103.png
+0.7908 area@0.5=0.0430  overlay__0005__12_22.png  src=12_22.png
+
+Bottom-10 abnormal weak coverage (score asc):
+0.5293 area@0.5=0.0048  overlay__0056__2_87.png  src=2_87.png
+0.5749 area@0.5=0.0066  overlay__0073__8_47.png  src=8_47.png
+0.6355 area@0.5=0.0085  overlay__0077__9_35.png  src=9_35.png
+0.6393 area@0.5=0.0091  overlay__0066__5_117.png  src=5_117.png
+0.6496 area@0.5=0.0113  overlay__0046__12_55.png  src=12_55.png
+0.6591 area@0.5=0.0168  overlay__0071__8_30.png  src=8_30.png
+0.6733 area@0.5=0.0102  overlay__0057__2_88.png  src=2_88.png
+0.6850 area@0.5=0.0107  overlay__0060__3_56.png  src=3_56.png
+0.7078 area@0.5=0.0179  overlay__0048__13_97.png  src=13_97.png
+0.7112 area@0.5=0.0148  overlay__0041__10_47.png  src=10_47.png

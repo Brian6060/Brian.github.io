@@ -1,0 +1,13 @@
+ 68K	./BMAD/UTRAD
+ 96K	./BMAD/cs-flow
+148K	./BMAD/Deep-SVDD
+676K	./BMAD/config
+912K	./BMAD/pytorch-cutpaste
+1.8M	./BMAD/anomalib
+1.9M	./BMAD/MKD
+3.4M	./BMAD/data_processing
+6.5M	./BMAD/f-AnoGAN
+ 17M	./BMAD/imgs
+ 27M	./BMAD/.git
+ 59M	./BMAD
+113M	.

@@ -1,0 +1,11 @@
+total 42686192
+drwxr-xr-x   5 dby051225  staff   160B  2 25 16:29 _trash
+drwxr-xr-x  10 dby051225  staff   320B  2 25 16:29 .
+drwxr-xr-x   5 dby051225  staff   160B  2 25 13:01 ..
+-rw-r--r--@  1 dby051225  staff   6.0K  2 25 16:29 .DS_Store
+-rw-r--r--   1 dby051225  staff   382M  2 18  2025 Brain_AD.zip
+-rw-r--r--@  1 dby051225  staff   8.9G  2 13 12:05 Chest-AD.zip
+-rw-r--r--   1 dby051225  staff   853M  2 13 09:24 Histopathology_AD.zip
+-rw-r--r--@  1 dby051225  staff    38M  2 13 08:42 Liver_AD.zip
+-rw-r--r--@  1 dby051225  staff   8.2G  2 13 10:41 Retina_OCT2017_AD.zip
+-rw-r--r--@  1 dby051225  staff   2.0G  2 13 11:17 Retina_RESC_AD.zip

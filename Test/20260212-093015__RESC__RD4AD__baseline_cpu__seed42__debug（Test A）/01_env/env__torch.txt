@@ -1,0 +1,4 @@
+platform: macOS-15.7.4-x86_64-i386-64bit
+python: 3.10.19 | packaged by conda-forge | (main, Jan 26 2026, 23:55:25) [Clang 19.1.7 ]
+torch: 2.2.2
+cuda_available: False

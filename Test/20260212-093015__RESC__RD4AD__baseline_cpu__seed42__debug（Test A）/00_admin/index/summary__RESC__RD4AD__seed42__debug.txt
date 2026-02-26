@@ -1,0 +1,6 @@
+metrics_csv: /Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug/06_outputs/metrics/metrics__RESC__RD4AD__seed42__debug.csv
+epoch: 3.0
+step: 6447.0
+image_AUROC: 0.7157143354415894
+pixel_AUROC: 0.942051649093628
+pixel_Dice: 0.54648756980896
