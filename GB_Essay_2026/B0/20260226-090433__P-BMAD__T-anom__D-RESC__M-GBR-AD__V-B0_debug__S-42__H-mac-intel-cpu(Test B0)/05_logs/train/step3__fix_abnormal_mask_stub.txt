@@ -1,0 +1,5 @@
+PATCHED CFG: /Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/04_configs/RESC__GBR-AD__B0_debug.yaml
+orig abnormal_dir = /Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug（Test A）/03_data/BMAD/datasets/RESC/test/ungood
+abnormal_stub = /Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/03_data/__abnormal_stub__/RESC count = 764
+mask_label = /Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/03_data/__mask_stub__/RESC/label count = 764
+image_size used = [224, 224]

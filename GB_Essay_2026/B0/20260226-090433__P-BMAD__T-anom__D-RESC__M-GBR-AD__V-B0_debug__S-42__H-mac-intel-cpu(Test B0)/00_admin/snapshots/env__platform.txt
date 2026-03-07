@@ -1,0 +1,7 @@
+platform: macOS-15.7.4-x86_64-i386-64bit
+system: Darwin
+release: 24.6.0
+version: Darwin Kernel Version 24.6.0: Mon Dec  8 02:35:53 PST 2025; root:xnu-11417.140.69.705.5~1/RELEASE_X86_64
+machine: x86_64
+processor: i386
+python_executable: /Users/dby051225/opt/miniconda3/envs/gbessay_resc_rd4ad_cpu/bin/python

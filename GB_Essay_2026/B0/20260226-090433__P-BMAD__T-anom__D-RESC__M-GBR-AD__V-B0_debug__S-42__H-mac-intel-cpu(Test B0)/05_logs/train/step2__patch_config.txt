@@ -1,0 +1,6 @@
+patched: /Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/04_configs/RESC__GBR-AD__B0_debug.yaml
+project.path: /Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/06_outputs/results/gbr_ad/RESC/run
+project.unique_dir: True
+seed: 42
+trainer: {'accelerator': 'cpu', 'max_epochs': 1, 'limit_train_batches': 5, 'limit_val_batches': 5, 'limit_test_batches': 5}
+data.num_workers: None

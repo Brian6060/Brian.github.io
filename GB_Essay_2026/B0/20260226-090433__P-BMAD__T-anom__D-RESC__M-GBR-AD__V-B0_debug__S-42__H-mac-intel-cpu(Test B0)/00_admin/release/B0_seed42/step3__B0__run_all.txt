@@ -1,0 +1,24 @@
+
+TRAIN RESC
+Training: 0it [00:00, ?it/s]Training:   0%|          | 0/3 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/3 [00:00<?, ?it/s] Epoch 0:  33%|███▎      | 1/3 [00:01<00:02,  1.24s/it]Epoch 0:  33%|███▎      | 1/3 [00:01<00:02,  1.24s/it, loss=nan]
+Validation: 0it [00:00, ?it/s][A
+Validation:   0%|          | 0/2 [00:00<?, ?it/s][A
+Validation DataLoader 0:   0%|          | 0/2 [00:00<?, ?it/s][A
+Validation DataLoader 0:  50%|█████     | 1/2 [00:01<00:01,  1.67s/it][AEpoch 0:  67%|██████▋   | 2/3 [00:04<00:02,  2.40s/it, loss=nan]
+Validation DataLoader 0: 100%|██████████| 2/2 [00:02<00:00,  1.12s/it][AEpoch 0: 100%|██████████| 3/3 [00:05<00:00,  1.79s/it, loss=nan]Epoch 0: 100%|██████████| 3/3 [00:06<00:00,  2.14s/it, loss=nan, pixel_F1Score=0.283, pixel_AUROC=0.841]
+                                                                      [AEpoch 0: 100%|██████████| 3/3 [00:06<00:00,  2.14s/it, loss=nan, pixel_F1Score=0.283, pixel_AUROC=0.841]Epoch 0: 100%|██████████| 3/3 [00:06<00:00,  2.33s/it, loss=nan, pixel_F1Score=0.283, pixel_AUROC=0.841]
+Testing: 0it [00:00, ?it/s]Testing:   0%|          | 0/2 [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/2 [00:00<?, ?it/s]Testing DataLoader 0:  50%|█████     | 1/2 [00:02<00:02,  2.82s/it]Testing DataLoader 0: 100%|██████████| 2/2 [00:03<00:00,  1.78s/it]Testing DataLoader 0: 100%|██████████| 2/2 [00:05<00:00,  2.59s/it]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│        image_AUROC        │    0.7700000405311584     │
+│       image_F1Score       │    0.8095238208770752     │
+│        pixel_AUROC        │    0.8406677842140198     │
+│       pixel_F1Score       │    0.2826694846153259     │
+└───────────────────────────┴───────────────────────────┘
+
+PICK CKPT RESC
+CKPT=/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/06_outputs/results/gbr_ad/RESC/run/gbr_ad/RESC/run.2026-03-06_15-49-31/weights/model.ckpt
+
+TEST RESC
+Testing: 0it [00:00, ?it/s]Testing:   0%|          | 0/2 [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/2 [00:00<?, ?it/s]Testing DataLoader 0:  50%|█████     | 1/2 [00:03<00:03,  3.49s/it]Testing DataLoader 0: 100%|██████████| 2/2 [00:04<00:00,  2.46s/it]

@@ -1,0 +1,1 @@
+Testing: 0it [00:00, ?it/s]Testing:   0%|          | 0/2 [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/2 [00:00<?, ?it/s]Testing DataLoader 0:  50%|█████     | 1/2 [00:03<00:03,  3.49s/it]Testing DataLoader 0: 100%|██████████| 2/2 [00:04<00:00,  2.46s/it]

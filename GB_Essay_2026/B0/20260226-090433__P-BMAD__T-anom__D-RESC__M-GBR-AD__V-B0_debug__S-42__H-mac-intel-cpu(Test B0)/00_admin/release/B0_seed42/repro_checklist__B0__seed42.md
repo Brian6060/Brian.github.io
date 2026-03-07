@@ -1,0 +1,35 @@
+# Reproducibility Checklist: B0 Seed 42
+
+- [x] Run directory:
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)`
+- [x] Environment snapshot paths (if present):
+- [x] Commands to regenerate environment snapshots:
+  - `conda env export -n gbessay_resc_rd4ad_cpu > 01_env/conda_env_export.yaml`
+  - `python -V > 01_env/python_version.txt`
+  - `pip freeze > 01_env/pip_freeze.txt`
+- [x] Config paths used:
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/04_configs/RESC__GBR-AD__B0_debug.yaml`
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/04_configs/OCT2017__GBR-AD__B0_debug.yaml`
+- [x] Scripts used:
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/00_admin/cmd/step2__b0_prepare.sh`
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/00_admin/cmd/step2__make_configs.py`
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/00_admin/cmd/step3__b0_run.sh`
+- [x] Log paths:
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/05_logs/train/train__B0__RESC__gbr_ad.txt`
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/05_logs/test/test__B0__RESC__gbr_ad.txt`
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/05_logs/train/train__B0__OCT2017__gbr_ad.txt`
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/05_logs/test/test__B0__OCT2017__gbr_ad.txt`
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/05_logs/step3__B0__run_all.txt`
+- [x] Output paths:
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/06_outputs/checkpoints/model__B0__RESC__seed42.ckpt`
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/06_outputs/metrics/metrics__B0__RESC__seed42.csv`
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/06_outputs/checkpoints/model__B0__OCT2017__seed42.ckpt`
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/06_outputs/metrics/metrics__B0__OCT2017__seed42.csv`
+  - `/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/06_outputs/metrics/summary__B0__seed42.csv`
+- [x] Exact commands to rerun Step3:
+  - `export RUN_DIR='/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)'`
+  - `export BMAD_DIR="$RUN_DIR/02_src/BMAD"`
+  - `export SEED=42`
+  - `bash "$RUN_DIR/00_admin/cmd/step3__b0_run.sh" | tee "$RUN_DIR/05_logs/step3__B0__run_all.txt"`
+- [x] Note:
+  - `num_workers` was forced to `0` in B0 configs due macOS shared-memory restrictions (`torch_shm_manager` permission issue).

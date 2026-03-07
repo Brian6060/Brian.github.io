@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{path}
+\title{B0 Final Report (Seed 42)}
+\author{GB Essay 2026}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Goal and Scope}
+B0 validates two layers: (1) factory integration for \texttt{gbr\_ad} in anomalib, and (2) a minimal train/test closed loop on one pixel-level dataset (RESC) and one image-level dataset (OCT2017), using debug-scale configurations and CPU execution.
+
+\section{Step Status (Step1--Step4)}
+\begin{itemize}
+\item Step1 (Factory): completed. \texttt{gbr\_ad} resolves to \texttt{GbrAdLightning} in model factory.
+\item Step2 (Data/config prep): completed. Stub datasets and debug configs were generated.
+\item Step3 (Train/test closed loop): completed with engineering compatibility fixes for macOS and environment constraints.
+\item Step4 (Summary/repro docs): completed.
+\end{itemize}
+
+Primary evidence paths:
+\begin{itemize}
+\item Summary CSV: \path{/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/06_outputs/metrics/summary__B0__seed42.csv}
+\item Evidence table: \path{/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/00_admin/step4/evidence__B0__seed42.md}
+\item Repro checklist: \path{/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/00_admin/step4/repro_checklist__B0__seed42.md}
+\end{itemize}
+
+\section{Metrics}
+The metrics table below is directly included from:
+\path{/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/00_admin/step4/latex_table__B0__seed42.tex}
+
+\input{latex_table__B0__seed42.tex}
+
+\section{Issues and Fixes}
+\begin{enumerate}
+\item Factory mapped \texttt{gbr\_ad} incorrectly.
+  \begin{itemize}
+  \item File: \path{/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/02_src/BMAD/anomalib/src/anomalib/models/__init__.py}
+  \item Fix: model factory route corrected to \texttt{anomalib.models.gbr\_ad.lightning\_model.GbrAdLightning}.
+  \end{itemize}
+\item \texttt{pytorch\_lightning} import missing in environment.
+  \begin{itemize}
+  \item Files: \path{/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/02_src/BMAD/anomalib/tools/train.py}, \path{/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/02_src/BMAD/anomalib/tools/test.py}
+  \item Fix: import fallback added from \texttt{pytorch\_lightning} to \texttt{lightning.pytorch}.
+  \end{itemize}
+\item macOS Retina visualizer reshape failure.
+  \begin{itemize}
+  \item File: \path{/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/02_src/BMAD/anomalib/src/anomalib/utils/callbacks/visualizer/visualizer_metric.py}
+  \item Fix: switched to \texttt{buffer\_rgba()} path with robust RGB fallback handling.
+  \end{itemize}
+\item \texttt{torch\_shm\_manager} permission issue on macOS.
+  \begin{itemize}
+  \item Files: \path{/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/04_configs/RESC__GBR-AD__B0_debug.yaml}, \path{/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/04_configs/OCT2017__GBR-AD__B0_debug.yaml}
+  \item Fix: forced single-process loading (\texttt{num\_workers=0}) to avoid multiprocessing shared-memory path.
+  \end{itemize}
+\item Metrics file missing in results directory.
+  \begin{itemize}
+  \item File: \path{/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/00_admin/cmd/step3__b0_run.sh}
+  \item Fix: added fallback parser that reads test metric table from log and writes CSV metrics.
+  \end{itemize}
+\end{enumerate}
+
+\section{Reproducibility}
+Reproducibility checklist:
+\path{/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/00_admin/step4/repro_checklist__B0__seed42.md}
+
+Environment and repo snapshots:
+\path{/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/00_admin/snapshots}
+
+\section{Exit Criteria}
+\begin{itemize}
+\item Factory layer satisfied: \texttt{gbr\_ad} resolved by anomalib model factory to the intended lightning module.
+\item Closed-loop layer satisfied on RESC and OCT2017: train/test logs, copied checkpoints, metrics CSVs, summary CSV, and evidence table are present with absolute paths.
+\item B0 packaging-ready artifacts are available under \texttt{00\_admin/step4} and release bundle directory.
+\end{itemize}
+
+\end{document}

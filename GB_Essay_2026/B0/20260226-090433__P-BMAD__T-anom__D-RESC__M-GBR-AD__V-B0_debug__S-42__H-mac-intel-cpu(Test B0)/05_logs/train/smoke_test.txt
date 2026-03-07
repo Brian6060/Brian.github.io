@@ -1,0 +1,2 @@
+smoke ok, model type: <class 'anomalib.models.padim.lightning_model.PadimLightning'>
+project.unique_dir = False

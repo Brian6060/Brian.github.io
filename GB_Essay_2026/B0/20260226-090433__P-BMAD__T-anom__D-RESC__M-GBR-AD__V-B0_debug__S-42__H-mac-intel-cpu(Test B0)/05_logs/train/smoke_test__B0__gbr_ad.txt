@@ -1,0 +1,8 @@
+anomalib.__file__ = /Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/02_src/BMAD/anomalib/src/anomalib/__init__.py
+gbr_ad pkg file  = /Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/02_src/BMAD/anomalib/src/anomalib/models/gbr_ad/__init__.py
+config.yaml exists = True path = /Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug（Test A）/02_src/BMAD/anomalib/src/anomalib/models/gbr_ad/config.yaml
+cfg.model.name = gbr_ad
+cfg.dataset.abnormal_dir = /Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/03_data/__abnormal_stub__/RESC
+cfg.dataset.mask_dir = /Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/03_data/__mask_stub__/RESC
+cfg.dataset.extensions(head) = ['.png', '.jpg', '.jpeg', '.bmp', '.tif', '.tiff', 'png', 'jpg']
+smoke ok, model type = <class 'anomalib.models.padim.lightning_model.PadimLightning'>

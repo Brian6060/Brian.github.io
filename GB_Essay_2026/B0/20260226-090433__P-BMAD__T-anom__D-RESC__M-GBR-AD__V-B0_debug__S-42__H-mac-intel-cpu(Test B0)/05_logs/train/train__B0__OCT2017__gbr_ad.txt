@@ -1,0 +1,14 @@
+Training: 0it [00:00, ?it/s]Training:   0%|          | 0/3 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/3 [00:00<?, ?it/s] Epoch 0:  33%|███▎      | 1/3 [00:00<00:01,  1.06it/s]Epoch 0:  33%|███▎      | 1/3 [00:00<00:01,  1.06it/s, loss=nan]
+Validation: 0it [00:00, ?it/s][A
+Validation:   0%|          | 0/2 [00:00<?, ?it/s][A
+Validation DataLoader 0:   0%|          | 0/2 [00:00<?, ?it/s][A
+Validation DataLoader 0:  50%|█████     | 1/2 [00:01<00:01,  1.68s/it][AEpoch 0:  67%|██████▋   | 2/3 [00:04<00:02,  2.15s/it, loss=nan]
+Validation DataLoader 0: 100%|██████████| 2/2 [00:02<00:00,  1.09s/it][AEpoch 0: 100%|██████████| 3/3 [00:04<00:00,  1.60s/it, loss=nan]Epoch 0: 100%|██████████| 3/3 [00:04<00:00,  1.61s/it, loss=nan, image_F1Score=0.714, image_AUROC=0.605]
+                                                                      [AEpoch 0: 100%|██████████| 3/3 [00:04<00:00,  1.61s/it, loss=nan, image_F1Score=0.714, image_AUROC=0.605]Epoch 0: 100%|██████████| 3/3 [00:05<00:00,  1.73s/it, loss=nan, image_F1Score=0.714, image_AUROC=0.605]
+Testing: 0it [00:00, ?it/s]Testing:   0%|          | 0/2 [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/2 [00:00<?, ?it/s]Testing DataLoader 0:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Testing DataLoader 0: 100%|██████████| 2/2 [00:02<00:00,  1.22s/it]Testing DataLoader 0: 100%|██████████| 2/2 [00:02<00:00,  1.22s/it]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│        image_AUROC        │    0.6024999618530273     │
+│       image_F1Score       │    0.7142857313156128     │
+└───────────────────────────┴───────────────────────────┘

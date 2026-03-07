@@ -1,0 +1,13 @@
+set -euo pipefail
+RUN_DIR='/Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)'
+BMAD_DIR="$RUN_DIR/02_src/BMAD"
+CFG="$RUN_DIR/04_configs/RESC__GBR-AD__B0_debug.yaml"
+
+export ALBUMENTATIONS_DISABLE_VERSION_CHECK=1
+export PYTHONPATH="$BMAD_DIR/anomalib/src"
+
+CKPT="$(find "$RUN_DIR/06_outputs/results/gbr_ad/RESC/run" -name '*.ckpt' | sort | tail -n 1)"
+echo "CKPT=$CKPT"
+test -f "$CKPT"
+
+python "$BMAD_DIR/anomalib/tools/test.py" --model gbr_ad --config "$CFG" --weights "$CKPT"

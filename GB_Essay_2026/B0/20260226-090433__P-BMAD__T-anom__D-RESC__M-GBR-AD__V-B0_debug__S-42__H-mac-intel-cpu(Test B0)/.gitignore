@@ -1,0 +1,44 @@
+.DS_Store
+__pycache__/
+*.pyc
+99_tmp/
+
+# Do not upload raw datasets
+03_data/BMAD/*
+03_data/rawzip/*
+!03_data/BMAD/.gitkeep
+!03_data/BMAD/README_NOT_UPLOADED.md
+!03_data/rawzip/.gitkeep
+
+# Do not upload raw run artifacts
+06_outputs/results/*
+!06_outputs/results/.gitkeep
+!06_outputs/results/README_NOT_TRACKED.md
+
+# Optional: do not upload embedded source checkouts
+# 02_src/
+
+# Preserve folder structure but do not track contents
+02_src/*
+!02_src/.gitkeep
+!02_src/README_NOT_TRACKED.md
+
+src/*
+!src/.gitkeep
+!src/README_NOT_TRACKED.md
+
+results/*
+!results/.gitkeep
+!results/README_NOT_TRACKED.md
+
+08_docs/*
+!08_docs/.gitkeep
+!08_docs/README_NOT_TRACKED.md
+
+03_data/__abnormal_stub__/*
+!03_data/__abnormal_stub__/.gitkeep
+!03_data/__abnormal_stub__/README_NOT_TRACKED.md
+
+03_data/__mask_stub__/*
+!03_data/__mask_stub__/.gitkeep
+!03_data/__mask_stub__/README_NOT_TRACKED.md

@@ -1,0 +1,4 @@
+normal_dir = /Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug（Test A）/03_data/BMAD/datasets/RESC/train/good
+exists = True
+extensions(first20) = ['.png', 'png']
+OK datamodule setup

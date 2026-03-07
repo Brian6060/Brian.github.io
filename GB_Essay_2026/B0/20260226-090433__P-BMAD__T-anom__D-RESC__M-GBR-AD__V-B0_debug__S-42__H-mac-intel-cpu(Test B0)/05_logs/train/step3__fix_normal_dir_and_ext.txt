@@ -1,0 +1,7 @@
+PATCHED: /Users/dby051225/Desktop/GB Essay 2026/Test/20260226-090433__P-BMAD__T-anom__D-RESC__M-GBR-AD__V-B0_debug__S-42__H-mac-intel-cpu(Test B0)/04_configs/RESC__GBR-AD__B0_debug.yaml
+dataset.root = /Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug（Test A）/03_data/BMAD/datasets/RESC
+train_root   = /Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug（Test A）/03_data/BMAD/datasets/RESC/train
+normal_dir   = /Users/dby051225/Desktop/GB Essay 2026/Test/20260212-093015__RESC__RD4AD__baseline_cpu__seed42__debug（Test A）/03_data/BMAD/datasets/RESC/train/good
+normal_dir exists = True
+top suffixes = [('.png', 4297)]
+extensions n = 2
