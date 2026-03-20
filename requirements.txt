@@ -1,0 +1,9 @@
+# Python dependencies used by project scripts.
+# Caffe itself is NOT installed through this file and must be built separately.
+
+numpy==1.26.4
+scipy==1.13.1
+pillow==10.4.0
+opencv-python==4.10.0.84
+h5py==3.11.0
+matplotlib==3.9.2

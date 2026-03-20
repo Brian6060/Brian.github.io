@@ -1,0 +1,380 @@
+\documentclass[11pt]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+
+% ---------- Formatting ----------
+\setstretch{1.15}
+\setlength{\parskip}{0.35em}
+\setlength{\parindent}{0pt}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Experiment Report}
+\fancyhead[R]{\thepage}
+
+\captionsetup{
+    font=small,
+    labelfont=bf
+}
+
+% ---------- Custom Commands ----------
+\newcommand{\reporttitle}{U-Net Reproduction Report}
+\newcommand{\authorname}{Boyuan Du}
+\newcommand{\labname}{VIS Lab}
+\newcommand{\coursename}{Research Experiment Log}
+\newcommand{\reportdate}{March 2026}
+\newcommand{\best}[1]{\textbf{#1}}
+
+% ---------- Title ----------
+\title{\vspace{-1.5em}\reporttitle}
+\author{
+    \authorname \\
+    \labname \\
+    \texttt{2024151470021@stu.scu.edu.cn}}
+\date{\reportdate}
+
+\begin{document}
+
+\maketitle
+\vspace{-1.5em}
+
+\begin{abstract}
+This report presents a lightweight reproduction study of U-Net for biomedical semantic segmentation under constrained computational resources. The goal is not to exactly match the original benchmark numbers, but to faithfully reconstruct the core architectural design and the basic training pipeline in Caffe, including data loading, preprocessing, model implementation, optimization, validation, deployment, and inference. The final version of the experiment adopts a weighted pixel-wise training objective inspired by the original U-Net paper and evaluates the reproduced model using a simplified local validation protocol. The final weighted model achieved a mean IoU of 0.252561 and a mean pixel error of 0.054223 on the seven-sample validation split, demonstrating that a Caffe-based U-Net can achieve meaningful biomedical segmentation behavior even in a CPU-only setting.
+\end{abstract}
+
+% =========================================================
+\section{Objective}
+
+This experiment aims to conduct a lightweight reproduction of U-Net on a personal Mac with an Intel i5 CPU and 8\,GB memory. Rather than strictly reproducing the best benchmark results reported in the original paper, the goal is to implement the main components of U-Net in \textbf{Caffe} based on the core ideas of the paper, and to build a complete, runnable, and analyzable semantic segmentation pipeline.
+
+\begin{enumerate}[leftmargin=1.5em]
+    \item To implement the \textbf{core architecture of U-Net} in Caffe, including the contracting path, expansive path, skip connections, and the final pixel-wise prediction layer.
+    \item To construct a \textbf{basic experimental workflow} covering data loading, preprocessing, model training, validation, deployment, and inference visualization, forming a minimal but complete semantic segmentation pipeline.
+    \item To verify the \textbf{basic effectiveness} of the reproduced model on a small-scale segmentation dataset, analyze its training behavior and qualitative prediction results, and explain the differences between the local reproduction setting and the original paper.
+    \item To use this experiment as a practical test of the understanding of U-Net in terms of problem formulation, network design, training logic, and experimental procedure, thereby laying a foundation for reproducing \textbf{more advanced segmentation models} in the future.
+\end{enumerate}
+
+\section{Research Question}
+
+Can a Caffe-based implementation of U-Net achieve basic pixel-wise semantic segmentation on a small-scale biomedical dataset under limited computational resources?
+
+\section{Hypothesis}
+
+Even under a Mac CPU environment and a small-scale dataset setting, a correctly implemented U-Net should still demonstrate basic semantic segmentation capability and produce qualitatively reasonable predictions.
+
+% =========================================================
+\section{Paper Background}
+
+U-Net, originally proposed by Ronneberger et al.~\cite{ronneberger2015u}, is a landmark model in biomedical image segmentation. Its core design combines a contracting path for semantic feature extraction with an expansive path for spatial resolution recovery, while skip connections fuse deep semantic representations with high-resolution local details. This design makes U-Net especially suitable for dense pixel-wise prediction when precise boundary localization is required.
+
+The original paper is notable not only for the architecture itself, but also for its task-specific training strategy under limited annotation conditions. In particular, the paper emphasizes extensive data augmentation and a weighted pixel-wise loss function that increases the importance of separating touching objects~\cite{ronneberger2015u}. Therefore, the value of U-Net lies not only in its network topology, but also in the complete methodological framework it provides for low-data biomedical segmentation.
+
+\section{Scope of Reproduction}
+
+This reproduction includes the following components:
+
+\begin{enumerate}[leftmargin=1.5em]
+    \item Implementation of the core U-Net architecture, including the contracting path, expansive path, skip connections, and the final pixel-wise prediction layer;
+    \item Loading and preprocessing of paired input images and corresponding segmentation maps;
+    \item Construction of a complete training, validation, deployment, and inference workflow, forming a minimal but runnable semantic segmentation pipeline;
+    \item Qualitative visualization of prediction results, including comparisons among input images, ground-truth segmentation maps, and predicted segmentation masks;
+    \item Quantitative evaluation using IoU and pixel error to measure the consistency between predicted segmentation results and ground-truth annotations;
+    \item Recording of experimental configurations, debugging procedures, training behavior, and final result summaries to support subsequent analysis and reporting.
+\end{enumerate}
+
+This reproduction does not include the following components:
+
+\begin{enumerate}[leftmargin=1.5em]
+    \item Full-scale replication of the original challenge-level experimental setting;
+    \item Exact numerical reproduction of the best benchmark results reported in the original paper;
+    \item Exhaustive hyperparameter search and systematic tuning;
+    \item Comparative experiments with multiple baseline methods;
+    \item Full reproduction of the original large-scale augmentation and benchmark evaluation protocol.
+\end{enumerate}
+
+% =========================================================
+\section{Experimental Setup}
+
+\subsection{Hardware}
+\begin{table}[H]
+\centering
+\caption{Hardware configuration}
+\begin{tabular}{ll}
+\toprule
+Machine & MacBook Pro with Intel i5 CPU \\
+Memory & 8 GB RAM \\
+GPU & None \\
+Execution Mode & CPU only \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Software Environment}
+\begin{table}[H]
+\centering
+\caption{Software environment}
+\begin{tabular}{ll}
+\toprule
+Operating System & macOS \\
+Python & 3.9.23 \\
+Framework & Caffe \\
+IDE & VS Code \\
+Environment Manager & Miniconda (Conda-based) \\
+Python Interpreter Path & /Users/dby051225/opt/miniconda3/envs/unet-caffe/bin/python \\
+Inference Backend & OpenCV DNN (Python) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Dataset}
+
+This experiment uses the PhC-C2DH-U373 dataset for a lightweight reproduction of U-Net. The dataset belongs to the light microscopy segmentation setting, where the inputs are phase-contrast microscopy images and the labels are the corresponding manually annotated segmentation maps. Considering the limited local CPU resources and the objective of this reproduction, only image frames with corresponding segmentation annotations were retained, and paired image--segmentation map samples were constructed for training and validation.
+
+In this reproduction, the data were organized as single-channel grayscale inputs, and the original instance-level segmentation maps were converted into binary semantic segmentation targets by treating all pixels with values greater than 0 as foreground cells and assigning 0 to background pixels. Therefore, the task in this study was defined as binary semantic segmentation.
+
+After preprocessing, all samples were resized to a fixed input resolution of \(256 \times 256\). A total of 35 valid image--segmentation map pairs were used in the current experiment. They were split into a training set and a validation set with a fixed seed under an 80:20 ratio, resulting in 28 training samples and 7 validation samples. This split was adopted to ensure reproducibility and to provide a consistent data basis for subsequent model training, validation, and result analysis.
+
+\subsection{Preprocessing}
+
+The preprocessing pipeline in this experiment consists of several steps. First, image frames with corresponding segmentation annotations were extracted from the raw dataset, and a one-to-one correspondence between each input image and its segmentation map was established. Second, all original microscopy images were converted into single-channel grayscale images in order to reduce computational cost under the local CPU-only environment. After that, all input images were resized to a fixed resolution of \(256 \times 256\).
+
+For the segmentation maps, since the original annotations are instance label maps rather than binary masks directly used for semantic segmentation, all pixels with values greater than 0 were mapped to the foreground class, while all remaining pixels were kept as background. In this way, the labels were converted into binary segmentation targets suitable for the current experiment. During resizing, the input images were resized using \textbf{bilinear interpolation}, whereas the segmentation maps were resized using \textbf{nearest-neighbor interpolation}, in order to avoid corruption of discrete label boundaries during resampling.
+
+At the data loading stage, the input images were further converted into \texttt{float32} format and normalized to the range \([0,1]\). The corresponding segmentation maps were converted into binary labels in \(\{0,1\}\), so that they could be directly used for pixel-wise supervised learning.
+
+% =========================================================
+\section{Model Implementation}
+
+\subsection{Architecture Summary}
+
+The reproduced model follows the high-level U-Net design. It consists of a contracting path for semantic context extraction and an expansive path for spatial resolution recovery. Skip connections are introduced between corresponding encoder and decoder stages in order to fuse high-level semantic features with high-resolution spatial details. A final \(1 \times 1\) convolution layer is used to produce pixel-wise predictions for foreground-background segmentation.
+
+\subsection{Implementation Details}
+
+The model is implemented in Caffe using layer-wise network definitions in \texttt{prototxt} files. The main components include:
+
+\begin{enumerate}[leftmargin=1.5em]
+    \item repeated convolution and ReLU layers for local feature extraction;
+    \item max-pooling layers for downsampling in the contracting path;
+    \item deconvolution layers for upsampling in the expansive path;
+    \item concatenation-based skip connections between encoder and decoder features;
+    \item a final \(1 \times 1\) convolution layer for pixel-wise binary classification;
+    \item a custom weighted pixel-wise loss layer for supervising dense segmentation outputs.
+\end{enumerate}
+
+\subsection{Sanity Checks}
+
+Before full training, several sanity checks were performed to verify the correctness of the implementation:
+
+\begin{enumerate}[leftmargin=1.5em]
+    \item verification of input and output tensor shapes;
+    \item consistency check between prediction size and segmentation label size;
+    \item successful single-batch forward pass through the network;
+    \item basic loss computation check for dense pixel-wise supervision;
+    \item short debug runs to confirm that the Caffe solver, weighted data input, and custom loss layer were properly connected.
+\end{enumerate}
+
+% =========================================================
+\section{Training Configuration}
+
+\subsection{Loss Function}
+
+The final version of this experiment adopts a \textbf{weighted two-channel softmax cross-entropy loss} implemented as a custom \textbf{WeightedSoftmaxWithLoss} layer. The network outputs two-channel pixel-wise classification scores corresponding to background and foreground, and the loss is computed after softmax normalization. In addition, each pixel is multiplied by a spatially varying weight map before contributing to the final loss.
+
+Following the idea of the original U-Net paper~\cite{ronneberger2015u}, the weight map combines two factors. First, a class-balancing term increases the relative contribution of foreground pixels under severe foreground-background imbalance. Second, an exponential border-emphasis term increases the penalty around touching objects, thereby encouraging the model to better separate adjacent cell regions. In this reproduction, the final weight map was generated from the resized instance annotations and then stored together with the image and binary label in the training HDF5 files.
+
+In the early stage of the experiment, the model was first trained with a single-channel output combined with \textbf{SigmoidCrossEntropyLoss}, and later with an unweighted \textbf{SoftmaxWithLoss}. However, these earlier settings either led to insufficient foreground learning or unstable probability calibration at inference time. The final reported result therefore uses the weighted softmax training objective.
+
+\subsection{Optimizer}
+
+\begin{table}[H]
+\centering
+\caption{Final training configuration used for the reported weighted model}
+\begin{tabular}{ll}
+\toprule
+Optimizer & SGD with momentum \\
+Learning Rate & $2\times10^{-7}$ \\
+Learning Rate Policy & multistep \\
+Step Values & 400, 800, 1200 \\
+Gamma & 0.5 \\
+Momentum & 0.9 \\
+Weight Decay & 0.0005 \\
+Per-iteration Batch Size & 1 \\
+Effective Batch Size & 2 (implemented via \texttt{iter\_size = 2}) \\
+Training Iterations & 1500 \\
+Image Size & $256 \times 256$ \\
+Loss Function & WeightedSoftmaxWithLoss \\
+Checkpoint Used for Final Inference & \texttt{unet\_weighted\_iter\_1500.caffemodel} \\
+Inference Threshold & 0.56 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+It should be noted that the current experiment follows the iteration-based training paradigm of Caffe. Therefore, \textbf{training iterations} provide a more accurate description of the optimization budget than epochs. Given the small training set and the Caffe solver design, iterations were used as the primary training unit throughout the experiment.
+
+\subsection{Training Procedure}
+
+The training procedure in this experiment consists of several major steps. First, the system loads preprocessed image--segmentation map pairs from HDF5 files. In the final weighted setting, each sample additionally contains a pixel-wise weight map derived from the corresponding instance label. Second, the input image is fed into the U-Net, passing through the encoder, bottleneck, and decoder to produce pixel-wise score maps. Third, the weighted softmax loss is computed using the output scores, the binary ground-truth labels, and the weight map. During training, gradients are obtained through backpropagation, and model parameters are updated using \textbf{SGD with momentum}. To reduce optimization noise under the small-batch setting, the experiment employs gradient accumulation through \texttt{iter\_size = 2}, thereby forming a more stable effective batch update. In addition, the solver performs validation at predefined intervals, records the validation loss, and periodically saves checkpoint files for subsequent inference and result comparison.
+
+% =========================================================
+\section{Evaluation Metrics}
+
+This reproduction adopts lightweight yet interpretable evaluation criteria. First, \textbf{training loss} is used to monitor the optimization process on the training set and to determine whether the training remains numerically stable or exhibits divergence. Second, \textbf{validation loss} is used to assess the overall performance of the model on the validation set and to examine whether the model shows signs of overfitting or optimization stagnation.
+
+On top of these loss-based indicators, the experiment further employs \textbf{IoU} and \textbf{pixel error} as pixel-level quantitative evaluation metrics. IoU measures the overlap between the predicted foreground region and the ground-truth foreground region, and therefore provides a direct indication of segmentation quality. Pixel error measures the proportion of incorrectly classified pixels over the whole image.
+
+In addition to quantitative metrics, the experiment also uses \textbf{qualitative visualization comparison} as a complementary evaluation strategy. Specifically, the input image, predicted foreground probability map, binarized prediction mask, and ground-truth segmentation map are compared side by side in order to examine whether the model responds correctly to cell regions and whether issues such as missing foreground, coarse boundaries, or foreground-background collapse are present.
+
+It is important to emphasize that the current evaluation is a \textbf{simplified local validation protocol} rather than a challenge-grade benchmark setting. Therefore, the reported metrics are intended to measure local reproduction effectiveness instead of reproducing the official benchmark numbers of the original paper.
+
+% =========================================================
+\section{Results}
+
+\subsection{Quantitative Results}
+
+\begin{table}[H]
+\centering
+\caption{Final quantitative results of the reproduced weighted U-Net}
+\begin{tabular}{lcccc}
+\toprule
+Model Variant & Iterations & Threshold & Mean IoU & Mean Pixel Error \\
+\midrule
+Weighted U-Net (final local result) & 1500 & 0.56 & \best{0.252561} & \best{0.054223} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Validation-set sample-wise results at threshold 0.56}
+\begin{tabular}{lcc}
+\toprule
+Validation Sample & IoU & Pixel Error \\
+\midrule
+02\_t041 & 0.301861 & 0.047501 \\
+01\_t021 & 0.299550 & 0.066437 \\
+02\_t085 & 0.303320 & 0.025620 \\
+02\_t112 & 0.251966 & 0.037735 \\
+02\_t019 & 0.114150 & 0.051392 \\
+01\_t005 & 0.221133 & 0.076370 \\
+01\_t067 & 0.275949 & 0.074509 \\
+\midrule
+Mean & \best{0.252561} & \best{0.054223} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For the representative inspected sample \texttt{01\_t049}, the final weighted model achieved \textbf{IoU = 0.315823} and \textbf{Pixel Error = 0.049484} when the inference threshold was calibrated to 0.56. This result was substantially better than the uncalibrated default threshold of 0.5, which produced an excessively large foreground region.
+
+\subsection{Qualitative Results}
+\subsection{Qualitative Results}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{/Users/dby051225/Desktop/VIS/U-Net/U-Net Experiment Reproduction/reports/figures/01_t049_input.png}
+        \caption{Input image}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{/Users/dby051225/Desktop/VIS/U-Net/U-Net Experiment Reproduction/reports/figures/01_t049_gt.png}
+        \caption{Ground-truth mask}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{/Users/dby051225/Desktop/VIS/U-Net/U-Net Experiment Reproduction/reports/figures/01_t049_pred.png}
+        \caption{Predicted mask}
+    \end{subfigure}
+    \caption{Representative qualitative result on sample \texttt{01\_t049} using the final weighted model with an inference threshold of 0.56.}
+    \label{fig:qualitative_01_t049}
+\end{figure}
+
+Qualitatively, the final weighted model no longer collapsed to an all-background prediction. Instead, it produced a foreground probability map with visible cell-region responses. After threshold calibration, the resulting segmentation mask covered meaningful cell regions and yielded a non-zero IoU. However, the predicted mask still tended to be conservative on certain samples, indicating that some foreground regions remained under-segmented.
+
+\subsection{Training Curve}
+
+\begin{figure}[H]
+    \centering
+    \fbox{\rule{0pt}{2in}\rule{0.85\linewidth}{0pt}}
+    \caption{Training and validation loss curves recorded from the Caffe log. The figure placeholder can be replaced with a curve exported from the saved training log file.}
+\end{figure}
+
+Training logs showed that the weighted version could be trained stably without the early \texttt{NaN} divergence observed in earlier exploratory settings. The final model used for deployment was taken from the 1500-iteration checkpoint.
+
+% =========================================================
+\section{Analysis and Discussion}
+
+\subsection{What Worked}
+
+Several parts of the reproduction worked well. First, the core U-Net architecture was successfully implemented in Caffe and the full training loop could run on real microscopy data under CPU-only constraints. Second, after several debugging iterations, the solver, deployment pipeline, and OpenCV-based inference backend all became operational. Third, the weighted training objective significantly improved the model behavior compared with the earlier unweighted variants. In particular, it alleviated the all-background collapse observed in the earlier stage and enabled the model to produce meaningful foreground probability responses.
+
+Another successful aspect is that threshold calibration at inference time proved effective. The final weighted model did not produce a well-separated probability distribution around the default threshold of 0.5. However, after local calibration, a threshold of 0.56 yielded substantially better segmentation quality and more reasonable foreground coverage.
+
+\subsection{Failure Cases}
+
+Despite these improvements, the reproduced model still exhibits several limitations. Some validation samples remain under-segmented, with foreground regions missed or only partially covered. The output foreground probabilities are also distributed within a relatively narrow range, which makes the final segmentation mask sensitive to the threshold value. This indicates that the model has not learned a sharply separated foreground-background boundary in probability space.
+
+In addition, the performance remains inconsistent across validation samples. For example, the weakest sample in the validation set achieved a notably lower IoU than the strongest ones. This suggests that the model still struggles with generalization under the small-data and CPU-constrained setting.
+
+\subsection{Gap from the Original Paper}
+
+There are several reasons why the reproduced experiment differs from the original U-Net paper~\cite{ronneberger2015u}. First, this reproduction was conducted on a very limited local environment, using only a Mac CPU without GPU acceleration. Second, the current dataset protocol is a simplified local split rather than the original challenge-style benchmark setting. Third, although the final model does adopt a weighted pixel-wise loss inspired by the original paper, the full original training regime, especially the large-scale augmentation strategy emphasized by Ronneberger et al., was not completely reproduced. Fourth, the total training budget and hyperparameter search remain much more limited than those used in the original work. Finally, deployment and inference were implemented through OpenCV DNN rather than the original training framework itself, which also reflects a practical engineering compromise specific to the local environment.
+
+% =========================================================
+\section{Limitations}
+
+This reproduction has several limitations:
+
+\begin{itemize}[leftmargin=1.5em]
+    \item limited computational resources, since all training and inference were conducted under a CPU-only local environment;
+    \item a very small local dataset split, which restricts statistical reliability and generalization analysis;
+    \item simplified augmentation and benchmark setup compared with the original paper;
+    \item threshold-sensitive inference behavior, indicating that the output probability distribution is not yet ideally calibrated;
+    \item incomplete reproduction of the original challenge-level protocol and benchmark metrics.
+\end{itemize}
+
+% =========================================================
+\section{Conclusion}
+
+This experiment successfully reproduces the core U-Net pipeline in a lightweight CPU-only environment. Although the setup does not aim to fully match the original challenge-level results, it verifies the feasibility of implementing, training, deploying, and evaluating a Caffe-based U-Net under constrained hardware conditions. The final weighted model achieved a mean IoU of 0.252561 and a mean pixel error of 0.054223 on the local validation split. These results show that the reproduced model possesses meaningful biomedical segmentation capability, even though the final probability distribution still requires threshold calibration for stable deployment.
+
+
+% =========================================================
+\begin{thebibliography}{9}
+
+\bibitem{ronneberger2015u}
+O. Ronneberger, P. Fischer, and T. Brox,
+``U-Net: Convolutional Networks for Biomedical Image Segmentation,''
+in \textit{Proceedings of MICCAI 2015}, 2015, pp. 234--241.
+
+\end{thebibliography}
+
+\end{document}

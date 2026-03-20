@@ -1,0 +1,25 @@
+net: "/Users/dby051225/Desktop/VIS/U-Net/U-Net Experiment Reproduction/src/train_val.prototxt"
+
+test_iter: 7
+test_interval: 50
+
+base_lr: 0.0000002
+lr_policy: "multistep"
+stepvalue: 400
+stepvalue: 800
+stepvalue: 1200
+gamma: 0.5
+
+momentum: 0.9
+weight_decay: 0.0005
+
+iter_size: 2
+average_loss: 20
+
+display: 10
+max_iter: 1500
+
+snapshot: 200
+snapshot_prefix: "/Users/dby051225/Desktop/VIS/U-Net/U-Net Experiment Reproduction/outputs/checkpoints/unet_weighted"
+
+solver_mode: CPU
