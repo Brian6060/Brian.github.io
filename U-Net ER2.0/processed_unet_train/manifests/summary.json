@@ -1,0 +1,40 @@
+{
+  "train_root": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Train",
+  "out_root": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_strict",
+  "strict_unet_paper_route": true,
+  "used_sequences": [
+    "01",
+    "02"
+  ],
+  "used_supervision": [
+    "01_GT/SEG",
+    "02_GT/SEG"
+  ],
+  "excluded_from_main_training": [
+    "01_ERR_SEG",
+    "02_ERR_SEG",
+    "01_ST/SEG",
+    "02_ST/SEG",
+    "01_GT/TRA",
+    "02_GT/TRA"
+  ],
+  "num_pairs": 34,
+  "w0": 10.0,
+  "sigma": 5.0,
+  "class_balance": {
+    "foreground": 7.7331000573135045,
+    "background": 0.5345633266537245,
+    "total_fg_pixels": 795624,
+    "total_bg_pixels": 11509656,
+    "total_pixels": 12305280
+  },
+  "notes": [
+    "原图保持原分辨率，不做 resize。",
+    "原图保持 TIFF，不转成 npy。",
+    "mask 使用 GT/SEG 的 man_seg*.tif 作为 source of truth。",
+    "binary mask 由 instance mask > 0 得到。",
+    "mask 和 weight map 存为 npy。",
+    "weight map 按 U-Net 论文公式预计算。",
+    "由于公开 gold truth 是部分标注，缺失对象无法从发布文件中恢复。"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "args": {
+    "test_out_root": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/outputs_test_formal_A_best",
+    "processed_root": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test",
+    "processed_manifest_name": "test_images.json",
+    "out_dir": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/outputs_test_formal_A_best/final_inference_output"
+  },
+  "metrics_csv": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/outputs_test_formal_A_best/final_inference_output/metrics_per_image.csv",
+  "summary_json": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/outputs_test_formal_A_best/final_inference_output/summary.json",
+  "packaged_root": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/outputs_test_formal_A_best/final_inference_output/packaged_results"
+}
