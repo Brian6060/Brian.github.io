@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/.venv_dl20/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

@@ -1,0 +1,12 @@
+#!/bin/sh
+'''exec' '/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/.venv_dl20/bin/python' "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import sys
+from tifffile.tiffcomment import main
+if __name__ == "__main__":
+    if sys.argv[0].endswith("-script.pyw"):
+        sys.argv[0] = sys.argv[0][:-11]
+    elif sys.argv[0].endswith(".exe"):
+        sys.argv[0] = sys.argv[0][:-4]
+    sys.exit(main())
