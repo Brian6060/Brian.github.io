@@ -1,0 +1,15 @@
+{
+  "mode": "train",
+  "data_root": "/Users/dby051225/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train",
+  "out_root": "/Users/dby051225/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_auto_originalstyle",
+  "num_pairs": 34,
+  "w0": 10.0,
+  "sigma": 5.0,
+  "class_balance": {
+    "foreground": 7.7331000573135045,
+    "background": 0.5345633266537245,
+    "total_fg_pixels": 795624,
+    "total_bg_pixels": 11509656,
+    "total_pixels": 12305280
+  }
+}

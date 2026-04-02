@@ -1,0 +1,13 @@
+{
+  "args": {
+    "test_out_root": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved",
+    "processed_root": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle",
+    "processed_manifest_name": "test_images.json",
+    "gt_processed_root": null,
+    "gt_manifest_name": "val_pairs.json",
+    "out_dir": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_infer_improved"
+  },
+  "metrics_csv": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_infer_improved/metrics_per_image.csv",
+  "summary_json": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_infer_improved/summary.json",
+  "packaged_root": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_infer_improved/packaged_results"
+}

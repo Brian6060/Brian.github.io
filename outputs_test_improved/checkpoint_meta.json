@@ -1,0 +1,40 @@
+{
+  "checkpoint_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_train_improved/best_train_loss.pt",
+  "checkpoint_keys": [
+    "model_state",
+    "optimizer_state",
+    "epoch",
+    "global_step",
+    "best_loss",
+    "metrics",
+    "args"
+  ],
+  "epoch": 10,
+  "global_step": 10880,
+  "best_loss": 0.023802775856679278,
+  "args": {
+    "processed_root": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_auto_originalstyle",
+    "save_dir": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_train_improved",
+    "batch_size": 1,
+    "momentum": 0.99,
+    "input_size": 572,
+    "output_size": 388,
+    "patches_per_image": 32,
+    "epochs": 50,
+    "lr": 0.0001,
+    "weight_decay": 0.0,
+    "elastic_deform": true,
+    "displacement_std": 10.0,
+    "grid_size": 3,
+    "normalize": "zscore",
+    "gray_value_aug": true,
+    "use_bottleneck_dropout": true,
+    "dropout_p": 0.5,
+    "num_workers": 0,
+    "seed": 42,
+    "print_freq": 10,
+    "save_every": 5,
+    "resume": "",
+    "device": "auto"
+  }
+}

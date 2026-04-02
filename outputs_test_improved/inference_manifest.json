@@ -1,0 +1,1842 @@
+[
+  {
+    "seq": "01",
+    "frame": "000",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_000.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_000.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_000.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_000.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "001",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_001.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_001.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_001.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_001.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "002",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_002.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_002.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_002.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_002.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "003",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_003.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_003.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_003.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_003.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "004",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_004.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_004.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_004.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_004.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "005",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_005.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_005.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_005.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_005.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "006",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_006.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_006.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_006.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_006.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "007",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_007.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_007.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_007.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_007.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "008",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_008.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_008.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_008.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_008.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "009",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_009.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_009.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_009.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_009.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "010",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_010.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_010.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_010.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_010.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "011",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_011.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_011.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_011.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_011.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "012",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_012.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_012.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_012.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_012.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "013",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_013.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_013.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_013.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_013.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "014",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_014.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_014.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_014.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_014.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "015",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_015.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_015.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_015.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_015.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "016",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_016.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_016.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_016.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_016.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "017",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_017.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_017.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_017.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_017.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "018",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_018.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_018.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_018.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_018.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "019",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_019.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_019.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_019.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_019.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "020",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_020.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_020.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_020.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_020.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "021",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_021.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_021.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_021.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_021.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "022",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_022.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_022.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_022.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_022.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "023",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_023.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_023.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_023.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_023.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "024",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_024.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_024.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_024.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_024.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "025",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_025.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_025.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_025.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_025.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "026",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_026.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_026.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_026.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_026.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "027",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_027.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_027.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_027.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_027.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "028",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_028.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_028.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_028.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_028.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "029",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_029.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_029.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_029.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_029.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "030",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_030.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_030.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_030.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_030.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "031",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_031.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_031.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_031.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_031.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "032",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_032.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_032.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_032.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_032.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "033",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_033.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_033.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_033.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_033.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "034",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_034.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_034.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_034.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_034.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "035",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_035.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_035.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_035.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_035.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "036",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_036.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_036.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_036.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_036.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "037",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_037.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_037.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_037.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_037.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "038",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_038.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_038.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_038.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_038.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "039",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_039.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_039.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_039.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_039.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "040",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_040.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_040.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_040.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_040.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "041",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_041.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_041.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_041.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_041.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "042",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_042.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_042.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_042.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_042.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "043",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_043.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_043.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_043.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_043.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "044",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_044.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_044.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_044.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_044.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "045",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_045.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_045.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_045.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_045.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "046",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_046.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_046.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_046.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_046.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "047",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_047.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_047.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_047.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_047.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "048",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_048.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_048.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_048.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_048.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "049",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_049.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_049.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_049.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_049.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "050",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_050.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_050.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_050.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_050.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "051",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_051.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_051.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_051.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_051.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "052",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_052.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_052.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_052.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_052.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "053",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_053.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_053.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_053.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_053.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "054",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_054.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_054.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_054.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_054.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "055",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_055.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_055.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_055.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_055.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "056",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_056.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_056.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_056.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_056.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "057",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_057.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_057.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_057.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_057.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "058",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_058.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_058.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_058.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_058.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "059",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_059.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_059.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_059.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_059.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "060",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_060.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_060.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_060.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_060.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "061",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_061.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_061.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_061.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_061.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "062",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_062.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_062.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_062.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_062.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "063",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_063.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_063.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_063.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_063.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "064",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_064.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_064.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_064.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_064.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "065",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_065.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_065.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_065.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_065.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "066",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_066.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_066.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_066.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_066.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "067",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_067.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_067.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_067.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_067.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "068",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_068.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_068.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_068.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_068.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "069",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_069.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_069.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_069.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_069.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "070",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_070.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_070.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_070.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_070.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "071",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_071.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_071.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_071.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_071.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "072",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_072.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_072.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_072.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_072.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "073",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_073.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_073.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_073.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_073.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "074",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_074.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_074.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_074.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_074.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "075",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_075.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_075.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_075.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_075.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "076",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_076.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_076.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_076.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_076.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "077",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_077.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_077.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_077.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_077.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "078",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_078.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_078.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_078.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_078.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "079",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_079.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_079.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_079.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_079.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "080",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_080.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_080.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_080.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_080.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "081",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_081.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_081.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_081.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_081.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "082",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_082.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_082.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_082.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_082.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "083",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_083.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_083.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_083.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_083.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "084",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_084.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_084.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_084.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_084.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "085",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_085.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_085.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_085.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_085.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "086",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_086.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_086.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_086.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_086.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "087",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_087.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_087.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_087.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_087.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "088",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_088.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_088.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_088.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_088.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "089",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_089.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_089.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_089.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_089.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "090",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_090.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_090.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_090.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_090.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "091",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_091.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_091.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_091.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_091.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "092",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_092.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_092.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_092.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_092.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "093",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_093.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_093.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_093.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_093.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "094",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_094.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_094.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_094.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_094.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "095",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_095.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_095.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_095.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_095.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "096",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_096.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_096.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_096.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_096.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "097",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_097.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_097.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_097.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_097.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "098",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_098.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_098.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_098.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_098.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "099",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_099.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_099.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_099.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_099.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "100",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_100.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_100.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_100.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_100.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "101",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_101.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_101.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_101.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_101.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "102",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_102.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_102.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_102.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_102.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "103",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_103.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_103.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_103.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_103.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "104",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_104.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_104.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_104.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_104.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "105",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_105.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_105.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_105.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_105.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "106",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_106.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_106.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_106.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_106.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "107",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_107.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_107.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_107.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_107.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "108",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_108.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_108.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_108.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_108.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "109",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_109.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_109.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_109.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_109.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "110",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_110.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_110.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_110.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_110.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "111",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_111.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_111.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_111.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_111.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "112",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_112.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_112.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_112.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_112.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "113",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_113.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_113.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_113.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_113.npy"
+  },
+  {
+    "seq": "01",
+    "frame": "114",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/01_114.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/01_114.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/01_114.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/01_114.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "000",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_000.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_000.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_000.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_000.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "001",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_001.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_001.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_001.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_001.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "002",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_002.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_002.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_002.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_002.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "003",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_003.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_003.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_003.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_003.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "004",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_004.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_004.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_004.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_004.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "005",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_005.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_005.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_005.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_005.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "006",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_006.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_006.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_006.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_006.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "007",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_007.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_007.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_007.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_007.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "008",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_008.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_008.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_008.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_008.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "009",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_009.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_009.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_009.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_009.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "010",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_010.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_010.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_010.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_010.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "011",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_011.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_011.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_011.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_011.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "012",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_012.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_012.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_012.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_012.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "013",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_013.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_013.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_013.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_013.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "014",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_014.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_014.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_014.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_014.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "015",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_015.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_015.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_015.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_015.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "016",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_016.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_016.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_016.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_016.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "017",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_017.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_017.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_017.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_017.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "018",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_018.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_018.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_018.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_018.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "019",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_019.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_019.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_019.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_019.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "020",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_020.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_020.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_020.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_020.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "021",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_021.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_021.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_021.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_021.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "022",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_022.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_022.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_022.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_022.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "023",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_023.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_023.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_023.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_023.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "024",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_024.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_024.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_024.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_024.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "025",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_025.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_025.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_025.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_025.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "026",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_026.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_026.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_026.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_026.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "027",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_027.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_027.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_027.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_027.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "028",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_028.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_028.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_028.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_028.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "029",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_029.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_029.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_029.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_029.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "030",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_030.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_030.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_030.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_030.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "031",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_031.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_031.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_031.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_031.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "032",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_032.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_032.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_032.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_032.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "033",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_033.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_033.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_033.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_033.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "034",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_034.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_034.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_034.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_034.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "035",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_035.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_035.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_035.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_035.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "036",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_036.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_036.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_036.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_036.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "037",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_037.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_037.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_037.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_037.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "038",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_038.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_038.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_038.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_038.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "039",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_039.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_039.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_039.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_039.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "040",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_040.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_040.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_040.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_040.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "041",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_041.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_041.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_041.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_041.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "042",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_042.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_042.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_042.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_042.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "043",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_043.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_043.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_043.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_043.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "044",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_044.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_044.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_044.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_044.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "045",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_045.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_045.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_045.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_045.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "046",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_046.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_046.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_046.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_046.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "047",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_047.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_047.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_047.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_047.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "048",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_048.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_048.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_048.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_048.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "049",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_049.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_049.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_049.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_049.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "050",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_050.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_050.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_050.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_050.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "051",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_051.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_051.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_051.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_051.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "052",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_052.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_052.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_052.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_052.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "053",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_053.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_053.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_053.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_053.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "054",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_054.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_054.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_054.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_054.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "055",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_055.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_055.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_055.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_055.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "056",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_056.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_056.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_056.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_056.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "057",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_057.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_057.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_057.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_057.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "058",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_058.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_058.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_058.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_058.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "059",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_059.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_059.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_059.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_059.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "060",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_060.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_060.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_060.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_060.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "061",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_061.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_061.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_061.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_061.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "062",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_062.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_062.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_062.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_062.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "063",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_063.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_063.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_063.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_063.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "064",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_064.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_064.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_064.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_064.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "065",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_065.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_065.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_065.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_065.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "066",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_066.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_066.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_066.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_066.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "067",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_067.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_067.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_067.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_067.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "068",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_068.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_068.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_068.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_068.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "069",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_069.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_069.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_069.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_069.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "070",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_070.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_070.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_070.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_070.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "071",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_071.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_071.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_071.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_071.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "072",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_072.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_072.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_072.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_072.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "073",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_073.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_073.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_073.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_073.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "074",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_074.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_074.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_074.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_074.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "075",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_075.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_075.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_075.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_075.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "076",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_076.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_076.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_076.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_076.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "077",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_077.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_077.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_077.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_077.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "078",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_078.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_078.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_078.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_078.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "079",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_079.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_079.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_079.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_079.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "080",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_080.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_080.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_080.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_080.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "081",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_081.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_081.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_081.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_081.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "082",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_082.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_082.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_082.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_082.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "083",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_083.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_083.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_083.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_083.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "084",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_084.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_084.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_084.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_084.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "085",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_085.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_085.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_085.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_085.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "086",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_086.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_086.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_086.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_086.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "087",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_087.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_087.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_087.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_087.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "088",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_088.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_088.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_088.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_088.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "089",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_089.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_089.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_089.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_089.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "090",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_090.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_090.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_090.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_090.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "091",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_091.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_091.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_091.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_091.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "092",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_092.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_092.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_092.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_092.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "093",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_093.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_093.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_093.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_093.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "094",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_094.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_094.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_094.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_094.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "095",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_095.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_095.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_095.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_095.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "096",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_096.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_096.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_096.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_096.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "097",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_097.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_097.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_097.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_097.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "098",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_098.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_098.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_098.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_098.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "099",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_099.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_099.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_099.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_099.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "100",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_100.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_100.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_100.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_100.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "101",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_101.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_101.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_101.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_101.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "102",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_102.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_102.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_102.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_102.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "103",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_103.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_103.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_103.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_103.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "104",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_104.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_104.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_104.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_104.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "105",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_105.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_105.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_105.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_105.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "106",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_106.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_106.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_106.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_106.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "107",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_107.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_107.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_107.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_107.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "108",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_108.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_108.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_108.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_108.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "109",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_109.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_109.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_109.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_109.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "110",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_110.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_110.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_110.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_110.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "111",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_111.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_111.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_111.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_111.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "112",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_112.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_112.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_112.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_112.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "113",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_113.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_113.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_113.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_113.npy"
+  },
+  {
+    "seq": "02",
+    "frame": "114",
+    "image_path": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle/images_tif/02_114.tif",
+    "pred_tif": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_tif/02_114.tif",
+    "pred_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/pred_masks_npy/02_114.npy",
+    "prob_npy": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved/prob_maps_npy/02_114.npy"
+  }
+]

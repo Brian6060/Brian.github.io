@@ -1,0 +1,128 @@
+[
+  {
+    "seq": "01",
+    "frame": "049",
+    "stem": "01_049",
+    "split": "val",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/01/t049.tif",
+    "seg_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/01_GT/SEG/man_seg049.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/images_tif/01_049.tif",
+    "instance_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_instance_npy/01_049.npy",
+    "binary_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_binary_npy/01_049.npy",
+    "weight_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/weight_maps_npy/01_049.npy",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8",
+    "seg_dtype": "uint16"
+  },
+  {
+    "seq": "01",
+    "frame": "067",
+    "stem": "01_067",
+    "split": "val",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/01/t067.tif",
+    "seg_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/01_GT/SEG/man_seg067.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/images_tif/01_067.tif",
+    "instance_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_instance_npy/01_067.npy",
+    "binary_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_binary_npy/01_067.npy",
+    "weight_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/weight_maps_npy/01_067.npy",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8",
+    "seg_dtype": "uint16"
+  },
+  {
+    "seq": "01",
+    "frame": "092",
+    "stem": "01_092",
+    "split": "val",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/01/t092.tif",
+    "seg_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/01_GT/SEG/man_seg092.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/images_tif/01_092.tif",
+    "instance_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_instance_npy/01_092.npy",
+    "binary_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_binary_npy/01_092.npy",
+    "weight_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/weight_maps_npy/01_092.npy",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8",
+    "seg_dtype": "uint16"
+  },
+  {
+    "seq": "02",
+    "frame": "022",
+    "stem": "02_022",
+    "split": "val",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/02/t022.tif",
+    "seg_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/02_GT/SEG/man_seg022.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/images_tif/02_022.tif",
+    "instance_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_instance_npy/02_022.npy",
+    "binary_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_binary_npy/02_022.npy",
+    "weight_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/weight_maps_npy/02_022.npy",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8",
+    "seg_dtype": "uint16"
+  },
+  {
+    "seq": "02",
+    "frame": "049",
+    "stem": "02_049",
+    "split": "val",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/02/t049.tif",
+    "seg_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/02_GT/SEG/man_seg049.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/images_tif/02_049.tif",
+    "instance_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_instance_npy/02_049.npy",
+    "binary_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_binary_npy/02_049.npy",
+    "weight_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/weight_maps_npy/02_049.npy",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8",
+    "seg_dtype": "uint16"
+  },
+  {
+    "seq": "02",
+    "frame": "077",
+    "stem": "02_077",
+    "split": "val",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/02/t077.tif",
+    "seg_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/02_GT/SEG/man_seg077.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/images_tif/02_077.tif",
+    "instance_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_instance_npy/02_077.npy",
+    "binary_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_binary_npy/02_077.npy",
+    "weight_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/weight_maps_npy/02_077.npy",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8",
+    "seg_dtype": "uint16"
+  },
+  {
+    "seq": "02",
+    "frame": "112",
+    "stem": "02_112",
+    "split": "val",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/02/t112.tif",
+    "seg_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train/02_GT/SEG/man_seg112.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/images_tif/02_112.tif",
+    "instance_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_instance_npy/02_112.npy",
+    "binary_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/masks_binary_npy/02_112.npy",
+    "weight_npy": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved/weight_maps_npy/02_112.npy",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8",
+    "seg_dtype": "uint16"
+  }
+]

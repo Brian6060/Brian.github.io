@@ -1,0 +1,20 @@
+{
+  "checkpoint": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/outputs_train_formal_A/best_train_loss.pt",
+  "processed_root": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test",
+  "manifest_name": "test_images.json",
+  "out_dir": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/outputs_test_formal_A_best",
+  "num_images": 230,
+  "elapsed_sec": 1585.0624730587006,
+  "input_size": 572,
+  "output_size": 388,
+  "normalize": "zscore",
+  "device": "cpu",
+  "note": "Pure inference only. No segmentation metrics are computed in this script. Use a separate evaluation/report stage for IoU, Dice, visualization, and analysis.",
+  "processed_summary": {
+    "mode": "infer",
+    "data_root": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test",
+    "out_root": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test",
+    "num_images": 230,
+    "note": "Inference-only preprocessing. No GT, no masks, no weight maps."
+  }
+}

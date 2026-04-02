@@ -1,0 +1,2532 @@
+[
+  {
+    "seq": "01",
+    "frame": "000",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t000.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_000.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "001",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t001.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_001.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "002",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t002.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_002.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "003",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t003.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_003.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "004",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t004.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_004.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "005",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t005.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_005.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "006",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t006.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_006.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "007",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t007.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_007.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "008",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t008.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_008.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "009",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t009.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_009.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "010",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t010.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_010.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "011",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t011.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_011.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "012",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t012.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_012.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "013",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t013.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_013.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "014",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t014.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_014.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "015",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t015.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_015.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "016",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t016.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_016.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "017",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t017.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_017.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "018",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t018.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_018.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "019",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t019.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_019.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "020",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t020.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_020.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "021",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t021.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_021.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "022",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t022.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_022.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "023",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t023.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_023.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "024",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t024.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_024.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "025",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t025.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_025.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "026",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t026.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_026.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "027",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t027.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_027.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "028",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t028.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_028.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "029",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t029.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_029.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "030",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t030.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_030.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "031",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t031.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_031.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "032",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t032.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_032.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "033",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t033.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_033.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "034",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t034.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_034.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "035",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t035.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_035.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "036",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t036.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_036.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "037",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t037.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_037.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "038",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t038.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_038.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "039",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t039.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_039.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "040",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t040.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_040.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "041",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t041.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_041.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "042",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t042.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_042.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "043",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t043.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_043.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "044",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t044.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_044.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "045",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t045.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_045.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "046",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t046.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_046.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "047",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t047.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_047.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "048",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t048.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_048.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "049",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t049.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_049.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "050",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t050.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_050.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "051",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t051.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_051.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "052",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t052.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_052.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "053",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t053.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_053.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "054",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t054.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_054.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "055",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t055.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_055.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "056",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t056.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_056.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "057",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t057.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_057.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "058",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t058.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_058.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "059",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t059.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_059.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "060",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t060.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_060.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "061",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t061.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_061.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "062",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t062.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_062.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "063",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t063.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_063.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "064",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t064.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_064.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "065",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t065.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_065.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "066",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t066.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_066.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "067",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t067.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_067.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "068",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t068.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_068.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "069",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t069.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_069.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "070",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t070.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_070.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "071",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t071.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_071.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "072",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t072.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_072.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "073",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t073.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_073.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "074",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t074.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_074.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "075",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t075.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_075.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "076",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t076.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_076.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "077",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t077.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_077.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "078",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t078.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_078.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "079",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t079.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_079.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "080",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t080.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_080.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "081",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t081.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_081.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "082",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t082.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_082.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "083",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t083.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_083.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "084",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t084.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_084.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "085",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t085.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_085.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "086",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t086.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_086.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "087",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t087.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_087.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "088",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t088.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_088.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "089",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t089.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_089.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "090",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t090.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_090.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "091",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t091.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_091.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "092",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t092.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_092.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "093",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t093.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_093.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "094",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t094.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_094.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "095",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t095.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_095.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "096",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t096.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_096.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "097",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t097.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_097.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "098",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t098.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_098.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "099",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t099.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_099.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "100",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t100.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_100.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "101",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t101.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_101.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "102",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t102.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_102.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "103",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t103.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_103.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "104",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t104.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_104.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "105",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t105.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_105.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "106",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t106.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_106.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "107",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t107.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_107.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "108",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t108.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_108.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "109",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t109.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_109.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "110",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t110.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_110.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "111",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t111.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_111.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "112",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t112.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_112.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "113",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t113.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_113.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "01",
+    "frame": "114",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/01/t114.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/01_114.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "000",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t000.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_000.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "001",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t001.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_001.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "002",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t002.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_002.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "003",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t003.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_003.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "004",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t004.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_004.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "005",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t005.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_005.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "006",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t006.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_006.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "007",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t007.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_007.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "008",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t008.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_008.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "009",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t009.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_009.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "010",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t010.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_010.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "011",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t011.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_011.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "012",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t012.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_012.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "013",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t013.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_013.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "014",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t014.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_014.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "015",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t015.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_015.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "016",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t016.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_016.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "017",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t017.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_017.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "018",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t018.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_018.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "019",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t019.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_019.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "020",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t020.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_020.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "021",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t021.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_021.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "022",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t022.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_022.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "023",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t023.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_023.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "024",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t024.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_024.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "025",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t025.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_025.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "026",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t026.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_026.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "027",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t027.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_027.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "028",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t028.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_028.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "029",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t029.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_029.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "030",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t030.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_030.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "031",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t031.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_031.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "032",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t032.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_032.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "033",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t033.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_033.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "034",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t034.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_034.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "035",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t035.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_035.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "036",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t036.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_036.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "037",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t037.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_037.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "038",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t038.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_038.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "039",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t039.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_039.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "040",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t040.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_040.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "041",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t041.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_041.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "042",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t042.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_042.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "043",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t043.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_043.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "044",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t044.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_044.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "045",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t045.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_045.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "046",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t046.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_046.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "047",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t047.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_047.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "048",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t048.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_048.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "049",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t049.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_049.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "050",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t050.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_050.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "051",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t051.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_051.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "052",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t052.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_052.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "053",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t053.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_053.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "054",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t054.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_054.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "055",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t055.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_055.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "056",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t056.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_056.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "057",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t057.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_057.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "058",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t058.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_058.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "059",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t059.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_059.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "060",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t060.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_060.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "061",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t061.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_061.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "062",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t062.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_062.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "063",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t063.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_063.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "064",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t064.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_064.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "065",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t065.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_065.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "066",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t066.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_066.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "067",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t067.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_067.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "068",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t068.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_068.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "069",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t069.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_069.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "070",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t070.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_070.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "071",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t071.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_071.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "072",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t072.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_072.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "073",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t073.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_073.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "074",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t074.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_074.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "075",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t075.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_075.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "076",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t076.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_076.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "077",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t077.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_077.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "078",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t078.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_078.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "079",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t079.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_079.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "080",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t080.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_080.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "081",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t081.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_081.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "082",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t082.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_082.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "083",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t083.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_083.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "084",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t084.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_084.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "085",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t085.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_085.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "086",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t086.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_086.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "087",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t087.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_087.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "088",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t088.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_088.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "089",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t089.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_089.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "090",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t090.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_090.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "091",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t091.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_091.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "092",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t092.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_092.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "093",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t093.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_093.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "094",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t094.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_094.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "095",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t095.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_095.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "096",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t096.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_096.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "097",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t097.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_097.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "098",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t098.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_098.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "099",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t099.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_099.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "100",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t100.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_100.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "101",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t101.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_101.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "102",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t102.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_102.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "103",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t103.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_103.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "104",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t104.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_104.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "105",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t105.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_105.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "106",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t106.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_106.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "107",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t107.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_107.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "108",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t108.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_108.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "109",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t109.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_109.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "110",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t110.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_110.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "111",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t111.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_111.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "112",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t112.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_112.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "113",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t113.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_113.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  },
+  {
+    "seq": "02",
+    "frame": "114",
+    "image_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/PhC-C2DH-U373 Test/02/t114.tif",
+    "image_copy_tif": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_test/images_tif/02_114.tif",
+    "shape_hw": [
+      520,
+      696
+    ],
+    "image_dtype": "uint8"
+  }
+]

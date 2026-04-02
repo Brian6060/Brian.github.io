@@ -1,0 +1,275 @@
+========== Test Config ==========
+{
+  "processed_root": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle",
+  "manifest_name": "test_images.json",
+  "checkpoint": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_train_improved/best_train_loss.pt",
+  "out_dir": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved",
+  "device": "mps",
+  "input_size": 572,
+  "output_size": 388,
+  "normalize": "zscore",
+  "threshold": 0.5,
+  "num_records": 230
+}
+=================================
+/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/src_improved/Test2_0.py:124: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  ckpt = torch.load(str(ckpt_path), map_location=device)
+[001/230] 01_000 inference done.
+[002/230] 01_001 inference done.
+[003/230] 01_002 inference done.
+[004/230] 01_003 inference done.
+[005/230] 01_004 inference done.
+[006/230] 01_005 inference done.
+[007/230] 01_006 inference done.
+[008/230] 01_007 inference done.
+[009/230] 01_008 inference done.
+[010/230] 01_009 inference done.
+[011/230] 01_010 inference done.
+[012/230] 01_011 inference done.
+[013/230] 01_012 inference done.
+[014/230] 01_013 inference done.
+[015/230] 01_014 inference done.
+[016/230] 01_015 inference done.
+[017/230] 01_016 inference done.
+[018/230] 01_017 inference done.
+[019/230] 01_018 inference done.
+[020/230] 01_019 inference done.
+[021/230] 01_020 inference done.
+[022/230] 01_021 inference done.
+[023/230] 01_022 inference done.
+[024/230] 01_023 inference done.
+[025/230] 01_024 inference done.
+[026/230] 01_025 inference done.
+[027/230] 01_026 inference done.
+[028/230] 01_027 inference done.
+[029/230] 01_028 inference done.
+[030/230] 01_029 inference done.
+[031/230] 01_030 inference done.
+[032/230] 01_031 inference done.
+[033/230] 01_032 inference done.
+[034/230] 01_033 inference done.
+[035/230] 01_034 inference done.
+[036/230] 01_035 inference done.
+[037/230] 01_036 inference done.
+[038/230] 01_037 inference done.
+[039/230] 01_038 inference done.
+[040/230] 01_039 inference done.
+[041/230] 01_040 inference done.
+[042/230] 01_041 inference done.
+[043/230] 01_042 inference done.
+[044/230] 01_043 inference done.
+[045/230] 01_044 inference done.
+[046/230] 01_045 inference done.
+[047/230] 01_046 inference done.
+[048/230] 01_047 inference done.
+[049/230] 01_048 inference done.
+[050/230] 01_049 inference done.
+[051/230] 01_050 inference done.
+[052/230] 01_051 inference done.
+[053/230] 01_052 inference done.
+[054/230] 01_053 inference done.
+[055/230] 01_054 inference done.
+[056/230] 01_055 inference done.
+[057/230] 01_056 inference done.
+[058/230] 01_057 inference done.
+[059/230] 01_058 inference done.
+[060/230] 01_059 inference done.
+[061/230] 01_060 inference done.
+[062/230] 01_061 inference done.
+[063/230] 01_062 inference done.
+[064/230] 01_063 inference done.
+[065/230] 01_064 inference done.
+[066/230] 01_065 inference done.
+[067/230] 01_066 inference done.
+[068/230] 01_067 inference done.
+[069/230] 01_068 inference done.
+[070/230] 01_069 inference done.
+[071/230] 01_070 inference done.
+[072/230] 01_071 inference done.
+[073/230] 01_072 inference done.
+[074/230] 01_073 inference done.
+[075/230] 01_074 inference done.
+[076/230] 01_075 inference done.
+[077/230] 01_076 inference done.
+[078/230] 01_077 inference done.
+[079/230] 01_078 inference done.
+[080/230] 01_079 inference done.
+[081/230] 01_080 inference done.
+[082/230] 01_081 inference done.
+[083/230] 01_082 inference done.
+[084/230] 01_083 inference done.
+[085/230] 01_084 inference done.
+[086/230] 01_085 inference done.
+[087/230] 01_086 inference done.
+[088/230] 01_087 inference done.
+[089/230] 01_088 inference done.
+[090/230] 01_089 inference done.
+[091/230] 01_090 inference done.
+[092/230] 01_091 inference done.
+[093/230] 01_092 inference done.
+[094/230] 01_093 inference done.
+[095/230] 01_094 inference done.
+[096/230] 01_095 inference done.
+[097/230] 01_096 inference done.
+[098/230] 01_097 inference done.
+[099/230] 01_098 inference done.
+[100/230] 01_099 inference done.
+[101/230] 01_100 inference done.
+[102/230] 01_101 inference done.
+[103/230] 01_102 inference done.
+[104/230] 01_103 inference done.
+[105/230] 01_104 inference done.
+[106/230] 01_105 inference done.
+[107/230] 01_106 inference done.
+[108/230] 01_107 inference done.
+[109/230] 01_108 inference done.
+[110/230] 01_109 inference done.
+[111/230] 01_110 inference done.
+[112/230] 01_111 inference done.
+[113/230] 01_112 inference done.
+[114/230] 01_113 inference done.
+[115/230] 01_114 inference done.
+[116/230] 02_000 inference done.
+[117/230] 02_001 inference done.
+[118/230] 02_002 inference done.
+[119/230] 02_003 inference done.
+[120/230] 02_004 inference done.
+[121/230] 02_005 inference done.
+[122/230] 02_006 inference done.
+[123/230] 02_007 inference done.
+[124/230] 02_008 inference done.
+[125/230] 02_009 inference done.
+[126/230] 02_010 inference done.
+[127/230] 02_011 inference done.
+[128/230] 02_012 inference done.
+[129/230] 02_013 inference done.
+[130/230] 02_014 inference done.
+[131/230] 02_015 inference done.
+[132/230] 02_016 inference done.
+[133/230] 02_017 inference done.
+[134/230] 02_018 inference done.
+[135/230] 02_019 inference done.
+[136/230] 02_020 inference done.
+[137/230] 02_021 inference done.
+[138/230] 02_022 inference done.
+[139/230] 02_023 inference done.
+[140/230] 02_024 inference done.
+[141/230] 02_025 inference done.
+[142/230] 02_026 inference done.
+[143/230] 02_027 inference done.
+[144/230] 02_028 inference done.
+[145/230] 02_029 inference done.
+[146/230] 02_030 inference done.
+[147/230] 02_031 inference done.
+[148/230] 02_032 inference done.
+[149/230] 02_033 inference done.
+[150/230] 02_034 inference done.
+[151/230] 02_035 inference done.
+[152/230] 02_036 inference done.
+[153/230] 02_037 inference done.
+[154/230] 02_038 inference done.
+[155/230] 02_039 inference done.
+[156/230] 02_040 inference done.
+[157/230] 02_041 inference done.
+[158/230] 02_042 inference done.
+[159/230] 02_043 inference done.
+[160/230] 02_044 inference done.
+[161/230] 02_045 inference done.
+[162/230] 02_046 inference done.
+[163/230] 02_047 inference done.
+[164/230] 02_048 inference done.
+[165/230] 02_049 inference done.
+[166/230] 02_050 inference done.
+[167/230] 02_051 inference done.
+[168/230] 02_052 inference done.
+[169/230] 02_053 inference done.
+[170/230] 02_054 inference done.
+[171/230] 02_055 inference done.
+[172/230] 02_056 inference done.
+[173/230] 02_057 inference done.
+[174/230] 02_058 inference done.
+[175/230] 02_059 inference done.
+[176/230] 02_060 inference done.
+[177/230] 02_061 inference done.
+[178/230] 02_062 inference done.
+[179/230] 02_063 inference done.
+[180/230] 02_064 inference done.
+[181/230] 02_065 inference done.
+[182/230] 02_066 inference done.
+[183/230] 02_067 inference done.
+[184/230] 02_068 inference done.
+[185/230] 02_069 inference done.
+[186/230] 02_070 inference done.
+[187/230] 02_071 inference done.
+[188/230] 02_072 inference done.
+[189/230] 02_073 inference done.
+[190/230] 02_074 inference done.
+[191/230] 02_075 inference done.
+[192/230] 02_076 inference done.
+[193/230] 02_077 inference done.
+[194/230] 02_078 inference done.
+[195/230] 02_079 inference done.
+[196/230] 02_080 inference done.
+[197/230] 02_081 inference done.
+[198/230] 02_082 inference done.
+[199/230] 02_083 inference done.
+[200/230] 02_084 inference done.
+[201/230] 02_085 inference done.
+[202/230] 02_086 inference done.
+[203/230] 02_087 inference done.
+[204/230] 02_088 inference done.
+[205/230] 02_089 inference done.
+[206/230] 02_090 inference done.
+[207/230] 02_091 inference done.
+[208/230] 02_092 inference done.
+[209/230] 02_093 inference done.
+[210/230] 02_094 inference done.
+[211/230] 02_095 inference done.
+[212/230] 02_096 inference done.
+[213/230] 02_097 inference done.
+[214/230] 02_098 inference done.
+[215/230] 02_099 inference done.
+[216/230] 02_100 inference done.
+[217/230] 02_101 inference done.
+[218/230] 02_102 inference done.
+[219/230] 02_103 inference done.
+[220/230] 02_104 inference done.
+[221/230] 02_105 inference done.
+[222/230] 02_106 inference done.
+[223/230] 02_107 inference done.
+[224/230] 02_108 inference done.
+[225/230] 02_109 inference done.
+[226/230] 02_110 inference done.
+[227/230] 02_111 inference done.
+[228/230] 02_112 inference done.
+[229/230] 02_113 inference done.
+[230/230] 02_114 inference done.
+========== Inference Summary ==========
+{
+  "checkpoint": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_train_improved/best_train_loss.pt",
+  "processed_root": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle",
+  "manifest_name": "test_images.json",
+  "out_dir": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved",
+  "num_images": 230,
+  "elapsed_sec": 46.3461229801178,
+  "device": "mps",
+  "input_size": 572,
+  "output_size": 388,
+  "normalize": "zscore",
+  "threshold": 0.5,
+  "saved_items": [
+    "pred_masks_tif/",
+    "pred_masks_npy/",
+    "prob_maps_npy/",
+    "checkpoint_meta.json",
+    "inference_manifest.json",
+    "summary.json"
+  ],
+  "processed_summary": {
+    "mode": "infer",
+    "data_root": "/Users/dby051225/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Test",
+    "out_root": "/Users/dby051225/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle",
+    "num_images": 230
+  }
+}
+=======================================

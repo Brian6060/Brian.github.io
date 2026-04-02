@@ -1,0 +1,20 @@
+{
+  "mode": "train",
+  "data_root": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Train",
+  "out_root": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_train_improved",
+  "num_all_pairs": 34,
+  "num_train_pairs": 27,
+  "num_val_pairs": 7,
+  "seed": 42,
+  "val_ratio": 0.2,
+  "w0": 10.0,
+  "sigma": 5.0,
+  "class_balance_train_only": {
+    "foreground": 7.664993811114266,
+    "background": 0.5348918654489558,
+    "total_fg_pixels": 637433,
+    "total_bg_pixels": 9134407,
+    "total_pixels": 9771840
+  },
+  "note": "Weight maps are generated for all GT samples, but class weights are estimated from train split only."
+}

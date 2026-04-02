@@ -1,0 +1,7 @@
+{
+  "mode": "infer",
+  "data_root": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Test",
+  "out_root": "/Users/dby051225/Desktop/VIS/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_improved",
+  "num_images": 230,
+  "note": "Inference-only preprocessing. No GT, no masks, no weight maps."
+}

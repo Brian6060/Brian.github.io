@@ -1,0 +1,7 @@
+usage: Inference2_0.py [-h] --test-out-root TEST_OUT_ROOT --processed-root
+                       PROCESSED_ROOT
+                       [--processed-manifest-name PROCESSED_MANIFEST_NAME]
+                       [--gt-processed-root GT_PROCESSED_ROOT]
+                       [--gt-manifest-name GT_MANIFEST_NAME]
+                       [--out-dir OUT_DIR]
+Inference2_0.py: error: the following arguments are required: --test-out-root, --processed-root

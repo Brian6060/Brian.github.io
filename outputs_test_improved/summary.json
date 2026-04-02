@@ -1,0 +1,27 @@
+{
+  "checkpoint": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_train_improved/best_train_loss.pt",
+  "processed_root": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle",
+  "manifest_name": "test_images.json",
+  "out_dir": "/Users/brian/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/outputs_test_improved",
+  "num_images": 230,
+  "elapsed_sec": 46.3461229801178,
+  "device": "mps",
+  "input_size": 572,
+  "output_size": 388,
+  "normalize": "zscore",
+  "threshold": 0.5,
+  "saved_items": [
+    "pred_masks_tif/",
+    "pred_masks_npy/",
+    "prob_maps_npy/",
+    "checkpoint_meta.json",
+    "inference_manifest.json",
+    "summary.json"
+  ],
+  "processed_summary": {
+    "mode": "infer",
+    "data_root": "/Users/dby051225/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/PhC-C2DH-U373 Test",
+    "out_root": "/Users/dby051225/Desktop/VCL318/U-Net/From U-Net to TransNet Experiment Reproduction 3.0/processed_unet_test_auto_originalstyle",
+    "num_images": 230
+  }
+}

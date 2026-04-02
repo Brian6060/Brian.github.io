@@ -1,0 +1,39 @@
+{
+  "checkpoint_path": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/outputs_train_formal_A/best_train_loss.pt",
+  "checkpoint_keys": [
+    "model_state",
+    "optimizer_state",
+    "epoch",
+    "global_step",
+    "best_loss",
+    "args"
+  ],
+  "epoch": 10,
+  "global_step": 1632,
+  "best_loss": 0.05971253993373145,
+  "args": {
+    "processed_root": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/processed_unet_strict",
+    "save_dir": "/Users/dby051225/Desktop/VIS/U-Net/U-Net ER2.0/outputs_train_formal_A",
+    "batch_size": 1,
+    "momentum": 0.99,
+    "input_size": 572,
+    "output_size": 388,
+    "patches_per_image": 4,
+    "epochs": 10,
+    "lr": 0.0001,
+    "weight_decay": 0.0,
+    "elastic_deform": true,
+    "displacement_std": 10.0,
+    "grid_size": 3,
+    "normalize": "zscore",
+    "gray_value_aug": true,
+    "use_bottleneck_dropout": true,
+    "dropout_p": 0.5,
+    "num_workers": 0,
+    "seed": 42,
+    "print_freq": 10,
+    "save_every": 2,
+    "resume": "",
+    "device": "cpu"
+  }
+}
