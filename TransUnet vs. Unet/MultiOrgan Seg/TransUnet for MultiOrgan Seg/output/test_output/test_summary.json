@@ -1,10 +1,3 @@
-{
-  "checkpoint_path": "/Users/brian/Desktop/VCL318/TransU-Net/TransUnet vs. Unet/TransUnet for MultiOrgan Seg/output/train_output/best.pth",
-  "num_test_batches": 50,
-  "test_mean_dice": 0.5355624864527828,
-  "test_mean_iou": 0.46910705392987256,
-  "input_size": [
-    320,
-    320
-  ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ed50ee0d3f06204c2e12ee25ed1342487ca92724623afecd005cb88c89582ee
+size 288

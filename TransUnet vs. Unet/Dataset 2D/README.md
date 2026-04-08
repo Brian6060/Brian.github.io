@@ -9,7 +9,7 @@ At the current stage, the repository only includes the **DataProcessor** module 
 - `DataProcessor/`: scripts and utilities for preparing, organizing, converting, or preprocessing the 2D dataset.
 
 ## Why the full dataset is not included
-The original dataset files are large and are therefore excluded from the repository for storage and transfer efficiency. This repository focuses on:
+The original dataset files are excluded from the repository for storage and transfer efficiency. This repository focuses on:
 - preprocessing pipeline preservation
 - reproducibility of dataset preparation logic
 - project structure management
@@ -22,4 +22,4 @@ Use the files in `DataProcessor/` to:
 
 ## Notes
 - Raw datasets and large generated files are not included in this repository.
-- If needed, dataset sources, download instructions, and preprocessing requirements should be documented separately in future updates.
+- Dataset sources and preprocessing requirements can be documented separately in future updates.
