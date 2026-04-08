@@ -1,0 +1,112 @@
+{
+  "model_name": "UNet2D_BTCV",
+  "checkpoint_path": "/Users/brian/Desktop/VCL318/TransU-Net/TransUnet vs. Unet/U-Net for MultiOrgan Seg/output/train_output/best.pth",
+  "num_test_samples": 394,
+  "mean_dice": 0.5173445571170276,
+  "mean_iou": 0.45209922265228264,
+  "input_size": [
+    320,
+    320
+  ],
+  "ignore_background": true,
+  "per_class_summary": {
+    "1": {
+      "class_id": 1,
+      "class_name": "spleen",
+      "mean_dice": 0.6864795549560806,
+      "mean_iou": 0.6319102317315838,
+      "support_samples": 133
+    },
+    "2": {
+      "class_id": 2,
+      "class_name": "right_kidney",
+      "mean_dice": 0.39979875655260677,
+      "mean_iou": 0.3570898650762085,
+      "support_samples": 148
+    },
+    "3": {
+      "class_id": 3,
+      "class_name": "left_kidney",
+      "mean_dice": 0.4937643588140822,
+      "mean_iou": 0.4423911757838676,
+      "support_samples": 144
+    },
+    "4": {
+      "class_id": 4,
+      "class_name": "gallbladder",
+      "mean_dice": 0.48194091377023884,
+      "mean_iou": 0.41106193466450236,
+      "support_samples": 95
+    },
+    "5": {
+      "class_id": 5,
+      "class_name": "esophagus",
+      "mean_dice": 0.6132987575567747,
+      "mean_iou": 0.5087652656871501,
+      "support_samples": 151
+    },
+    "6": {
+      "class_id": 6,
+      "class_name": "liver",
+      "mean_dice": 0.7860561112228321,
+      "mean_iou": 0.7356601145774972,
+      "support_samples": 264
+    },
+    "7": {
+      "class_id": 7,
+      "class_name": "stomach",
+      "mean_dice": 0.6485657574649368,
+      "mean_iou": 0.5530104256982843,
+      "support_samples": 168
+    },
+    "8": {
+      "class_id": 8,
+      "class_name": "aorta",
+      "mean_dice": 0.6085792240792912,
+      "mean_iou": 0.5537173002692057,
+      "support_samples": 311
+    },
+    "9": {
+      "class_id": 9,
+      "class_name": "inferior_vena_cava",
+      "mean_dice": 0.5599042022491716,
+      "mean_iou": 0.4933748468734313,
+      "support_samples": 311
+    },
+    "10": {
+      "class_id": 10,
+      "class_name": "portal_and_splenic_vein",
+      "mean_dice": 0.33702897198077003,
+      "mean_iou": 0.2730537077637875,
+      "support_samples": 115
+    },
+    "11": {
+      "class_id": 11,
+      "class_name": "pancreas",
+      "mean_dice": 0.5132195849461717,
+      "mean_iou": 0.4046015821141965,
+      "support_samples": 149
+    },
+    "12": {
+      "class_id": 12,
+      "class_name": "right_adrenal_gland",
+      "mean_dice": 0.2811056587990279,
+      "mean_iou": 0.2150469798865793,
+      "support_samples": 83
+    },
+    "13": {
+      "class_id": 13,
+      "class_name": "left_adrenal_gland",
+      "mean_dice": 0.14814419875500293,
+      "mean_iou": 0.10493137117198746,
+      "support_samples": 66
+    },
+    "14": {
+      "class_id": 14,
+      "class_name": "organ_14",
+      "mean_dice": 0.4684828742309277,
+      "mean_iou": 0.360264987620278,
+      "support_samples": 167
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "checkpoint_path": "/Users/brian/Desktop/VCL318/TransU-Net/TransUnet vs. Unet/U-Net for MultiOrgan Seg/output/train_output/best.pth",
+  "num_test_batches": 50,
+  "test_mean_dice": 0.5173445571170276,
+  "test_mean_iou": 0.45209922265228264,
+  "input_size": [
+    320,
+    320
+  ]
+}

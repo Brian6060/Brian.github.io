@@ -1,0 +1,117 @@
+{
+  "overall_comparison": {
+    "UNet2D_BTCV": {
+      "mean_dice": 0.5173445571170276,
+      "mean_iou": 0.4520992226522826,
+      "num_test_samples": 394
+    },
+    "TransUNet2D_BTCV": {
+      "mean_dice": 0.5355624864527828,
+      "mean_iou": 0.4691070539298725,
+      "num_test_samples": 394
+    }
+  },
+  "per_class_comparison": {
+    "1": {
+      "class_name": "spleen",
+      "unet_mean_dice": 0.6864795549560806,
+      "transunet_mean_dice": 0.6665893720209729,
+      "unet_mean_iou": 0.6319102317315838,
+      "transunet_mean_iou": 0.6076514738126904
+    },
+    "2": {
+      "class_name": "right_kidney",
+      "unet_mean_dice": 0.3997987565526067,
+      "transunet_mean_dice": 0.5607682157006192,
+      "unet_mean_iou": 0.3570898650762085,
+      "transunet_mean_iou": 0.5122241963424825
+    },
+    "3": {
+      "class_name": "left_kidney",
+      "unet_mean_dice": 0.4937643588140822,
+      "transunet_mean_dice": 0.5989429984502335,
+      "unet_mean_iou": 0.4423911757838676,
+      "transunet_mean_iou": 0.5482406746662117
+    },
+    "4": {
+      "class_name": "gallbladder",
+      "unet_mean_dice": 0.4819409137702388,
+      "transunet_mean_dice": 0.5353522332704234,
+      "unet_mean_iou": 0.4110619346645023,
+      "transunet_mean_iou": 0.4578072720655186
+    },
+    "5": {
+      "class_name": "esophagus",
+      "unet_mean_dice": 0.6132987575567747,
+      "transunet_mean_dice": 0.605674863232156,
+      "unet_mean_iou": 0.5087652656871501,
+      "transunet_mean_iou": 0.4942771827087146
+    },
+    "6": {
+      "class_name": "liver",
+      "unet_mean_dice": 0.7860561112228321,
+      "transunet_mean_dice": 0.8706684013422146,
+      "unet_mean_iou": 0.7356601145774972,
+      "transunet_mean_iou": 0.8255348143153566
+    },
+    "7": {
+      "class_name": "stomach",
+      "unet_mean_dice": 0.6485657574649368,
+      "transunet_mean_dice": 0.6907766895982685,
+      "unet_mean_iou": 0.5530104256982843,
+      "transunet_mean_iou": 0.5984290659896914
+    },
+    "8": {
+      "class_name": "aorta",
+      "unet_mean_dice": 0.6085792240792912,
+      "transunet_mean_dice": 0.6653990013776365,
+      "unet_mean_iou": 0.5537173002692057,
+      "transunet_mean_iou": 0.6043267847529779
+    },
+    "9": {
+      "class_name": "inferior_vena_cava",
+      "unet_mean_dice": 0.5599042022491716,
+      "transunet_mean_dice": 0.4821705314142676,
+      "unet_mean_iou": 0.4933748468734313,
+      "transunet_mean_iou": 0.4173153595243767
+    },
+    "10": {
+      "class_name": "portal_and_splenic_vein",
+      "unet_mean_dice": 0.33702897198077,
+      "transunet_mean_dice": 0.3331014513258136,
+      "unet_mean_iou": 0.2730537077637875,
+      "transunet_mean_iou": 0.2635813356124269
+    },
+    "11": {
+      "class_name": "pancreas",
+      "unet_mean_dice": 0.5132195849461717,
+      "transunet_mean_dice": 0.431134548949476,
+      "unet_mean_iou": 0.4046015821141965,
+      "transunet_mean_iou": 0.3260111937864692
+    },
+    "12": {
+      "class_name": "right_adrenal_gland",
+      "unet_mean_dice": 0.2811056587990279,
+      "transunet_mean_dice": 0.0,
+      "unet_mean_iou": 0.2150469798865793,
+      "transunet_mean_iou": 0.0
+    },
+    "13": {
+      "class_name": "left_adrenal_gland",
+      "unet_mean_dice": 0.1481441987550029,
+      "transunet_mean_dice": 0.0,
+      "unet_mean_iou": 0.1049313711719874,
+      "transunet_mean_iou": 0.0
+    },
+    "14": {
+      "class_name": "organ_14",
+      "unet_mean_dice": 0.4684828742309277,
+      "transunet_mean_dice": 0.4108837064649165,
+      "unet_mean_iou": 0.360264987620278,
+      "transunet_mean_iou": 0.2990979992585506
+    }
+  },
+  "best_model_by_mean_dice": "TransUNet2D_BTCV",
+  "best_model_by_mean_iou": "TransUNet2D_BTCV",
+  "merged_sample_count": 394
+}
