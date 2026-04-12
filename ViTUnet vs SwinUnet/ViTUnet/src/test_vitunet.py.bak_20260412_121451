@@ -1,0 +1,280 @@
+"""ViTUNet 测试脚本（基于新版 model.py + dataloader.py）
+
+功能：
+1. 加载 best checkpoint
+2. 在 test split 上计算整体指标：
+   - IoU
+   - Dice
+   - AP
+3. 保存逐图指标到 csv
+4. 保存整体 summary 到 json
+5. 保存 test overlay 可视化结果
+"""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+import sys
+from pathlib import Path
+from typing import Dict, Any, List
+
+# ---------------------------------------------------------------------
+# 让当前脚本可以访问项目根目录与 shared 目录
+# ---------------------------------------------------------------------
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+_SHARED_DIR = _REPO_ROOT / "shared"
+sys.path.insert(0, str(_REPO_ROOT))
+sys.path.insert(0, str(_SHARED_DIR))
+
+import torch
+
+from config import (
+    SPLIT_DIR,
+    THRESHOLD,
+    get_device,
+    IMAGE_SIZE,
+)
+from utils.metrics import compute_metrics, summarize_metrics
+from utils.visualize import save_overlay
+
+from dataloader import get_dataloader
+from model import ViTUNet
+
+
+# ---------------------------------------------------------------------
+# 参数解析
+# ---------------------------------------------------------------------
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Test ViTUNet on Kvasir-SEG")
+
+    parser.add_argument(
+        "--checkpoint",
+        type=Path,
+        required=True,
+        help="要加载的 checkpoint 路径（一般是 best_dice.pt）",
+    )
+    parser.add_argument(
+        "--device",
+        default="auto",
+        help="设备: auto/cpu/cuda/mps",
+    )
+    parser.add_argument(
+        "--batch_size",
+        type=int,
+        default=1,
+        help="测试 batch size，建议 1",
+    )
+    parser.add_argument(
+        "--num_workers",
+        type=int,
+        default=0,
+        help="DataLoader worker 数",
+    )
+    parser.add_argument(
+        "--threshold",
+        type=float,
+        default=THRESHOLD,
+        help="二值化阈值",
+    )
+    parser.add_argument(
+        "--smoke_test",
+        action="store_true",
+        help="仅测试少量样本，快速检查链路",
+    )
+
+    return parser.parse_args()
+
+
+# ---------------------------------------------------------------------
+# 加载模型与配置
+# ---------------------------------------------------------------------
+def load_model_from_checkpoint(
+    checkpoint_path: Path,
+    device: torch.device,
+) -> tuple[torch.nn.Module, Dict[str, Any], Dict[str, Any]]:
+    """从 checkpoint 中恢复模型和 config。"""
+    if not checkpoint_path.exists():
+        raise FileNotFoundError(f"Checkpoint not found: {checkpoint_path}")
+
+    ckpt = torch.load(checkpoint_path, map_location=device)
+
+    if "config" not in ckpt:
+        raise KeyError("Checkpoint 中缺少 config 字段，无法重建模型。")
+
+    cfg = ckpt["config"]
+
+    model = ViTUNet(
+        backbone=cfg.get("backbone", "vit_small_patch16_224"),
+        pretrained=False,  # 测试时只加载 checkpoint 权重，不再从 timm 重新下载预训练
+        num_classes=1,
+    ).to(device)
+
+    model.load_state_dict(ckpt["model_state_dict"])
+    model.eval()
+
+    return model, cfg, ckpt
+
+
+# ---------------------------------------------------------------------
+# 主测试逻辑
+# ---------------------------------------------------------------------
+@torch.no_grad()
+def run_test(
+    model: torch.nn.Module,
+    loader,
+    device: torch.device,
+    threshold: float,
+    overlay_dir: Path,
+) -> List[Dict[str, Any]]:
+    """在 test split 上运行模型，返回逐图指标。"""
+    overlay_dir.mkdir(parents=True, exist_ok=True)
+
+    records: List[Dict[str, Any]] = []
+
+    for images, masks, meta in loader:
+        images = images.to(device)
+        masks = masks.to(device)
+
+        logits = model(images)
+        probs = torch.sigmoid(logits).detach().cpu()
+        masks_cpu = masks.detach().cpu()
+
+        bs = images.size(0)
+        for i in range(bs):
+            prob = probs[i, 0]
+            gt = masks_cpu[i, 0]
+
+            m = compute_metrics(prob, gt, threshold=threshold)
+
+            filename = (
+                meta["filename"][i]
+                if isinstance(meta["filename"], list)
+                else str(meta["filename"])
+            )
+
+            m["filename"] = filename
+            records.append(m)
+
+            # 保存 overlay
+            stem = Path(filename).stem
+            save_overlay(
+                image=images[i].cpu(),
+                gt_mask=gt,
+                pred_mask=(prob >= threshold).float(),
+                save_path=overlay_dir / f"{stem}.png",
+            )
+
+    return records
+
+
+# ---------------------------------------------------------------------
+# 保存逐图指标
+# ---------------------------------------------------------------------
+def save_per_image_csv(records: List[Dict[str, Any]], save_path: Path) -> None:
+    save_path.parent.mkdir(parents=True, exist_ok=True)
+
+    fieldnames = ["filename", "iou", "dice", "ap"]
+    with save_path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for r in records:
+            writer.writerow(
+                {
+                    "filename": r["filename"],
+                    "iou": r["iou"],
+                    "dice": r["dice"],
+                    "ap": r["ap"],
+                }
+            )
+
+
+# ---------------------------------------------------------------------
+# 主函数
+# ---------------------------------------------------------------------
+def main() -> None:
+    args = parse_args()
+    device = get_device(args.device)
+
+    # 1. 加载 checkpoint / model
+    model, cfg, ckpt = load_model_from_checkpoint(args.checkpoint, device)
+
+    # 2. 解析测试集路径
+    split_dir = Path(cfg.get("split_dir", str(SPLIT_DIR)))
+    test_csv = split_dir / "test.csv"
+
+    # smoke test 时只取少量样本
+    test_limit = 8 if args.smoke_test else None
+
+    # 3. DataLoader
+    test_loader = get_dataloader(
+        split_csv=test_csv,
+        split="test",
+        batch_size=args.batch_size,
+        num_workers=args.num_workers,
+        limit=test_limit,
+    )
+
+    # 4. 结果输出目录
+    run_dir = args.checkpoint.resolve().parent.parent
+    metrics_dir = run_dir / "metrics"
+    overlay_dir = run_dir / "test_overlays"
+
+    metrics_dir.mkdir(parents=True, exist_ok=True)
+    overlay_dir.mkdir(parents=True, exist_ok=True)
+
+    # 5. 测试
+    records = run_test(
+        model=model,
+        loader=test_loader,
+        device=device,
+        threshold=args.threshold,
+        overlay_dir=overlay_dir,
+    )
+
+    # 6. 汇总
+    summary = summarize_metrics(records)
+    summary["checkpoint"] = str(args.checkpoint.resolve())
+    summary["epoch"] = ckpt.get("epoch", None)
+    summary["best_dice_recorded"] = ckpt.get("best_dice", None)
+    summary["num_test_images"] = len(records)
+    summary["threshold"] = args.threshold
+    summary["smoke_test"] = bool(args.smoke_test)
+
+    # 四舍五入，便于阅读
+    for k in ["iou", "dice", "ap"]:
+        if k in summary:
+            summary[k] = round(float(summary[k]), 6)
+
+    # 兼容你之前的 summary 字段命名
+    output_summary = {
+        "checkpoint": summary["checkpoint"],
+        "epoch": summary["epoch"],
+        "best_dice_recorded": summary["best_dice_recorded"],
+        "num_test_images": summary["num_test_images"],
+        "mean_iou": summary["iou"],
+        "mean_dice": summary["dice"],
+        "mean_ap": summary["ap"],
+        "threshold": summary["threshold"],
+        "smoke_test": summary["smoke_test"],
+    }
+
+    # 7. 保存 summary / csv
+    (metrics_dir / "test_metrics_summary.json").write_text(
+        json.dumps(output_summary, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    save_per_image_csv(
+        records=records,
+        save_path=metrics_dir / "test_metrics_per_image.csv",
+    )
+
+    # 8. 打印结果
+    print(json.dumps(output_summary, indent=2, ensure_ascii=False))
+
+
+if __name__ == "__main__":
+    main()

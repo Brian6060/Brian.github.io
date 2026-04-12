@@ -1,0 +1,7 @@
+{
+  "checkpoint": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/ViTUnet/runs/vitunet_kvasir_seg_pretrained_bs8/checkpoints/best_dice.pt",
+  "input_path": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/Dataset/processed/Kvasir-SEG/images",
+  "num_images": 1000,
+  "mask_dir": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/Dataset/processed/Kvasir-SEG/masks",
+  "threshold": 0.5
+}

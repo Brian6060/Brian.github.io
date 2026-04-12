@@ -1,0 +1,16 @@
+{
+  "checkpoint": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/SwinUnet/runs/swinunet_kvasir_seg_pretrained_bs8/checkpoints/best_dice.pt",
+  "checkpoint_epoch": 27,
+  "best_dice_recorded": 0.8673817404517906,
+  "backbone": "swin_tiny_patch4_window7_224",
+  "pretrained": true,
+  "image_size": 224,
+  "input_path": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/Dataset/processed/Kvasir-SEG/images",
+  "mask_dir": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/Dataset/processed/Kvasir-SEG/masks",
+  "threshold": 0.5,
+  "num_images": 1000,
+  "num_images_with_gt": 1000,
+  "mean_iou": 0.934519,
+  "mean_dice": 0.961366,
+  "mean_ap": 0.986792
+}

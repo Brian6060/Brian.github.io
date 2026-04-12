@@ -1,0 +1,22 @@
+{
+  "task": "binary_segmentation",
+  "dataset": "Kvasir-SEG",
+  "processed_root": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/Dataset/processed/Kvasir-SEG",
+  "image_size": 224,
+  "batch_size": 8,
+  "epochs": 30,
+  "lr": 0.0001,
+  "weight_decay": 0.0001,
+  "num_workers": 0,
+  "seed": 42,
+  "device": "mps",
+  "threshold": 0.5,
+  "patience": 8,
+  "model_name": "SwinUNet",
+  "backbone": "swin_tiny_patch4_window7_224",
+  "pretrained": true,
+  "loss": "0.5 * BCEWithLogitsLoss + 0.5 * DiceLoss",
+  "optimizer": "AdamW",
+  "scheduler": "CosineAnnealingLR",
+  "smoke_test": false
+}

@@ -1,0 +1,8 @@
+{
+  "best_dice": 0.849061,
+  "best_epoch": 25,
+  "total_time_sec": 682.203,
+  "run_dir": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/ViTUnet/runs/vitunet_kvasir_seg_pretrained_bs8",
+  "checkpoint_best": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/ViTUnet/runs/vitunet_kvasir_seg_pretrained_bs8/checkpoints/best_dice.pt",
+  "checkpoint_latest": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/ViTUnet/runs/vitunet_kvasir_seg_pretrained_bs8/checkpoints/latest.pt"
+}

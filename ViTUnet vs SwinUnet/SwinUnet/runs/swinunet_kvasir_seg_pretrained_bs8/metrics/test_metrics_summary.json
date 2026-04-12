@@ -1,0 +1,11 @@
+{
+  "checkpoint": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/SwinUnet/runs/swinunet_kvasir_seg_pretrained_bs8/checkpoints/best_dice.pt",
+  "epoch": 27,
+  "best_dice_recorded": 0.8673817404517906,
+  "num_test_images": 100,
+  "mean_iou": 0.838957,
+  "mean_dice": 0.897017,
+  "mean_ap": 0.952007,
+  "threshold": 0.5,
+  "smoke_test": false
+}

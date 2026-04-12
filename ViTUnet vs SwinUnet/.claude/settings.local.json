@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import torch; print\\('torch:', torch.__version__\\); import timm; print\\('timm:', timm.__version__\\); import cv2; print\\('cv2:', cv2.__version__\\); import albumentations; print\\('albumentations:', albumentations.__version__\\)\")",
+      "Bash(python3 -c \"import pandas; print\\('pandas:', pandas.__version__\\); import sklearn; print\\('sklearn:', sklearn.__version__\\); import matplotlib; print\\('matplotlib:', matplotlib.__version__\\)\")",
+      "Bash(pip install:*)",
+      "Bash(python3 -c \"import timm; print\\(timm.__version__\\); m = timm.create_model\\('swin_tiny_patch4_window7_224', pretrained=False, features_only=True\\); print\\(m.feature_info.channels\\(\\)\\)\")",
+      "Bash(python3 -c \"import sys; sys.path.insert\\(0,'ViTUnet/src'\\); sys.path.insert\\(0,'shared'\\); from model import smoke_test; smoke_test\\(\\)\")",
+      "Bash(python3 -c \"import sys; sys.path.insert\\(0,'SwinUnet/src'\\); sys.path.insert\\(0,'shared'\\); from model import smoke_test; smoke_test\\(\\)\")",
+      "Bash(python3 ViTUnet/src/dataloader.py)",
+      "Bash(python3 SwinUnet/src/dataloader.py)",
+      "Bash(python3 ViTUnet/src/train_vitunet.py --smoke_test --epochs 1 --batch_size 4 --no_pretrained)",
+      "Bash(python3 SwinUnet/src/train_swinunet.py --smoke_test --epochs 1 --batch_size 4 --no_pretrained)",
+      "Bash(python3 ViTUnet/src/test_vitunet.py --checkpoint runs/vitunet/checkpoints/latest.pt --smoke_test)",
+      "Bash(python3 SwinUnet/src/test_swinunet.py --checkpoint runs/swinunet/checkpoints/latest.pt --smoke_test)",
+      "Bash(python3 ViTUnet/src/inference_vitunet.py --checkpoint runs/vitunet/checkpoints/latest.pt --input Dataset/processed/Kvasir-SEG/images --mask_dir Dataset/processed/Kvasir-SEG/masks --save_dir runs/vitunet/inference_output)"
+    ]
+  }
+}

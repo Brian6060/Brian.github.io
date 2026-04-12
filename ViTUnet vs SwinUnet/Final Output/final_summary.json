@@ -1,0 +1,30 @@
+{
+  "vit_summary": {
+    "checkpoint": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/ViTUnet/runs/vitunet_kvasir_seg_pretrained_bs8/checkpoints/best_dice.pt",
+    "epoch": 25,
+    "best_dice_recorded": 0.8490608796106416,
+    "num_test_images": 100,
+    "mean_iou": 0.849311,
+    "mean_dice": 0.909554,
+    "mean_ap": 0.964538,
+    "threshold": 0.5,
+    "smoke_test": false
+  },
+  "swin_summary": {
+    "checkpoint": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/SwinUnet/runs/swinunet_kvasir_seg_pretrained_bs8/checkpoints/best_dice.pt",
+    "epoch": 27,
+    "best_dice_recorded": 0.8673817404517906,
+    "num_test_images": 100,
+    "mean_iou": 0.838957,
+    "mean_dice": 0.897017,
+    "mean_ap": 0.952007,
+    "threshold": 0.5,
+    "smoke_test": false
+  },
+  "num_merged_cases": 100,
+  "mean_diff_iou_swin_minus_vit": -0.010354,
+  "mean_diff_dice_swin_minus_vit": -0.012536,
+  "mean_diff_ap_swin_minus_vit": -0.012531,
+  "swin_better_dice_cases": 63,
+  "vit_better_dice_cases": 37
+}

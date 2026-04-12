@@ -1,0 +1,45 @@
+{
+  "dataset_name": "Kvasir-SEG",
+  "seed": 42,
+  "raw_root": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/Dataset/raw/Kvasir-SEG",
+  "processed_root": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/Dataset/processed/Kvasir-SEG",
+  "total_samples": 1000,
+  "split_counts": {
+    "train": 800,
+    "val": 100,
+    "test": 100
+  },
+  "image_resolution_stats": {
+    "width": {
+      "min": 332.0,
+      "max": 1920.0,
+      "mean": 625.292,
+      "median": 621.0,
+      "std": 129.556315
+    },
+    "height": {
+      "min": 352.0,
+      "max": 1072.0,
+      "mean": 545.228,
+      "median": 530.0,
+      "std": 90.645441
+    }
+  },
+  "mask_foreground_ratio_stats": {
+    "min": 0.004739,
+    "max": 0.81182,
+    "mean": 0.15391,
+    "median": 0.114007,
+    "std": 0.129936
+  },
+  "bbox_summary": {
+    "source_json": "/Users/brian/Desktop/VCL318/Swin-ViT/ViTUnet vs SwinUnet/Dataset/raw/Kvasir-SEG/kavsir_bboxes.json",
+    "matched_entries": 1000,
+    "total_bbox_entries": 1000
+  },
+  "anomalies": {
+    "missing_images": [],
+    "missing_masks": [],
+    "other_issues": []
+  }
+}

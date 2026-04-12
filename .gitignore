@@ -1,0 +1,22 @@
+# system
+.DS_Store
+
+# python
+__pycache__/
+*.pyc
+
+# dataset (重要)
+Dataset/processed/Kvasir-SEG/images/
+Dataset/processed/Kvasir-SEG/masks/
+
+# cache & tmp
+*.log
+*.tmp
+
+# matplotlib outputs（如果很多）
+*.png
+
+# mac
+*.DS_Store
+
+
